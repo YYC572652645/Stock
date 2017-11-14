@@ -1,0 +1,93 @@
+QComboBox#comboBoxMenu
+{
+min-height: 35px;
+min-width: 60px;
+color:white;
+background-color:transparent;
+selection-background-color: rgb(44, 62, 80);
+}
+
+QComboBox QAbstractItemView
+{
+selection-color:white;
+selection-background-color:rgb(44, 62, 80);
+background-color:rgb(44, 62, 80);
+font:14px;
+}
+
+QComboBox QAbstractItemView::item
+{
+min-height: 35px;
+min-width: 60px;
+color:white;
+}
+QToolBar
+{
+    background-color:rgb(44, 62, 80);
+}
+
+QPushButton:hover#closeButton
+{
+background-color: darkred;
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed#closeButton
+{
+background-color:darkred;
+border-radius:5px;
+color:white;
+}
+
+QPushButton#closeButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 15px;
+max-width: 25px;
+spacing: 10px;
+padding: 0px 0px;
+}
+
+QTreeWidget::item:selected:active
+{
+background-color: #828282;
+color:white;
+}
+
+QTreeWidget::item
+{
+height:40px;
+}
+
+QTreeWidget::item:selected:!active
+{
+background-color: #828282;
+color:white;
+}
+
+QTabBar::tab
+{
+min-width:120px;
+color: white;
+background-color:rgb(44, 62, 80);
+border: 0px solid;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+padding:5px;
+}
+
+QTabBar::tab:!selected
+{
+margin-top: 5px;
+}
+
+QTabBar::tab:selected
+{
+color: white;
+font-size:14px;
+font-weight:bold;
+}
+*{outline:0px;}

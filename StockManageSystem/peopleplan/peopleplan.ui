@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>peopleplan</class>
+ <widget class="QWidget" name="peopleplan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1076</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widgetFirst" native="true">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>5</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>二星直选</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>三星直选</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_6">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>四星直选</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_5">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>五星直选</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>5</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>二星混选</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>三星混选</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>定位胆</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="styleSheet">
+               <string notr="true">QPushButton:hover
+{
+background-color: rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton:hover:pressed
+{
+background-color:rgb(180, 85, 0);
+border-radius:5px;
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(100, 85, 80);
+color:white;
+border-radius:5px;
+height: 30px;
+max-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>更多开发中</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="leftMargin">
+             <number>6</number>
+            </property>
+            <property name="rightMargin">
+             <number>6</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pushButton_9">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 140);
+color:white;
+border-radius:5px;
+height: 30px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>免费计划</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_10">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+height: 30px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>搜索计划</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">border: 0px solid;border-color: gray;</string>
+            </property>
+            <property name="text">
+             <string>注：【红色】：当前为第一期 【黄色】：多期计划 【灰色】：过期计划</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widgetSecond" native="true">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>3</number>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="pushButton_11">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+min-height: 40px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>我的收藏</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>370</width>
+                 <height>38</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_12">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+min-height: 40px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>收藏计划</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pushButton_14">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+height: 30px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>刷新计划</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_13">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+height: 30px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>复制号码</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_16">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+height: 30px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>复制文本</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_15">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+height: 30px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>QQ群发</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_17">
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton
+{
+background-color:rgb(85, 185, 220);
+color:white;
+border-radius:5px;
+height: 30px;
+min-width: 120px;
+spacing: 10px;
+padding: 0px 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>|</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="styleSheet">
+             <string notr="true">border: 0px solid;border-color: gray;</string>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>  文本计划</string>
+             </attribute>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>计划详情</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QTableWidget" name="tableWidget_2">
+                <column>
+                 <property name="text">
+                  <string>期号</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>玩法</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>位置</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>周期</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>注数</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>倍投</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>盈亏</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>状态</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>操作</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+       <zorder></zorder>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

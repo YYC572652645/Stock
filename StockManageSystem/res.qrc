@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/app.jpg</file>
+        <file>image/link.gif</file>
+        <file>image/tc.ico</file>
+        <file>image/floder.png</file>
+        <file>image/fail.png</file>
+        <file>image/messagebackground.png</file>
+        <file>image/messagecolor.png</file>
+        <file>image/ok.png</file>
+        <file>image/qq.png</file>
+        <file>image/money.png</file>
+        <file>image/cicle.png</file>
+        <file>image/60000958.png</file>
+        <file>image/jskt_1.png</file>
+        <file>image/MixFileType.png</file>
+        <file>image/v009_24.png</file>
+        <file>image/calc.png</file>
+        <file>image/Information.png</file>
+        <file>image/Hand.png</file>
+        <file>image/Success.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>qss/style.qss</file>
+    </qresource>
+</RCC>

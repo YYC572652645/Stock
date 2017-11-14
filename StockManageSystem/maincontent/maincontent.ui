@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>maincontent</class>
+ <widget class="QMainWindow" name="maincontent">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>3</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QTreeWidget" name="treeWidgetMenu">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <column>
+         <property name="text">
+          <string>表头</string>
+         </property>
+        </column>
+        <item>
+         <property name="text">
+          <string>股票分析首页</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/app.jpg</normaloff>:/image/image/app.jpg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>直选号码验证</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/floder.png</normaloff>:/image/image/floder.png</iconset>
+         </property>
+         <item>
+          <property name="text">
+           <string>定位胆</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/image/tc.ico</normaloff>:/image/image/tc.ico</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>二星直选</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/image/tc.ico</normaloff>:/image/image/tc.ico</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>三星直选</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/image/tc.ico</normaloff>:/image/image/tc.ico</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>四星直选</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/image/tc.ico</normaloff>:/image/image/tc.ico</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>五星直选</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/image/tc.ico</normaloff>:/image/image/tc.ico</iconset>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>混选号码验证</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/floder.png</normaloff>:/image/image/floder.png</iconset>
+         </property>
+         <item>
+          <property name="text">
+           <string>二星混选</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/image/tc.ico</normaloff>:/image/image/tc.ico</iconset>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>三星混选</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/image/tc.ico</normaloff>:/image/image/tc.ico</iconset>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>计划模板设置</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/60000958.png</normaloff>:/image/image/60000958.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>人工计划平台</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/MixFileType.png</normaloff>:/image/image/MixFileType.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>自定义QQ群发</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/qq.png</normaloff>:/image/image/qq.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大底黄金分割</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/v009_24.png</normaloff>:/image/image/v009_24.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>时时彩二星缩水</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/money.png</normaloff>:/image/image/money.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>时时彩三星缩水</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/money.png</normaloff>:/image/image/money.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>时时彩四星缩水</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/money.png</normaloff>:/image/image/money.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>时时彩五星缩水</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/money.png</normaloff>:/image/image/money.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>万能拼接工具</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/jskt_1.png</normaloff>:/image/image/jskt_1.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大底验证工具</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/jskt_1.png</normaloff>:/image/image/jskt_1.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>常规倍投计算</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/calc.png</normaloff>:/image/image/calc.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>推波倍投计算</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/image/calc.png</normaloff>:/image/image/calc.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidgetContent"/>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBoxChat">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>240</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>聊天窗口</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QTextBrowser" name="textBrowserContent">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QFontComboBox" name="fontComboBoxFont">
+                  <property name="minimumSize">
+                   <size>
+                    <width>40</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>80</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBoxSize">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="editable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="currentText">
+                   <string>2</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>12</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>14</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>16</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>18</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>20</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>22</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>24</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>26</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>28</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>30</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>32</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>34</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>36</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButtonColor">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEditSendText">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButtonSend">
+               <property name="text">
+                <string>发送</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionLogin">
+   <property name="text">
+    <string>立刻登录</string>
+   </property>
+   <property name="toolTip">
+    <string>立刻登录</string>
+   </property>
+  </action>
+  <action name="actionRegister">
+   <property name="text">
+    <string>用户注册</string>
+   </property>
+   <property name="toolTip">
+    <string>用户注册</string>
+   </property>
+  </action>
+  <action name="actionFogetPwd">
+   <property name="text">
+    <string>忘记密码</string>
+   </property>
+   <property name="toolTip">
+    <string>忘记密码</string>
+   </property>
+  </action>
+  <action name="actionChat">
+   <property name="text">
+    <string>聊天窗口</string>
+   </property>
+   <property name="toolTip">
+    <string>聊天窗口</string>
+   </property>
+  </action>
+  <action name="actionAdmin">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>当前用户admin</string>
+   </property>
+   <property name="toolTip">
+    <string>当前用户admin</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

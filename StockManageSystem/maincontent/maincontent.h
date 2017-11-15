@@ -76,10 +76,8 @@ private:
     UvslSplic * uvslSplic;
     RegisterUser * registerUser;
     VerTool *verTool;
-     QColor fontColor;
+    QColor fontColor;
 
-
-    QList<QPushButton*>closeButtonList;
 
     void initControl();
     void setTreeClickWidget(QString treeItemName);

@@ -47,7 +47,6 @@ class TcpDataHandler(BaseRequestHandler):
 
                 # 读取json包
                 self.data = self.readJson(jsonStr)
-                self.role.addRole(self.data.get(globaldef.user), connSock)
                 self.messageHandler.onCommand(self.protocolNumber, self.data, self)
 
                 # 如果客户端退出了，则去除该套接字
@@ -65,9 +64,9 @@ class TcpDataHandler(BaseRequestHandler):
     # 去除已经关闭的Socket
     def removeSock(self):
         try:
-            print("已关闭...", self.role.getRole(self.data.get(globaldef.user)).getpeername())
+            print("已关闭...", self.role.getRole(self.data.get(globaldef.USER)).getpeername())
 
-            self.role.deleteRole(self.data.get(globaldef.user))
+            self.role.deleteRole(self.data.get(globaldef.USER))
 
         except Exception as e:
             print(e.args)
@@ -83,27 +82,9 @@ class TcpDataHandler(BaseRequestHandler):
 
         return data
 
-    # 向客户端发送消息
-    def netSend(self, protocol, dataDictionary, user = None):
-        try:
-            self.dataTotal = {}       # 总的json数据
-
-            # json组包
-            dataDictionary[globaldef.PROTOCOLNAME] = str(protocol)
-            self.dataTotal[globaldef.DATANAME] = dataDictionary
-
-            # 编码成json格式的数据
-            encodejson = json.dumps(self.dataTotal, ensure_ascii = False)
-
-            print(encodejson)
-
-            if(user == None):
-                self.role.getRole(self.data.get(globaldef.user)).sendall(encodejson.encode())
-            else:
-                self.role.getRole(user).sendall(encodejson.encode())
-
-        except Exception as e:
-            print(e.args)
+    # 添加角色
+    def addRole(self):
+        self.role.addRole(self.data.get(globaldef.USER), self.request)
 
     # 做一个广播
     def netSendAll(self, protocol, dataDictionary):
@@ -119,4 +100,5 @@ class TcpDataHandler(BaseRequestHandler):
         print(encodejson)
 
         for key, value in self.role.getAllRole().items():
-            value.sendall(encodejson.encode())
+            if (key != dataDictionary.get(globaldef.USER)):
+                value.sendall(encodejson.encode())

@@ -13,5 +13,15 @@ PORT = 8080                     # 端口号
 EXIT = "exit"                   # 退出
 PROTOCOLNAME = "protocol"       # 协议
 DATANAME = "data"               # 协议数据
+USER = "user"                   # 用户名
+
+TABCHATLOG = "chatlog"          # chatlog表
+CHATUSERNAME = "user"           # 用户名
+CHATTEXT ="text"                # 内容
+CHATTIME = "time"               # 时间
+
+# 数据库对象类型
+class DATABASETYPE:
+    LOGDATA = 0
 
 

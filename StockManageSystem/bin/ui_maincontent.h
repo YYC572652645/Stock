@@ -13,18 +13,10 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QComboBox>
-#include <QtWidgets/QFontComboBox>
-#include <QtWidgets/QFrame>
-#include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTabWidget>
-#include <QtWidgets/QTextBrowser>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QTreeWidget>
 #include <QtWidgets/QVBoxLayout>
@@ -45,20 +37,6 @@ public:
     QHBoxLayout *horizontalLayout;
     QTreeWidget *treeWidgetMenu;
     QTabWidget *tabWidgetContent;
-    QGroupBox *groupBoxChat;
-    QVBoxLayout *verticalLayout_4;
-    QVBoxLayout *verticalLayout_3;
-    QTextBrowser *textBrowserContent;
-    QFrame *frame;
-    QVBoxLayout *verticalLayout_2;
-    QHBoxLayout *horizontalLayout_2;
-    QFontComboBox *fontComboBoxFont;
-    QComboBox *comboBoxSize;
-    QPushButton *pushButtonColor;
-    QTextEdit *textEditSendText;
-    QHBoxLayout *horizontalLayout_3;
-    QSpacerItem *horizontalSpacer;
-    QPushButton *pushButtonSend;
     QToolBar *toolBar;
 
     void setupUi(QMainWindow *maincontent)
@@ -69,12 +47,24 @@ public:
         maincontent->resize(800, 600);
         actionLogin = new QAction(maincontent);
         actionLogin->setObjectName(QStringLiteral("actionLogin"));
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/image/image/login.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionLogin->setIcon(icon);
         actionRegister = new QAction(maincontent);
         actionRegister->setObjectName(QStringLiteral("actionRegister"));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral(":/image/image/register.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionRegister->setIcon(icon1);
         actionFogetPwd = new QAction(maincontent);
         actionFogetPwd->setObjectName(QStringLiteral("actionFogetPwd"));
+        QIcon icon2;
+        icon2.addFile(QStringLiteral(":/image/image/Hand.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionFogetPwd->setIcon(icon2);
         actionChat = new QAction(maincontent);
         actionChat->setObjectName(QStringLiteral("actionChat"));
+        QIcon icon3;
+        icon3.addFile(QStringLiteral(":/image/image/session.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionChat->setIcon(icon3);
         actionAdmin = new QAction(maincontent);
         actionAdmin->setObjectName(QStringLiteral("actionAdmin"));
         actionAdmin->setCheckable(false);
@@ -86,74 +76,74 @@ public:
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(3);
+        horizontalLayout->setSpacing(0);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(-1, 6, -1, -1);
         treeWidgetMenu = new QTreeWidget(centralwidget);
-        QIcon icon;
-        icon.addFile(QStringLiteral(":/image/image/app.jpg"), QSize(), QIcon::Normal, QIcon::Off);
-        QIcon icon1;
-        icon1.addFile(QStringLiteral(":/image/image/floder.png"), QSize(), QIcon::Normal, QIcon::Off);
-        QIcon icon2;
-        icon2.addFile(QStringLiteral(":/image/image/tc.ico"), QSize(), QIcon::Normal, QIcon::Off);
-        QIcon icon3;
-        icon3.addFile(QStringLiteral(":/image/image/60000958.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon4;
-        icon4.addFile(QStringLiteral(":/image/image/MixFileType.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon4.addFile(QStringLiteral(":/image/image/app.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon5;
-        icon5.addFile(QStringLiteral(":/image/image/qq.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QStringLiteral(":/image/image/floder.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon6;
-        icon6.addFile(QStringLiteral(":/image/image/v009_24.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QStringLiteral(":/image/image/tc.ico"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon7;
-        icon7.addFile(QStringLiteral(":/image/image/money.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon7.addFile(QStringLiteral(":/image/image/60000958.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/image/image/jskt_1.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QStringLiteral(":/image/image/MixFileType.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon9;
-        icon9.addFile(QStringLiteral(":/image/image/calc.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon9.addFile(QStringLiteral(":/image/image/qq.png"), QSize(), QIcon::Normal, QIcon::Off);
+        QIcon icon10;
+        icon10.addFile(QStringLiteral(":/image/image/v009_24.png"), QSize(), QIcon::Normal, QIcon::Off);
+        QIcon icon11;
+        icon11.addFile(QStringLiteral(":/image/image/money.png"), QSize(), QIcon::Normal, QIcon::Off);
+        QIcon icon12;
+        icon12.addFile(QStringLiteral(":/image/image/jskt_1.png"), QSize(), QIcon::Normal, QIcon::Off);
+        QIcon icon13;
+        icon13.addFile(QStringLiteral(":/image/image/calc.png"), QSize(), QIcon::Normal, QIcon::Off);
         QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem->setIcon(0, icon);
+        __qtreewidgetitem->setIcon(0, icon4);
         QTreeWidgetItem *__qtreewidgetitem1 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem1->setIcon(0, icon1);
+        __qtreewidgetitem1->setIcon(0, icon5);
         QTreeWidgetItem *__qtreewidgetitem2 = new QTreeWidgetItem(__qtreewidgetitem1);
-        __qtreewidgetitem2->setIcon(0, icon2);
+        __qtreewidgetitem2->setIcon(0, icon6);
         QTreeWidgetItem *__qtreewidgetitem3 = new QTreeWidgetItem(__qtreewidgetitem1);
-        __qtreewidgetitem3->setIcon(0, icon2);
+        __qtreewidgetitem3->setIcon(0, icon6);
         QTreeWidgetItem *__qtreewidgetitem4 = new QTreeWidgetItem(__qtreewidgetitem1);
-        __qtreewidgetitem4->setIcon(0, icon2);
+        __qtreewidgetitem4->setIcon(0, icon6);
         QTreeWidgetItem *__qtreewidgetitem5 = new QTreeWidgetItem(__qtreewidgetitem1);
-        __qtreewidgetitem5->setIcon(0, icon2);
+        __qtreewidgetitem5->setIcon(0, icon6);
         QTreeWidgetItem *__qtreewidgetitem6 = new QTreeWidgetItem(__qtreewidgetitem1);
-        __qtreewidgetitem6->setIcon(0, icon2);
+        __qtreewidgetitem6->setIcon(0, icon6);
         QTreeWidgetItem *__qtreewidgetitem7 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem7->setIcon(0, icon1);
+        __qtreewidgetitem7->setIcon(0, icon5);
         QTreeWidgetItem *__qtreewidgetitem8 = new QTreeWidgetItem(__qtreewidgetitem7);
-        __qtreewidgetitem8->setIcon(0, icon2);
+        __qtreewidgetitem8->setIcon(0, icon6);
         QTreeWidgetItem *__qtreewidgetitem9 = new QTreeWidgetItem(__qtreewidgetitem7);
-        __qtreewidgetitem9->setIcon(0, icon2);
+        __qtreewidgetitem9->setIcon(0, icon6);
         QTreeWidgetItem *__qtreewidgetitem10 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem10->setIcon(0, icon3);
+        __qtreewidgetitem10->setIcon(0, icon7);
         QTreeWidgetItem *__qtreewidgetitem11 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem11->setIcon(0, icon4);
+        __qtreewidgetitem11->setIcon(0, icon8);
         QTreeWidgetItem *__qtreewidgetitem12 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem12->setIcon(0, icon5);
+        __qtreewidgetitem12->setIcon(0, icon9);
         QTreeWidgetItem *__qtreewidgetitem13 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem13->setIcon(0, icon6);
+        __qtreewidgetitem13->setIcon(0, icon10);
         QTreeWidgetItem *__qtreewidgetitem14 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem14->setIcon(0, icon7);
+        __qtreewidgetitem14->setIcon(0, icon11);
         QTreeWidgetItem *__qtreewidgetitem15 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem15->setIcon(0, icon7);
+        __qtreewidgetitem15->setIcon(0, icon11);
         QTreeWidgetItem *__qtreewidgetitem16 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem16->setIcon(0, icon7);
+        __qtreewidgetitem16->setIcon(0, icon11);
         QTreeWidgetItem *__qtreewidgetitem17 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem17->setIcon(0, icon7);
+        __qtreewidgetitem17->setIcon(0, icon11);
         QTreeWidgetItem *__qtreewidgetitem18 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem18->setIcon(0, icon8);
+        __qtreewidgetitem18->setIcon(0, icon12);
         QTreeWidgetItem *__qtreewidgetitem19 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem19->setIcon(0, icon8);
+        __qtreewidgetitem19->setIcon(0, icon12);
         QTreeWidgetItem *__qtreewidgetitem20 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem20->setIcon(0, icon9);
+        __qtreewidgetitem20->setIcon(0, icon13);
         QTreeWidgetItem *__qtreewidgetitem21 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem21->setIcon(0, icon9);
+        __qtreewidgetitem21->setIcon(0, icon13);
         treeWidgetMenu->setObjectName(QStringLiteral("treeWidgetMenu"));
         treeWidgetMenu->setMinimumSize(QSize(180, 0));
         treeWidgetMenu->setMaximumSize(QSize(180, 16777215));
@@ -165,84 +155,6 @@ public:
 
         horizontalLayout->addWidget(tabWidgetContent);
 
-        groupBoxChat = new QGroupBox(centralwidget);
-        groupBoxChat->setObjectName(QStringLiteral("groupBoxChat"));
-        groupBoxChat->setMinimumSize(QSize(0, 0));
-        groupBoxChat->setMaximumSize(QSize(240, 16777215));
-        verticalLayout_4 = new QVBoxLayout(groupBoxChat);
-        verticalLayout_4->setSpacing(0);
-        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
-        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        textBrowserContent = new QTextBrowser(groupBoxChat);
-        textBrowserContent->setObjectName(QStringLiteral("textBrowserContent"));
-        textBrowserContent->setMinimumSize(QSize(100, 0));
-
-        verticalLayout_3->addWidget(textBrowserContent);
-
-        frame = new QFrame(groupBoxChat);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setStyleSheet(QStringLiteral(""));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        verticalLayout_2 = new QVBoxLayout(frame);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        fontComboBoxFont = new QFontComboBox(frame);
-        fontComboBoxFont->setObjectName(QStringLiteral("fontComboBoxFont"));
-        fontComboBoxFont->setMinimumSize(QSize(40, 0));
-        fontComboBoxFont->setMaximumSize(QSize(80, 16777215));
-
-        horizontalLayout_2->addWidget(fontComboBoxFont);
-
-        comboBoxSize = new QComboBox(frame);
-        comboBoxSize->setObjectName(QStringLiteral("comboBoxSize"));
-        comboBoxSize->setMinimumSize(QSize(60, 0));
-        comboBoxSize->setEditable(true);
-
-        horizontalLayout_2->addWidget(comboBoxSize);
-
-        pushButtonColor = new QPushButton(frame);
-        pushButtonColor->setObjectName(QStringLiteral("pushButtonColor"));
-        pushButtonColor->setMinimumSize(QSize(60, 0));
-        pushButtonColor->setStyleSheet(QStringLiteral("background-color: rgb(0, 0, 0);"));
-
-        horizontalLayout_2->addWidget(pushButtonColor);
-
-
-        verticalLayout_2->addLayout(horizontalLayout_2);
-
-
-        verticalLayout_3->addWidget(frame);
-
-        textEditSendText = new QTextEdit(groupBoxChat);
-        textEditSendText->setObjectName(QStringLiteral("textEditSendText"));
-        textEditSendText->setMaximumSize(QSize(16777215, 100));
-
-        verticalLayout_3->addWidget(textEditSendText);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_3->addItem(horizontalSpacer);
-
-        pushButtonSend = new QPushButton(groupBoxChat);
-        pushButtonSend->setObjectName(QStringLiteral("pushButtonSend"));
-
-        horizontalLayout_3->addWidget(pushButtonSend);
-
-
-        verticalLayout_3->addLayout(horizontalLayout_3);
-
-
-        verticalLayout_4->addLayout(verticalLayout_3);
-
-
-        horizontalLayout->addWidget(groupBoxChat);
-
 
         verticalLayout->addLayout(horizontalLayout);
 
@@ -252,6 +164,7 @@ public:
         toolBar->setEnabled(true);
         toolBar->setMinimumSize(QSize(0, 0));
         toolBar->setMovable(false);
+        toolBar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
         maincontent->addToolBar(Qt::TopToolBarArea, toolBar);
 
         retranslateUi(maincontent);
@@ -333,31 +246,6 @@ public:
         ___qtreewidgetitem22->setText(0, QApplication::translate("maincontent", "\346\216\250\346\263\242\345\200\215\346\212\225\350\256\241\347\256\227", 0));
         treeWidgetMenu->setSortingEnabled(__sortingEnabled);
 
-        groupBoxChat->setTitle(QApplication::translate("maincontent", "\350\201\212\345\244\251\347\252\227\345\217\243", 0));
-        comboBoxSize->clear();
-        comboBoxSize->insertItems(0, QStringList()
-         << QApplication::translate("maincontent", "2", 0)
-         << QApplication::translate("maincontent", "4", 0)
-         << QApplication::translate("maincontent", "6", 0)
-         << QApplication::translate("maincontent", "8", 0)
-         << QApplication::translate("maincontent", "10", 0)
-         << QApplication::translate("maincontent", "12", 0)
-         << QApplication::translate("maincontent", "14", 0)
-         << QApplication::translate("maincontent", "16", 0)
-         << QApplication::translate("maincontent", "18", 0)
-         << QApplication::translate("maincontent", "20", 0)
-         << QApplication::translate("maincontent", "22", 0)
-         << QApplication::translate("maincontent", "24", 0)
-         << QApplication::translate("maincontent", "26", 0)
-         << QApplication::translate("maincontent", "28", 0)
-         << QApplication::translate("maincontent", "30", 0)
-         << QApplication::translate("maincontent", "32", 0)
-         << QApplication::translate("maincontent", "34", 0)
-         << QApplication::translate("maincontent", "36", 0)
-        );
-        comboBoxSize->setCurrentText(QApplication::translate("maincontent", "2", 0));
-        pushButtonColor->setText(QString());
-        pushButtonSend->setText(QApplication::translate("maincontent", "\345\217\221\351\200\201", 0));
         toolBar->setWindowTitle(QApplication::translate("maincontent", "toolBar", 0));
     } // retranslateUi
 

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui axcontainer
+QT       += core gui axcontainer sql network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,7 +29,15 @@ SOURCES += main.cpp\
     pushcalc/pushcalc.cpp \
     uvslsplic/uvslsplic.cpp \
     registeruser/registeruser.cpp \
-    vertool/vertool.cpp
+    vertool/vertool.cpp\
+    groupchat/client/client.cpp \
+    groupchat/messagehandler/messagehandler.cpp \
+    groupchat/config/qreadini.cpp \
+    groupchat/database/database.cpp \
+    groupchat/chattogether/chattogether.cpp \
+    groupchat/database/logindata/logindata.cpp \
+    groupchat/database/logdata/logdata.cpp \
+    groupchat/chatlog/chatlog.cpp \
 
 HEADERS  += mainwindow/mainwindow.h \
     messagebox/messagedialog.h \
@@ -48,7 +56,18 @@ HEADERS  += mainwindow/mainwindow.h \
     pushcalc/pushcalc.h \
     uvslsplic/uvslsplic.h \
     registeruser/registeruser.h \
-    vertool/vertool.h
+    vertool/vertool.h\
+    groupchat/client/client.h \
+    groupchat/messagehandler/messagehandler.h \
+    groupchat/protocol.h \
+    groupchat/config/qreadini.h \
+    groupchat/database/database.h \
+    groupchat/chattogether/chattogether.h \
+    groupchat/database/logindata/logindata.h \
+    groupchat/database/logdata/logdata.h \
+    groupchat/chatlog/chatlog.h \
+    groupchat/database/databasedef.h \
+    messageinfo.h
 
 FORMS    += mainwindow/mainwindow.ui \
     messagebox/messagedialog.ui \
@@ -64,7 +83,9 @@ FORMS    += mainwindow/mainwindow.ui \
     pushcalc/pushcalc.ui \
     uvslsplic/uvslsplic.ui \
     registeruser/registeruser.ui \
-    vertool/vertool.ui
+    vertool/vertool.ui\
+    groupchat/chattogether/chattogether.ui \
+    groupchat/chatlog/chatlog.ui
 
 
 RC_FILE += myapp.rc

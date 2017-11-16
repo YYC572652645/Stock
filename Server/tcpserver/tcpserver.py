@@ -73,18 +73,53 @@ class TcpDataHandler(BaseRequestHandler):
 
     # 读取json数据
     def readJson(self, jsonStr):
-        data = json.loads(jsonStr)
-        data = data["data"]
+        beginIndex = 0
+        for index in range(len(jsonStr)):
+            if(self.isJson(jsonStr[beginIndex:index])):
+                data = json.loads(jsonStr[beginIndex:index])
+                data = data["data"]
 
-        self.protocolNumber = int(data[globaldef.PROTOCOLNAME])
+                self.protocolNumber = int(data[globaldef.PROTOCOLNAME])
+                del data[globaldef.PROTOCOLNAME]
 
-        del data[globaldef.PROTOCOLNAME]
+                beginIndex = index
+
+                if(self.protocolNumber == PROTOCOL.ADDSOCKETREQ):
+                    self.data = data
+                    self.messageHandler.onCommand(self.protocolNumber, data, self)
 
         return data
+
+    # 判断json格式是否合法
+    def isJson(self,jsonStr):
+        try:
+            json.loads(jsonStr)
+        except ValueError:
+            return False
+        return True
 
     # 添加角色
     def addRole(self):
         self.role.addRole(self.data.get(globaldef.USER), self.request)
+
+    # 向客户端发送消息
+    def netSend(self, protocol, dataDictionary):
+        try:
+            self.dataTotal = {}       # 总的json数据
+
+            # json组包
+            dataDictionary[globaldef.PROTOCOLNAME] = str(protocol)
+            self.dataTotal[globaldef.DATANAME] = dataDictionary
+
+            # 编码成json格式的数据
+            encodejson = json.dumps(self.dataTotal, ensure_ascii = False)
+
+            print(encodejson)
+
+            self.role.getRole(dataDictionary.get(globaldef.USER)).sendall(encodejson.encode())
+
+        except Exception as e:
+            print(e.args)
 
     # 做一个广播
     def netSendAll(self, protocol, dataDictionary):
@@ -96,8 +131,6 @@ class TcpDataHandler(BaseRequestHandler):
 
         # 编码成json格式的数据
         encodejson = json.dumps(self.dataTotal, ensure_ascii=False)
-
-        print(encodejson)
 
         for key, value in self.role.getAllRole().items():
             if (key != dataDictionary.get(globaldef.USER)):

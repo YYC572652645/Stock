@@ -14,8 +14,6 @@ class LogData(DataBase):
 
     def insertData(self, dict):
         try:
-            self.dataConn()
-
             str = "insert into  " + globaldef.TABCHATLOG + " values ('"
 
             str += dict.get(globaldef.CHATUSERNAME)      + "', '"
@@ -24,7 +22,6 @@ class LogData(DataBase):
 
             str += dict.get(globaldef.CHATTIME)          + "') ;"
 
-
             print(str)
 
             data = self.cursor.execute(str)
@@ -32,5 +29,5 @@ class LogData(DataBase):
             self.conn.commit()
 
         except Exception as e:
-            print(e.args)
+            print("sql插入异常", e.args)
 

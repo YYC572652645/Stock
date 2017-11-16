@@ -18,7 +18,10 @@
         <file>image/calc.png</file>
         <file>image/Information.png</file>
         <file>image/Hand.png</file>
-        <file>image/Success.png</file>
+        <file>image/login.png</file>
+        <file>image/register.png</file>
+        <file>image/session.png</file>
+        <file>image/search.png</file>
     </qresource>
     <qresource prefix="/qss">
         <file>qss/style.qss</file>

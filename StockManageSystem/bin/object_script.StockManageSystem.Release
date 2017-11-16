@@ -17,6 +17,14 @@ INPUT(
 ./release\uvslsplic.o
 ./release\registeruser.o
 ./release\vertool.o
+./release\client.o
+./release\messagehandler.o
+./release\qreadini.o
+./release\database.o
+./release\chattogether.o
+./release\logindata.o
+./release\logdata.o
+./release\chatlog.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_messagedialog.o
@@ -35,4 +43,7 @@ INPUT(
 ./release\moc_uvslsplic.o
 ./release\moc_registeruser.o
 ./release\moc_vertool.o
+./release\moc_client.o
+./release\moc_chattogether.o
+./release\moc_chatlog.o
 );

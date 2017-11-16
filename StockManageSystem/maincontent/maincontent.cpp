@@ -32,6 +32,7 @@ MainContent::MainContent(QWidget *parent) :
   ,uvslSplic(NULL)
   ,registerUser(NULL)
   ,verTool(NULL)
+  ,chatTogether(NULL)
 {
     ui->setupUi(this);
 
@@ -60,6 +61,7 @@ MainContent::~MainContent()
     SAFEDELETE(uvslSplic);
     SAFEDELETE(registerUser);
     SAFEDELETE(verTool);
+    SAFEDELETE(chatTogether);
 }
 
 /************************   关闭当前页            ************************/
@@ -102,7 +104,6 @@ void MainContent::initControl()
     ui->toolBar->addAction(ui->actionFogetPwd);
     ui->toolBar->addAction(ui->actionChat);
 
-
     //添加窗口
     homePage = new HomePage();
     dwDan = new StarChoose();
@@ -122,6 +123,8 @@ void MainContent::initControl()
     uvslSplic = new UvslSplic();
     registerUser = new RegisterUser();
     verTool = new VerTool();
+    chatTogether = new ChatTogether();
+    loginData = new LoginData();
 
     //设置标题栏可关闭
     ui->tabWidgetContent->setTabsClosable(true);
@@ -142,11 +145,7 @@ void MainContent::initControl()
     ui->treeWidgetMenu->header()->setStretchLastSection(true);
 
     //设置字体
-    ui->treeWidgetMenu->setFont(QFont("ZYsong", 12));
-
-    ui->groupBoxChat->hide();
-
-    fontColor = QColor(0,0,0);
+    ui->treeWidgetMenu->setFont(QFont(GLOBALDEF::FONTNAME, GLOBALDEF::SMALLFONTSIZE));
 }
 
 /************************   设置窗口             ************************/
@@ -258,22 +257,29 @@ void MainContent::on_actionLogin_triggered()
 {
     if(userNameLineEdit->text().isEmpty()|| pwdLineEdit->text().isEmpty())
     {
-        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, "用户名或密码不能为空" ,GLOBALDEF::FAILIMG, true);
+        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::LOGINEMPTY ,GLOBALDEF::FAILIMG, true);
         return;
     }
 
-    if(userNameLineEdit->text() == "admin" && pwdLineEdit->text() == "admin")
+    if(loginData->selectData(userNameLineEdit->text(), pwdLineEdit->text()))
     {
-        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, "登录成功" ,GLOBALDEF::SUCCESSIMG, true);
+        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::LOGINSUCCESS ,GLOBALDEF::SUCCESSIMG, true);
+
         static int count = 0;
+
         if(count == 0) ui->toolBar->addSeparator();
 
         count ++;
+
         ui->toolBar->addAction(ui->actionAdmin);
+
+        myUserName = userNameLineEdit->text();
+
+        chatTogether->initConn();
     }
     else
     {
-        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, "登录失败" ,GLOBALDEF::FAILIMG, true);
+        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::LOGINFAILED ,GLOBALDEF::FAILIMG, true);
     }
 }
 
@@ -286,82 +292,14 @@ void MainContent::on_actionRegister_triggered()
 /************************     聊天           ************************/
 void MainContent::on_actionChat_triggered()
 {
-    static int count = 0;
-
-    if(count % 2 == 0)
+    if(myUserName.isEmpty())
     {
-        ui->groupBoxChat->show();
+        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::LOGINUSED ,GLOBALDEF::FAILIMG, true);
+        return;
     }
-    else
-    {
-        ui->groupBoxChat->hide();
-    }
-
-    count ++;
+    chatTogether->show();
 }
 
 
-/*******************        设置文本              ***********************/
-void MainContent::setUpText()
-{
-    ui->textBrowserContent->setTextColor(Qt::blue);
-    ui->textBrowserContent->setCurrentFont(QFont("ZYsong", 12, true));
-    ui->textBrowserContent->append("[admin] " + QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss"));
 
-    ui->textBrowserContent->setTextColor(fontColor);
 
-    QFont font = ui->fontComboBoxFont->currentFont();
-    font.setPointSize(ui->comboBoxSize->currentText().toInt());
-    ui->textBrowserContent->setCurrentFont(font);
-
-    ui->textBrowserContent->append(ui->textEditSendText->toPlainText());
-}
-void MainContent::on_pushButtonColor_clicked()
-{
-    fontColor = QColorDialog::getColor(Qt::black, this);
-
-    QPalette palette = ui->pushButtonColor->palette();
-    palette.setColor(QPalette::Button, fontColor);
-    ui->pushButtonColor->setPalette(palette);
-    ui->pushButtonColor->setAutoFillBackground(true);
-    ui->pushButtonColor->setFlat(true);
-
-    this->setTextEdit();
-}
-
-void MainContent::on_comboBoxSize_currentIndexChanged(const QString &arg1)
-{
-    this->setTextEdit();
-}
-
-void MainContent::on_fontComboBoxFont_currentIndexChanged(const QString &arg1)
-{
-     this->setTextEdit();
-}
-
-/************************   设置文本框              ************************/
-void MainContent::setTextEdit()
-{
-    QFont font = ui->fontComboBoxFont->currentFont();
-
-    font.setPointSize(ui->comboBoxSize->currentText().toInt());
-
-    ui->textEditSendText->setFont(font);
-
-    ui->textEditSendText->setTextColor(fontColor);
-
-    ui->textEditSendText->setTextColor(fontColor);
-
-    QString text = ui->textEditSendText->toPlainText();
-
-    ui->textEditSendText->clear();
-
-    ui->textEditSendText->setText(text);
-}
-
-void MainContent::on_pushButtonSend_clicked()
-{
-    this->setUpText();
-
-    ui->textEditSendText->clear();
-}

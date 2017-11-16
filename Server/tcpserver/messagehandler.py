@@ -23,6 +23,7 @@ class MessageHandler():
         self.commandList[PROTOCOL.ADDSOCKETREQ] = self.receiveAddSocketRequest
         self.commandList[PROTOCOL.CLOSESOCKET] = self.receiveCloseRequest
         self.commandList[PROTOCOL.SENDMESSAGEREQ] = self.sendMessageRequest
+        self.commandList[PROTOCOL.SENDBREAKHEARTREQ] = self.receiveHeartRequest
 
     # 所有接收客户端数据函数的调用
     def onCommand(self, protocolNumber, dict, sock):
@@ -40,6 +41,10 @@ class MessageHandler():
     def sendMessageRequest(self, dict, sock):
         sock.netSendAll(PROTOCOL.SENDMESSAGEINFO, dict)
         self.logData.insertData(dict)
+
+    # 接收心跳包的请求
+    def receiveHeartRequest(self, dict, sock):
+        sock.netSend(PROTOCOL.SENDBREAKHEARTINFO, dict)
 
 
 

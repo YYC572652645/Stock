@@ -35,22 +35,22 @@ public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *lineEditUserName;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_5;
-    QLineEdit *lineEdit_5;
+    QLineEdit *lineEditNickName;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
-    QLineEdit *lineEdit_2;
+    QLineEdit *lineEditPassword;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_3;
-    QLineEdit *lineEdit_3;
+    QLineEdit *lineEditCofPassWord;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_4;
-    QLineEdit *lineEdit_4;
+    QLineEdit *lineEditEmail;
     QHBoxLayout *horizontalLayout_6;
     QLabel *label_6;
-    QLineEdit *lineEdit_6;
+    QLineEdit *lineEditPhoneNumber;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_8;
     QLabel *label_10;
@@ -58,16 +58,16 @@ public:
     QLabel *label_7;
     QHBoxLayout *horizontalLayout_8;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButton;
+    QPushButton *pushButtonOk;
     QSpacerItem *horizontalSpacer_2;
-    QPushButton *pushButton_2;
+    QPushButton *pushButtonCancel;
     QSpacerItem *horizontalSpacer_3;
 
     void setupUi(QWidget *registeruser)
     {
         if (registeruser->objectName().isEmpty())
             registeruser->setObjectName(QStringLiteral("registeruser"));
-        registeruser->resize(464, 303);
+        registeruser->resize(464, 310);
         verticalLayout_4 = new QVBoxLayout(registeruser);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         horizontalSpacer_5 = new QSpacerItem(40, 25, QSizePolicy::Expanding, QSizePolicy::Minimum);
@@ -93,10 +93,10 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        lineEdit = new QLineEdit(registeruser);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEditUserName = new QLineEdit(registeruser);
+        lineEditUserName->setObjectName(QStringLiteral("lineEditUserName"));
 
-        horizontalLayout->addWidget(lineEdit);
+        horizontalLayout->addWidget(lineEditUserName);
 
 
         verticalLayout->addLayout(horizontalLayout);
@@ -110,10 +110,10 @@ public:
 
         horizontalLayout_5->addWidget(label_5);
 
-        lineEdit_5 = new QLineEdit(registeruser);
-        lineEdit_5->setObjectName(QStringLiteral("lineEdit_5"));
+        lineEditNickName = new QLineEdit(registeruser);
+        lineEditNickName->setObjectName(QStringLiteral("lineEditNickName"));
 
-        horizontalLayout_5->addWidget(lineEdit_5);
+        horizontalLayout_5->addWidget(lineEditNickName);
 
 
         verticalLayout->addLayout(horizontalLayout_5);
@@ -127,10 +127,10 @@ public:
 
         horizontalLayout_2->addWidget(label_2);
 
-        lineEdit_2 = new QLineEdit(registeruser);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEditPassword = new QLineEdit(registeruser);
+        lineEditPassword->setObjectName(QStringLiteral("lineEditPassword"));
 
-        horizontalLayout_2->addWidget(lineEdit_2);
+        horizontalLayout_2->addWidget(lineEditPassword);
 
 
         verticalLayout->addLayout(horizontalLayout_2);
@@ -144,10 +144,10 @@ public:
 
         horizontalLayout_3->addWidget(label_3);
 
-        lineEdit_3 = new QLineEdit(registeruser);
-        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
+        lineEditCofPassWord = new QLineEdit(registeruser);
+        lineEditCofPassWord->setObjectName(QStringLiteral("lineEditCofPassWord"));
 
-        horizontalLayout_3->addWidget(lineEdit_3);
+        horizontalLayout_3->addWidget(lineEditCofPassWord);
 
 
         verticalLayout->addLayout(horizontalLayout_3);
@@ -161,10 +161,10 @@ public:
 
         horizontalLayout_4->addWidget(label_4);
 
-        lineEdit_4 = new QLineEdit(registeruser);
-        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
+        lineEditEmail = new QLineEdit(registeruser);
+        lineEditEmail->setObjectName(QStringLiteral("lineEditEmail"));
 
-        horizontalLayout_4->addWidget(lineEdit_4);
+        horizontalLayout_4->addWidget(lineEditEmail);
 
 
         verticalLayout->addLayout(horizontalLayout_4);
@@ -178,10 +178,10 @@ public:
 
         horizontalLayout_6->addWidget(label_6);
 
-        lineEdit_6 = new QLineEdit(registeruser);
-        lineEdit_6->setObjectName(QStringLiteral("lineEdit_6"));
+        lineEditPhoneNumber = new QLineEdit(registeruser);
+        lineEditPhoneNumber->setObjectName(QStringLiteral("lineEditPhoneNumber"));
 
-        horizontalLayout_6->addWidget(lineEdit_6);
+        horizontalLayout_6->addWidget(lineEditPhoneNumber);
 
 
         verticalLayout->addLayout(horizontalLayout_6);
@@ -226,25 +226,25 @@ public:
 
         horizontalLayout_8->addItem(horizontalSpacer);
 
-        pushButton = new QPushButton(registeruser);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButtonOk = new QPushButton(registeruser);
+        pushButtonOk->setObjectName(QStringLiteral("pushButtonOk"));
         QIcon icon;
         icon.addFile(QStringLiteral(":/image/image/Success.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon);
+        pushButtonOk->setIcon(icon);
 
-        horizontalLayout_8->addWidget(pushButton);
+        horizontalLayout_8->addWidget(pushButtonOk);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_8->addItem(horizontalSpacer_2);
 
-        pushButton_2 = new QPushButton(registeruser);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButtonCancel = new QPushButton(registeruser);
+        pushButtonCancel->setObjectName(QStringLiteral("pushButtonCancel"));
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/image/image/Hand.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_2->setIcon(icon1);
+        pushButtonCancel->setIcon(icon1);
 
-        horizontalLayout_8->addWidget(pushButton_2);
+        horizontalLayout_8->addWidget(pushButtonCancel);
 
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -275,8 +275,8 @@ public:
         label_10->setText(QApplication::translate("registeruser", "1.\346\230\265\347\247\260\346\263\250\345\206\214\345\220\216\344\270\215\345\217\257\346\233\264\346\224\271\357\274\201", 0));
         label_9->setText(QApplication::translate("registeruser", "2.\346\233\264\345\244\232\345\212\237\350\203\275\345\274\200\346\224\276\344\270\255\357\274\201", 0));
         label_7->setText(QApplication::translate("registeruser", "\350\257\264\346\230\216\357\274\232\346\230\265\347\247\260\344\270\272\344\272\272\345\267\245\350\256\241\345\210\222\347\232\204\345\220\215\347\247\260\357\274\214\346\263\250\345\206\214\345\220\216\346\227\240\346\263\225\344\277\256\346\224\271\343\200\202\346\211\213\346\234\272\345\217\267\347\224\250\346\235\245\345\217\226\345\233\236\345\257\206\347\240\201\357\274\214\350\260\250\346\205\216\345\241\253\345\206\231\357\274\201", 0));
-        pushButton->setText(QApplication::translate("registeruser", "\347\241\256\350\256\244\346\263\250\345\206\214", 0));
-        pushButton_2->setText(QApplication::translate("registeruser", "\345\205\263\351\227\255\346\263\250\345\206\214", 0));
+        pushButtonOk->setText(QApplication::translate("registeruser", "\347\241\256\350\256\244\346\263\250\345\206\214", 0));
+        pushButtonCancel->setText(QApplication::translate("registeruser", "\345\205\263\351\227\255\346\263\250\345\206\214", 0));
     } // retranslateUi
 
 };

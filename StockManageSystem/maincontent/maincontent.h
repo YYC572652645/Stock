@@ -22,6 +22,7 @@
 #include "vertool/vertool.h"
 #include "groupchat/chattogether/chattogether.h"
 #include "groupchat/database/logindata/logindata.h"
+#include "pushmessage/pushmessage.h"
 
 namespace Ui {
 class maincontent;
@@ -43,6 +44,12 @@ private slots:
     void on_actionLogin_triggered();
     void on_actionRegister_triggered();
     void on_actionChat_triggered();
+    void on_actionFogetPwd_triggered();
+    void receiveNetStatus(int type);
+
+signals:
+    void sendLoginStatus(QString);
+    void sendNetStatus(int);
 
 private:
     Ui::maincontent *ui;
@@ -59,18 +66,18 @@ private:
     QLabel *userNameLabel;
     QLineEdit *pwdLineEdit;
     QLabel *pwdLabel;
-    PlanTemplate * planTemplate;
-    PeoplePlan * peoplePlan;
+    PlanTemplate *planTemplate;
+    PeoplePlan *peoplePlan;
     GodlenSection *goldenSection;
     TwoStarShrink *twoStarShrink;
     ThreeStarShrink *threeStarShrink;
     NormalCalc *normalCalc;
     PushCalc *pushCalc;
-    UvslSplic * uvslSplic;
+    UvslSplic *uvslSplic;
     RegisterUser *registerUser;
     VerTool *verTool;
-    ChatTogether *chatTogether;
     LoginData *loginData;
+    PushMessage pushMessage;
 
     void initControl();
     void setTreeClickWidget(QString treeItemName);

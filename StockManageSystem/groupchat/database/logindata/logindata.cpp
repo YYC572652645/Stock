@@ -4,7 +4,7 @@
 /*************************    构造函数      *********************/
 LoginData::LoginData()
 {
-    if(!this->dataCnn(GLOBALDEF::QMYSQL))
+    if(!this->mysqlDataCnn())
     {
         qDebug()<<"连接数据库失败";
     }
@@ -13,7 +13,7 @@ LoginData::LoginData()
 /*************************    查询数据      *********************/
 bool LoginData::selectData(QString userName, QString passWord)
 {
-    if(!db.isOpen()) db.open();
+    if(!mysqlDb.isOpen()) mysqlDb.open();
 
     QSqlQuery query;
 
@@ -27,11 +27,16 @@ bool LoginData::selectData(QString userName, QString passWord)
 
     int count = 0;
 
-    while(query.next()) count ++;
+    while(query.next())
+    {
+        GLOBALDEF::myNickName = query.value(2).toString();
+        GLOBALDEF::myVip = query.value(5).toInt();
+        count ++;
+    }
 
     query.clear();
 
-    db.close();
+    mysqlDb.close();
 
     return count > 0 ? true : false;
 }
@@ -39,7 +44,7 @@ bool LoginData::selectData(QString userName, QString passWord)
 /*************************    插入数据      *********************/
 bool LoginData::insertData(UserData data)
 {
-    if(!db.isOpen()) db.open();
+    if(!mysqlDb.isOpen()) mysqlDb.open();
 
     QSqlQuery query;
 
@@ -63,7 +68,8 @@ bool LoginData::insertData(UserData data)
 
     query.clear();
 
-    db.close();
+    mysqlDb.close();
 
     return true;
 }
+

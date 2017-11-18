@@ -19,8 +19,6 @@ UvslSplic::~UvslSplic()
 
 void UvslSplic::initControl()
 {
-    this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-
     titleBar = new TitleBar(this);
 
     titleBar->setTitle(GLOBALDEF::UNIVERSALSPLIC);
@@ -31,8 +29,13 @@ void UvslSplic::initControl()
     this->setWindowFlags(Qt::CoverWindow | Qt::FramelessWindowHint);
 }
 
+void UvslSplic::showWidget()
+{
+    this->show();
+}
+
 /************************   改变事件              ************************/
 void UvslSplic::resizeEvent(QResizeEvent *event)
 {
-    titleBar->resize(this->width(), TitleBar::TITLEBARHEIGHT);
+    titleBar->resize(this->width(), titleBar->getTitleBarHeight());
 }

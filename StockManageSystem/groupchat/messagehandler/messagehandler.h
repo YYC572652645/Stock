@@ -45,6 +45,7 @@ private:
     /********************************   接收函数      ******************************/
     void receiveSendMessageInfo(QMap<QString, QString> &mapData);
     void receiveHeartMessageInfo(QMap<QString, QString> &mapData);
+    void receiveDelDataMessageInfo(QMap<QString, QString> &mapData);
 };
 
 #endif // MESSAGEHANDLER_H

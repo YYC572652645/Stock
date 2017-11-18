@@ -46,7 +46,7 @@ public:
     {
         if (chatlog->objectName().isEmpty())
             chatlog->setObjectName(QStringLiteral("chatlog"));
-        chatlog->resize(711, 606);
+        chatlog->resize(502, 449);
         verticalLayout_3 = new QVBoxLayout(chatlog);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -60,6 +60,7 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(6, -1, 6, -1);
         frame = new QFrame(chatlog);
         frame->setObjectName(QStringLiteral("frame"));
         frame->setFrameShape(QFrame::StyledPanel);
@@ -94,6 +95,11 @@ public:
         pushButtonSelect = new QPushButton(frame);
         pushButtonSelect->setObjectName(QStringLiteral("pushButtonSelect"));
         pushButtonSelect->setMinimumSize(QSize(0, 25));
+        pushButtonSelect->setMaximumSize(QSize(100, 25));
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/image/image/search.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButtonSelect->setIcon(icon);
+        pushButtonSelect->setIconSize(QSize(32, 32));
 
         horizontalLayout->addWidget(pushButtonSelect);
 
@@ -126,7 +132,7 @@ public:
         dateTimeEditBeginTime->setDisplayFormat(QApplication::translate("chatlog", "yyyy-MM-dd hh:mm:ss", 0));
         label->setText(QApplication::translate("chatlog", "\350\207\263", 0));
         dateTimeEditEndTime->setDisplayFormat(QApplication::translate("chatlog", "yyyy-MM-dd hh:mm:ss", 0));
-        pushButtonSelect->setText(QApplication::translate("chatlog", "\346\237\245\350\257\242", 0));
+        pushButtonSelect->setText(QApplication::translate("chatlog", "  \346\237\245\350\257\242", 0));
     } // retranslateUi
 
 };

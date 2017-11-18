@@ -23,13 +23,11 @@ public:
     explicit SystemTray(QWidget * parent = 0);
     ~SystemTray();
 
-    void addAction();   //添加菜单
+    void addAction();    //添加菜单
     void createAction(); //创建菜单
 
 public:
     QMenu *myMenu;                    //托盘菜单
-    QAction* showWidget;              //显示窗口
-    QAction* minWidget;               //隐藏窗口
     QAction* exitSoftWare;            //退出软件
  signals:
     void showMainWindow();

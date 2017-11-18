@@ -20,11 +20,14 @@ RegisterUser::~RegisterUser()
     delete ui;
 }
 
+void RegisterUser::showWidget()
+{
+    this->show();
+}
+
 /************************   初始化控件              ************************/
 void RegisterUser::initControl()
 {
-    this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-
     titleBar = new TitleBar(this);
     loginData = new LoginData();
 
@@ -39,7 +42,7 @@ void RegisterUser::initControl()
 /************************   改变事件              ************************/
 void RegisterUser::resizeEvent(QResizeEvent *event)
 {
-    titleBar->resize(this->width(), TitleBar::TITLEBARHEIGHT);
+    titleBar->resize(this->width(), titleBar->getTitleBarHeight());
 }
 
 /************************   确认注册              ************************/
@@ -62,5 +65,9 @@ void RegisterUser::on_pushButtonOk_clicked()
     if(loginData->insertData(data))
     {
         MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::REGISTERSUCCESS ,GLOBALDEF::SUCCESSIMG, true);
+    }
+    else
+    {
+        MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::REGISTERFAILED ,GLOBALDEF::FAILIMG, true);
     }
 }

@@ -302,7 +302,8 @@
     <string>立刻登录</string>
    </property>
    <property name="toolTip">
-    <string>立刻登录</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;font color=&quot;#123456&quot;&gt;立刻登录&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;
+</string>
    </property>
   </action>
   <action name="actionRegister">
@@ -314,7 +315,8 @@
     <string>用户注册</string>
    </property>
    <property name="toolTip">
-    <string>用户注册</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;font color=&quot;#123456&quot;&gt;用户注册&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;
+</string>
    </property>
   </action>
   <action name="actionFogetPwd">
@@ -326,7 +328,8 @@
     <string>忘记密码</string>
    </property>
    <property name="toolTip">
-    <string>忘记密码</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;font color=&quot;#123456&quot;&gt;忘记密码&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;
+</string>
    </property>
   </action>
   <action name="actionChat">
@@ -338,21 +341,8 @@
     <string>聊天窗口</string>
    </property>
    <property name="toolTip">
-    <string>聊天窗口</string>
-   </property>
-  </action>
-  <action name="actionAdmin">
-   <property name="checkable">
-    <bool>false</bool>
-   </property>
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="text">
-    <string>当前用户admin</string>
-   </property>
-   <property name="toolTip">
-    <string>当前用户admin</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;font color=&quot;#123456&quot;&gt;聊天窗口&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;
+</string>
    </property>
   </action>
  </widget>

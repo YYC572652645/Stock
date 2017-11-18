@@ -22,6 +22,11 @@
         <file>image/register.png</file>
         <file>image/session.png</file>
         <file>image/search.png</file>
+        <file>image/backup.png</file>
+        <file>image/search-yellow.png</file>
+        <file>image/picture.jpg</file>
+        <file>image/administrator.png</file>
+        <file>image/delete.png</file>
     </qresource>
     <qresource prefix="/qss">
         <file>qss/style.qss</file>

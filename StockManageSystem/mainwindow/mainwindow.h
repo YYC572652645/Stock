@@ -9,6 +9,7 @@
 #include "systemtray/systemtray.h"
 #include "titlebar/titlebar.h"
 #include "maincontent/maincontent.h"
+#include <QNetworkConfigurationManager>
 
 /*************************************************
 
@@ -30,6 +31,10 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void receiveStatus(QString nickName);
+    void receiveNetStatus(int type);
+
 private:
     Ui::MainWindow *ui;
     TitleBar *titleBar;
@@ -37,9 +42,13 @@ private:
     QMovie  *movie;
     QTimer  *timer;
     SystemTray *systemTray;
+    QPushButton *userMsgButton;
+    QPushButton *netMsgButton;
 
     void initControl();
+    void initConnect();
     void resizeEvent(QResizeEvent *event);
+    bool isNetWorkOnline();
 };
 
 #endif // MAINWINDOW_H

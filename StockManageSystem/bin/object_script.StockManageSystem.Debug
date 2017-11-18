@@ -25,6 +25,11 @@ INPUT(
 ./debug\logindata.o
 ./debug\logdata.o
 ./debug\chatlog.o
+./debug\globaldef.o
+./debug\pushmessage.o
+./debug\logmanage.o
+./debug\localdata.o
+./debug\sqlitedatabase.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_messagedialog.o
@@ -46,4 +51,6 @@ INPUT(
 ./debug\moc_client.o
 ./debug\moc_chattogether.o
 ./debug\moc_chatlog.o
+./debug\moc_pushmessage.o
+./debug\moc_logmanage.o
 );

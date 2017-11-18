@@ -22,9 +22,10 @@ public:
     DataBase();
 
     /************         连接数据库       *************/
-    bool dataCnn(int type);
+    bool mysqlDataCnn();
 
-    QSqlDatabase db;
+
+    QSqlDatabase mysqlDb;
 
 };
 

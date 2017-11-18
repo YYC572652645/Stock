@@ -9,7 +9,7 @@
 Client * Client::instance = new Client();
 
 /**********************    构造函数                 *************************/
-Client::Client(): protocolNumber(Protocol::INVALID),heartBreakCount(0)
+Client::Client(): protocolNumber(Protocol::INVALID),heartBreakCount(0),tcpSocket(NULL)
 {
     //实例化套接字对象
     tcpSocket = new QTcpSocket(this);
@@ -22,7 +22,7 @@ Client::Client(): protocolNumber(Protocol::INVALID),heartBreakCount(0)
 /**********************    析构函数                 *************************/
 Client::~Client()
 {
-    delete tcpSocket;
+    SAFEDELETE(tcpSocket);
 }
 
 /**********************    饿汉模式                 *************************/
@@ -34,20 +34,20 @@ Client *Client::getInstance()
 /**********************    连接服务器               *************************/
 void Client::connectServer()
 {
-    if(myUserName.isEmpty()) return;
+    if(GLOBALDEF::myUserName.isEmpty()) return;
 
-    tcpSocket->abort();                                             //终止过去的连接
-    tcpSocket->connectToHost(QHostAddress("127.0.0.1"), 8080);      //连接到服务器
+    tcpSocket->abort();
+    tcpSocket->connectToHost(QHostAddress(GLOBALDEF::IPADDRESS), GLOBALDEF::SERVERPORT);
 
     QMap<QString, QString> mapData;
-    this->netSend(Protocol::ADDSOCKETREQ, myUserName, mapData);
+    this->netSend(Protocol::ADDSOCKETREQ, GLOBALDEF::myUserName, mapData);
 }
 
 /**********************    输出错误信息              *************************/
 void Client::displayError(QAbstractSocket::SocketError)
 {
-    qDebug()<<tcpSocket->errorString();      //输出错误提示
-    tcpSocket->close();                      //关闭套接字
+    qDebug()<<tcpSocket->errorString();
+    tcpSocket->close();
 }
 
 /**********************    读取数据                 *************************/
@@ -92,6 +92,7 @@ void Client::netSend(int protocol, QString userName, QMap<QString, QString> &map
 
     jsonData.insert("protocol", QString::number(protocol));
     jsonData.insert("user", userName);
+    jsonData.insert(Protocol::nickName, GLOBALDEF::myNickName);
 
     for(auto iter = mapData.begin(); iter != mapData.end(); ++ iter)
     {

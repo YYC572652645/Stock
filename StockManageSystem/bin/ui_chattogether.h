@@ -18,6 +18,7 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTextBrowser>
@@ -42,16 +43,18 @@ public:
     QComboBox *comboBoxSize;
     QPushButton *pushButtonColor;
     QPushButton *pushButtonChatLog;
+    QPushButton *pushButtonManage;
     QTextEdit *textEditSendText;
     QHBoxLayout *horizontalLayout_3;
     QSpacerItem *horizontalSpacer;
+    QLabel *labelInfo;
     QPushButton *pushButtonSend;
 
     void setupUi(QWidget *chatdemo)
     {
         if (chatdemo->objectName().isEmpty())
             chatdemo->setObjectName(QStringLiteral("chatdemo"));
-        chatdemo->resize(787, 743);
+        chatdemo->resize(581, 544);
         verticalLayout_3 = new QVBoxLayout(chatdemo);
         verticalLayout_3->setSpacing(6);
         verticalLayout_3->setContentsMargins(11, 11, 11, 11);
@@ -110,8 +113,19 @@ public:
 
         pushButtonChatLog = new QPushButton(frame);
         pushButtonChatLog->setObjectName(QStringLiteral("pushButtonChatLog"));
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/image/image/backup.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButtonChatLog->setIcon(icon);
 
         horizontalLayout_2->addWidget(pushButtonChatLog);
+
+        pushButtonManage = new QPushButton(frame);
+        pushButtonManage->setObjectName(QStringLiteral("pushButtonManage"));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral(":/image/image/administrator.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButtonManage->setIcon(icon1);
+
+        horizontalLayout_2->addWidget(pushButtonManage);
 
 
         verticalLayout_2->addLayout(horizontalLayout_2);
@@ -132,6 +146,12 @@ public:
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_3->addItem(horizontalSpacer);
+
+        labelInfo = new QLabel(chatdemo);
+        labelInfo->setObjectName(QStringLiteral("labelInfo"));
+        labelInfo->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_3->addWidget(labelInfo);
 
         pushButtonSend = new QPushButton(chatdemo);
         pushButtonSend->setObjectName(QStringLiteral("pushButtonSend"));
@@ -174,9 +194,11 @@ public:
          << QApplication::translate("chatdemo", "34", 0)
          << QApplication::translate("chatdemo", "36", 0)
         );
-        comboBoxSize->setCurrentText(QApplication::translate("chatdemo", "12", 0));
+        comboBoxSize->setCurrentText(QApplication::translate("chatdemo", "2", 0));
         pushButtonColor->setText(QString());
-        pushButtonChatLog->setText(QApplication::translate("chatdemo", "\350\201\212\345\244\251\350\256\260\345\275\225", 0));
+        pushButtonChatLog->setText(QApplication::translate("chatdemo", "  \350\201\212\345\244\251\350\256\260\345\275\225", 0));
+        pushButtonManage->setText(QApplication::translate("chatdemo", "  \350\201\212\345\244\251\347\256\241\347\220\206", 0));
+        labelInfo->setText(QString());
         pushButtonSend->setText(QApplication::translate("chatdemo", "\345\217\221\351\200\201", 0));
     } // retranslateUi
 

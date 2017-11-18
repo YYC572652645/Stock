@@ -33,6 +33,8 @@ void QReadIni::readIni()
     dataConfig.dataBaseName    = configIniRead->value("conn/databasename").toString();      //数据库名称
     dataConfig.userName        = configIniRead->value("conn/username").toString();          //用户名
     dataConfig.passWord        = configIniRead->value("conn/password").toString();          //密码
+    dataConfig.myUserName      = configIniRead->value("conn/myusername").toString();        //我的用户名
+    dataConfig.myPassWord      = configIniRead->value("conn/mypassword").toString();        //我的密码
 
     SAFEDELETE(configIniRead);
 }
@@ -41,4 +43,17 @@ void QReadIni::readIni()
 const DataConfig &QReadIni::getDataConfig()
 {
     return dataConfig;
+}
+
+/****************          写入用户信息           ***************/
+void QReadIni::writeIni(QString userName, QString passWord)
+{
+    QSettings * configIniWrite = new QSettings("config.ini",QSettings::IniFormat);
+
+    configIniWrite->setIniCodec(QTextCodec::codecForName("GB2312"));
+
+    configIniWrite->setValue("conn/myusername", userName);
+    configIniWrite->setValue("conn/mypassword", passWord);
+
+    SAFEDELETE(configIniWrite);
 }

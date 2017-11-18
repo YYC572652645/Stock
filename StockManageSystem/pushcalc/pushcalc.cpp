@@ -12,3 +12,4 @@ PushCalc::~PushCalc()
 {
     delete ui;
 }
+

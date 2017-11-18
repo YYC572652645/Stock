@@ -5,8 +5,9 @@
 #include <QListView>
 #include "globaldef.h"
 
+
 /***************************            构造函数              ***************************/
-TitleBar::TitleBar(QWidget *parent) : QWidget(parent)
+TitleBar::TitleBar(QWidget *parent) : QWidget(parent),titleBarHeight(50)
 {
     //最大化按钮设置图标
     QPixmap pixMap = this->style()->standardPixmap(QStyle::SP_TitleBarMaxButton);
@@ -60,7 +61,7 @@ TitleBar::TitleBar(QWidget *parent) : QWidget(parent)
     this->setPalette(paletteColor);
 
     //重置窗口大小
-    this->resize(parent->width(), TITLEBARHEIGHT);
+    this->resize(parent->width(), titleBarHeight);
 
     //设置父类窗口
     parentWidget = parent;
@@ -151,6 +152,16 @@ void TitleBar::showMin()
 void TitleBar::showClose()
 {
     parentWidget->close();
+}
+
+int TitleBar::getTitleBarHeight() const
+{
+    return titleBarHeight;
+}
+
+void TitleBar::setTitleBarHeight(int value)
+{
+    titleBarHeight = value;
 }
 
 /***************************            鼠标点击              ***************************/

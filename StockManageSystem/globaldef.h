@@ -10,6 +10,8 @@
 
 #define MSGSIZE  100
 #define BUFFERSIZE 4096 * 1024
+#define  DATA(str) new QTableWidgetItem(str)
+
 
 #ifndef LOADQSS
 #define LOADQSS(qssFile)                      \
@@ -38,12 +40,11 @@
 #endif
 
 
-static QString myUserName = NULL;
-
 //群聊天消息
 typedef struct MessageData
 {
     QString userName;
+    QString nickName;
     QString textContent;
     QString font;
     QString fontSize;
@@ -104,6 +105,8 @@ const static QString PASSWORD        = "  密码：";
 const static QString SYSTEMINFO      = "系统提示";
 const static QString REGISTERUSER    = "新用户注册";
 const static QString GROUPCHAT       = "群聊";
+const static QString LOGMANAGE       = "聊天管理";
+const static QString USERLOGINSTATUS = "：用户已登录";
 const static QString HOMEPAGEURL     = "www.baidu.com";
 const static QString CLOSEBTNNAME    = "closeButton";
 const static QString COMBOBOXMENU    = "comboBoxMenu";
@@ -114,16 +117,27 @@ const static QString LINKIMAGE       = ":/image/image/link.gif";
 const static QString USERLOGINIMG    = ":/image/image/login.png";
 const static QString USERREGISTERIMG = ":/image/image/register.png";
 const static QString SESSIONPATH     = ":/image/image/session.png";
+const static QString LOGINFAILIMG    = ":/image/image/Hand.png";
 const static QString QSSPATH         = ":/qss/qss/style.qss";
 const static QString TIMEFORMAT      = "yyyy-MM-dd hh:mm:ss";
 const static QString BEGINTIMEFORMAT = "yyyy-MM-dd 00:00:00";
 const static QString FONTNAME        = "ZYSong";
+const static QString IPADDRESS       = "127.0.0.1";
+const static int     SERVERPORT      = 8080;
 const static int     REFRESHTIME     = 3500;
 const static int     LINEDITLEN      = 120;
-const static int     BIGFONTSIZE     = 14;
+const static int     BIGFONTSIZE     = 8;
 const static int     SMALLFONTSIZE   = 12;
-const static int     INTERNAL        = 3000;
-const static int     HEARTBREAKMAX   = 5;
+const static int     INTERNAL        = 4000;
+const static int     WIDGETINTERNAL  = 15;
+const static int     MOVEPOINT       = 10;
+const static int     HEARTBREAKMAX   = 3;
+
+
+extern QString myUserName;
+extern QString myNickName;
+extern int myVip;
+
 
 enum SQLVERSION
 {
@@ -136,6 +150,12 @@ enum TABLETYPE
     LOGINDATA,
     LOGDATA,
 
+};
+
+enum NETSTATUS
+{
+    NETCONNSUCCESS,
+    NETCONNFAILED,
 };
 
 }

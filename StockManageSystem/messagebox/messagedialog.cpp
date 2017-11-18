@@ -25,7 +25,7 @@ MessageDialog::MessageDialog(QWidget *parent) :
     this->resize(320, 160);                         //重定义界面大小
     int width = this->width();                      //获取界面宽度
     int height = this->height();                    //获取界面高度
-    this->setWindowFlags(Qt::CoverWindow | Qt::FramelessWindowHint);
+    this->setWindowFlags(Qt::CoverWindow | Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
 
     //加载图标
     QPixmap closePix = style()->standardPixmap(QStyle::SP_TitleBarCloseButton);

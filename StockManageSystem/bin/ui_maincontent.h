@@ -31,7 +31,6 @@ public:
     QAction *actionRegister;
     QAction *actionFogetPwd;
     QAction *actionChat;
-    QAction *actionAdmin;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
@@ -65,10 +64,6 @@ public:
         QIcon icon3;
         icon3.addFile(QStringLiteral(":/image/image/session.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionChat->setIcon(icon3);
-        actionAdmin = new QAction(maincontent);
-        actionAdmin->setObjectName(QStringLiteral("actionAdmin"));
-        actionAdmin->setCheckable(false);
-        actionAdmin->setEnabled(false);
         centralwidget = new QWidget(maincontent);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -177,23 +172,23 @@ public:
         maincontent->setWindowTitle(QApplication::translate("maincontent", "MainWindow", 0));
         actionLogin->setText(QApplication::translate("maincontent", "\347\253\213\345\210\273\347\231\273\345\275\225", 0));
 #ifndef QT_NO_TOOLTIP
-        actionLogin->setToolTip(QApplication::translate("maincontent", "\347\253\213\345\210\273\347\231\273\345\275\225", 0));
+        actionLogin->setToolTip(QApplication::translate("maincontent", "<html><head/><body><font color=\"#123456\">\347\253\213\345\210\273\347\231\273\345\275\225</font></body></html>\n"
+"", 0));
 #endif // QT_NO_TOOLTIP
         actionRegister->setText(QApplication::translate("maincontent", "\347\224\250\346\210\267\346\263\250\345\206\214", 0));
 #ifndef QT_NO_TOOLTIP
-        actionRegister->setToolTip(QApplication::translate("maincontent", "\347\224\250\346\210\267\346\263\250\345\206\214", 0));
+        actionRegister->setToolTip(QApplication::translate("maincontent", "<html><head/><body><font color=\"#123456\">\347\224\250\346\210\267\346\263\250\345\206\214</font></body></html>\n"
+"", 0));
 #endif // QT_NO_TOOLTIP
         actionFogetPwd->setText(QApplication::translate("maincontent", "\345\277\230\350\256\260\345\257\206\347\240\201", 0));
 #ifndef QT_NO_TOOLTIP
-        actionFogetPwd->setToolTip(QApplication::translate("maincontent", "\345\277\230\350\256\260\345\257\206\347\240\201", 0));
+        actionFogetPwd->setToolTip(QApplication::translate("maincontent", "<html><head/><body><font color=\"#123456\">\345\277\230\350\256\260\345\257\206\347\240\201</font></body></html>\n"
+"", 0));
 #endif // QT_NO_TOOLTIP
         actionChat->setText(QApplication::translate("maincontent", "\350\201\212\345\244\251\347\252\227\345\217\243", 0));
 #ifndef QT_NO_TOOLTIP
-        actionChat->setToolTip(QApplication::translate("maincontent", "\350\201\212\345\244\251\347\252\227\345\217\243", 0));
-#endif // QT_NO_TOOLTIP
-        actionAdmin->setText(QApplication::translate("maincontent", "\345\275\223\345\211\215\347\224\250\346\210\267admin", 0));
-#ifndef QT_NO_TOOLTIP
-        actionAdmin->setToolTip(QApplication::translate("maincontent", "\345\275\223\345\211\215\347\224\250\346\210\267admin", 0));
+        actionChat->setToolTip(QApplication::translate("maincontent", "<html><head/><body><font color=\"#123456\">\350\201\212\345\244\251\347\252\227\345\217\243</font></body></html>\n"
+"", 0));
 #endif // QT_NO_TOOLTIP
         QTreeWidgetItem *___qtreewidgetitem = treeWidgetMenu->headerItem();
         ___qtreewidgetitem->setText(0, QApplication::translate("maincontent", "\350\241\250\345\244\264", 0));

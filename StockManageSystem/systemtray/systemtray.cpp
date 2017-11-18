@@ -18,16 +18,12 @@ SystemTray::~SystemTray()
 
 void SystemTray::addAction()
 {
-    myMenu->addAction(showWidget);
-    myMenu->addAction(minWidget);
     myMenu->addAction(exitSoftWare);
 }
 
 void SystemTray::createAction()
 {
     myMenu = new QMenu();                                      //托盘菜单
-    showWidget = new QAction(tr("显示窗口 "), this);             //最大化
-    minWidget = new QAction(tr("隐藏窗口 "), this);              //最小化
     exitSoftWare = new QAction(tr("退出软件 "), this);           //退出软件
 
     this->setIcon(QIcon(GLOBALDEF::LOGOIMG));

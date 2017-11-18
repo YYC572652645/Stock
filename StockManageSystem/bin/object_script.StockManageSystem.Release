@@ -25,6 +25,11 @@ INPUT(
 ./release\logindata.o
 ./release\logdata.o
 ./release\chatlog.o
+./release\globaldef.o
+./release\pushmessage.o
+./release\logmanage.o
+./release\localdata.o
+./release\sqlitedatabase.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_messagedialog.o
@@ -46,4 +51,6 @@ INPUT(
 ./release\moc_client.o
 ./release\moc_chattogether.o
 ./release\moc_chatlog.o
+./release\moc_pushmessage.o
+./release\moc_logmanage.o
 );

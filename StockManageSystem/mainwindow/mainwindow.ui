@@ -263,6 +263,9 @@ color:white;
                   <property name="text">
                    <string>距第一期开奖：</string>
                   </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
                  </widget>
                 </item>
                </layout>

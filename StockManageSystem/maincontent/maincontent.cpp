@@ -2,6 +2,7 @@
 #include "ui_maincontent.h"
 #include "globaldef.h"
 #include "messagebox/messagedialog.h"
+#include "groupchat/config/qreadini.h"
 #include <QDebug>
 #include <QDateTime>
 
@@ -32,7 +33,6 @@ MainContent::MainContent(QWidget *parent) :
   ,uvslSplic(NULL)
   ,registerUser(NULL)
   ,verTool(NULL)
-  ,chatTogether(NULL)
 {
     ui->setupUi(this);
 
@@ -61,7 +61,7 @@ MainContent::~MainContent()
     SAFEDELETE(uvslSplic);
     SAFEDELETE(registerUser);
     SAFEDELETE(verTool);
-    SAFEDELETE(chatTogether);
+    SAFEDELETE(loginData);
 }
 
 /************************   关闭当前页            ************************/
@@ -123,7 +123,6 @@ void MainContent::initControl()
     uvslSplic = new UvslSplic();
     registerUser = new RegisterUser();
     verTool = new VerTool();
-    chatTogether = new ChatTogether();
     loginData = new LoginData();
 
     //设置标题栏可关闭
@@ -146,6 +145,16 @@ void MainContent::initControl()
 
     //设置字体
     ui->treeWidgetMenu->setFont(QFont(GLOBALDEF::FONTNAME, GLOBALDEF::SMALLFONTSIZE));
+
+    //设置为密码框形式
+    pwdLineEdit->setEchoMode(QLineEdit::Password);
+
+    //设置用户名密码
+    userNameLineEdit->setText(DATACONFIG.myUserName);
+    pwdLineEdit->setText(DATACONFIG.myPassWord);
+
+    //初始化信号与槽
+    connect(CHATTOGETHER, SIGNAL(sendNetStatus(int)), this, SLOT(receiveNetStatus(int)));
 }
 
 /************************   设置窗口             ************************/
@@ -214,7 +223,7 @@ void MainContent::setTreeClickWidget(QString treeItemName)
     }
     else if(GLOBALDEF::GOLDENSECTION == treeItemName)
     {
-        goldenSection->show();
+        goldenSection->showWidget();
     }
     else if(GLOBALDEF::TWOSTARSHRINK == treeItemName)
     {
@@ -238,11 +247,11 @@ void MainContent::setTreeClickWidget(QString treeItemName)
     }
     else if(GLOBALDEF::UNIVERSALSPLIC == treeItemName)
     {
-        uvslSplic->show();
+        uvslSplic->showWidget();
     }
     else if(GLOBALDEF::VERTOOL == treeItemName)
     {
-        verTool->show();
+        verTool->showWidget();
     }
 }
 
@@ -265,17 +274,13 @@ void MainContent::on_actionLogin_triggered()
     {
         MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::LOGINSUCCESS ,GLOBALDEF::SUCCESSIMG, true);
 
-        static int count = 0;
+        GLOBALDEF::myUserName = userNameLineEdit->text();
 
-        if(count == 0) ui->toolBar->addSeparator();
+        CHATTOGETHER->initConn();
 
-        count ++;
+        INICONFIG->writeIni(userNameLineEdit->text(), pwdLineEdit->text());
 
-        ui->toolBar->addAction(ui->actionAdmin);
-
-        myUserName = userNameLineEdit->text();
-
-        chatTogether->initConn();
+        emit sendLoginStatus(GLOBALDEF::myNickName);
     }
     else
     {
@@ -286,20 +291,28 @@ void MainContent::on_actionLogin_triggered()
 /************************     注册           ************************/
 void MainContent::on_actionRegister_triggered()
 {
-    registerUser->show();
+    registerUser->showWidget();
 }
 
 /************************     聊天           ************************/
 void MainContent::on_actionChat_triggered()
 {
-    if(myUserName.isEmpty())
+    if( GLOBALDEF::myUserName.isEmpty())
     {
         MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::LOGINUSED ,GLOBALDEF::FAILIMG, true);
         return;
     }
-    chatTogether->show();
+    CHATTOGETHER->showWidget();
 }
 
+/************************     忘记密码           ************************/
+void MainContent::on_actionFogetPwd_triggered()
+{
+    pushMessage.showWidget();
+}
 
-
-
+/************************     接收网络状态        ************************/
+void MainContent::receiveNetStatus(int type)
+{
+    emit sendNetStatus(type);
+}

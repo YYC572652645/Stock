@@ -17,6 +17,7 @@ class UvslSplic : public QWidget
 public:
     explicit UvslSplic(QWidget *parent = 0);
     ~UvslSplic();
+    void showWidget();
 
 private:
     Ui::uvslsplic *ui;

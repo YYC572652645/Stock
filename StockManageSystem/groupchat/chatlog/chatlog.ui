@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>711</width>
-    <height>606</height>
+    <width>502</width>
+    <height>449</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -54,6 +54,12 @@
    </item>
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="leftMargin">
+      <number>6</number>
+     </property>
+     <property name="rightMargin">
+      <number>6</number>
+     </property>
      <item>
       <widget class="QFrame" name="frame">
        <property name="frameShape">
@@ -128,8 +134,24 @@
               <height>25</height>
              </size>
             </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="text">
-             <string>查询</string>
+             <string>  查询</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res.qrc">
+              <normaloff>:/image/image/search.png</normaloff>:/image/image/search.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -151,6 +173,8 @@
   <tabstop>dateTimeEditBeginTime</tabstop>
   <tabstop>textBrowserLog</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="../../res.qrc"/>
+ </resources>
  <connections/>
 </ui>

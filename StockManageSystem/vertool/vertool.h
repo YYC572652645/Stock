@@ -16,6 +16,7 @@ class VerTool : public QWidget
 public:
     explicit VerTool(QWidget *parent = 0);
     ~VerTool();
+    void showWidget();
 
 private:
     Ui::vertool *ui;

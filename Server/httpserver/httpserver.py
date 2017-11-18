@@ -1,6 +1,4 @@
 
-import socketserver
-
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 class HttpDataHandler(BaseHTTPRequestHandler):

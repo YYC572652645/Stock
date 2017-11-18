@@ -18,6 +18,8 @@ public:
     explicit RegisterUser(QWidget *parent = 0);
     ~RegisterUser();
 
+    void showWidget();
+
 private slots:
     void on_pushButtonOk_clicked();
 

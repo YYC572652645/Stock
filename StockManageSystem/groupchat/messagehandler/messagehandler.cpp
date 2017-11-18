@@ -9,6 +9,7 @@ MessageHandler::MessageHandler()
 {
     dataMessageList[Protocol::SENDMESSAGEINFO] = DataMessage("sendmessageinfo", &MessageHandler::receiveSendMessageInfo);
     dataMessageList[Protocol::SENDBREAKHEARTINFO] = DataMessage("heartbreakinfo", &MessageHandler::receiveHeartMessageInfo);
+    dataMessageList[Protocol::SENDDELCHATTEXTINFO] = DataMessage("deletechatinfo", &MessageHandler::receiveDelDataMessageInfo);
 }
 
 /*************************   根据协议号调取对应函数    *********************/
@@ -31,5 +32,11 @@ void MessageHandler::receiveSendMessageInfo(QMap<QString, QString> &mapData)
 /*************************   接收心跳包              *********************/
 void MessageHandler::receiveHeartMessageInfo(QMap<QString, QString> &mapData)
 {
-     CLIENT->heartBreakCount = 0;
+    CLIENT->heartBreakCount = 0;
+}
+
+/*************************   接收删除数据消息          *********************/
+void MessageHandler::receiveDelDataMessageInfo(QMap<QString, QString> &mapData)
+{
+    qDebug()<<"收到了";
 }

@@ -18,8 +18,6 @@ VerTool::~VerTool()
 
 void VerTool::initControl()
 {
-    this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-
     titleBar = new TitleBar(this);
 
     titleBar->setTitle(GLOBALDEF::VERTOOL);
@@ -30,8 +28,14 @@ void VerTool::initControl()
     this->setWindowFlags(Qt::CoverWindow | Qt::FramelessWindowHint);
 }
 
+void VerTool::showWidget()
+{
+    this->show();
+}
+
+
 /************************   改变事件              ************************/
 void VerTool::resizeEvent(QResizeEvent *event)
 {
-    titleBar->resize(this->width(), TitleBar::TITLEBARHEIGHT);
+    titleBar->resize(this->width(), titleBar->getTitleBarHeight());
 }

@@ -24,6 +24,7 @@ class MessageHandler():
         self.commandList[PROTOCOL.CLOSESOCKET] = self.receiveCloseRequest
         self.commandList[PROTOCOL.SENDMESSAGEREQ] = self.sendMessageRequest
         self.commandList[PROTOCOL.SENDBREAKHEARTREQ] = self.receiveHeartRequest
+        self.commandList[PROTOCOL.SENDDELCHATTEXTREQ] = self.receiveDelDataRequest
 
     # 所有接收客户端数据函数的调用
     def onCommand(self, protocolNumber, dict, sock):
@@ -46,8 +47,10 @@ class MessageHandler():
     def receiveHeartRequest(self, dict, sock):
         sock.netSend(PROTOCOL.SENDBREAKHEARTINFO, dict)
 
-
-
+    # 接收删除数据请求
+    def receiveDelDataRequest(self, dict, sock):
+        sock.netSendAll(PROTOCOL.SENDDELCHATTEXTINFO, dict)
+        self.logData.deleteData(dict)
 
 
 

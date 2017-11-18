@@ -23,15 +23,18 @@ typedef struct DataConfig
     QString dataBaseName;      //数据库名称
     QString userName;          //用户名
     QString passWord;          //密码
+    QString myUserName;        //我的用户名
+    QString myPassWord;        //我的密码
 }DataConfig;
 
 
 class QReadIni
 {
 public:
-    static QReadIni*getInstance();            //单例模式
-    void readIni();                           //读取所有配置文件
-    const DataConfig &getDataConfig();        //获取数据库配置信息
+    static QReadIni*getInstance();                      //单例模式
+    void readIni();                                     //读取所有配置文件
+    const DataConfig &getDataConfig();                  //获取数据库配置信息
+    void writeIni(QString userName, QString passWord);  //写入配置文件
 private:
     QReadIni();                               //私有构造
     DataConfig dataConfig;                    //数据库配置信息

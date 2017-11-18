@@ -186,6 +186,7 @@ public:
         label_2 = new QLabel(widgetMessage);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setMinimumSize(QSize(0, 20));
+        label_2->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         verticalLayout_4->addWidget(label_2);
 

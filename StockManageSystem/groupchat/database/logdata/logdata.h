@@ -23,7 +23,9 @@ public:
     LogData();
 
     bool selectData(QString beginTime, QString endTime); //查询消息记录
+    bool selectData(QString chatText);                   //查询消息记录
     QList<DataLog> getLogList() const;                   //获取消息列表
+    void changeLogeList(int index);                      //改变数据列表
 
 private:
     QList<DataLog> logList;                              //消息记录数据

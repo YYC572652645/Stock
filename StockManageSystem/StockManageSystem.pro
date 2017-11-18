@@ -38,6 +38,11 @@ SOURCES += main.cpp\
     groupchat/database/logindata/logindata.cpp \
     groupchat/database/logdata/logdata.cpp \
     groupchat/chatlog/chatlog.cpp \
+    globaldef.cpp \
+    pushmessage/pushmessage.cpp \
+    groupchat/logmanage/logmanage.cpp \
+    groupchat/database/localdata/localdata.cpp \
+    groupchat/database/sqlitedatabase.cpp
 
 HEADERS  += mainwindow/mainwindow.h \
     messagebox/messagedialog.h \
@@ -67,7 +72,11 @@ HEADERS  += mainwindow/mainwindow.h \
     groupchat/database/logdata/logdata.h \
     groupchat/chatlog/chatlog.h \
     groupchat/database/databasedef.h \
-    messageinfo.h
+    messageinfo.h \
+    pushmessage/pushmessage.h \
+    groupchat/logmanage/logmanage.h \
+    groupchat/database/localdata/localdata.h \
+    groupchat/database/sqlitedatabase.h
 
 FORMS    += mainwindow/mainwindow.ui \
     messagebox/messagedialog.ui \
@@ -85,7 +94,9 @@ FORMS    += mainwindow/mainwindow.ui \
     registeruser/registeruser.ui \
     vertool/vertool.ui\
     groupchat/chattogether/chattogether.ui \
-    groupchat/chatlog/chatlog.ui
+    groupchat/chatlog/chatlog.ui \
+    pushmessage/pushmessage.ui \
+    groupchat/logmanage/logmanage.ui
 
 
 RC_FILE += myapp.rc

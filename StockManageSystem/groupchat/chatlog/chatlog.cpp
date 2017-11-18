@@ -8,7 +8,6 @@ ChatLog::ChatLog(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     this->initControl();
 }
 
@@ -16,6 +15,7 @@ ChatLog::ChatLog(QWidget *parent) :
 ChatLog::~ChatLog()
 {
     delete ui;
+    SAFEDELETE(logData);
 }
 
 /************************   显示窗口            ************************/
@@ -71,5 +71,5 @@ void ChatLog::on_pushButtonSelect_clicked()
 /************************   改变事件             ************************/
 void ChatLog::resizeEvent(QResizeEvent *event)
 {
-    titleBar->resize(this->width(), TitleBar::TITLEBARHEIGHT);
+    titleBar->resize(this->width(), titleBar->getTitleBarHeight());
 }

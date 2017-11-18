@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>787</width>
-    <height>743</height>
+    <width>581</width>
+    <height>544</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -115,7 +115,7 @@
              <bool>true</bool>
             </property>
             <property name="currentText">
-             <string>12</string>
+             <string>2</string>
             </property>
             <item>
              <property name="text">
@@ -228,7 +228,22 @@
           <item>
            <widget class="QPushButton" name="pushButtonChatLog">
             <property name="text">
-             <string>聊天记录</string>
+             <string>  聊天记录</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res.qrc">
+              <normaloff>:/image/image/backup.png</normaloff>:/image/image/backup.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonManage">
+            <property name="text">
+             <string>  聊天管理</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../res.qrc">
+              <normaloff>:/image/image/administrator.png</normaloff>:/image/image/administrator.png</iconset>
             </property>
            </widget>
           </item>
@@ -269,6 +284,16 @@
         </spacer>
        </item>
        <item>
+        <widget class="QLabel" name="labelInfo">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="pushButtonSend">
          <property name="text">
           <string>发送</string>
@@ -282,6 +307,8 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="../../res.qrc"/>
+ </resources>
  <connections/>
 </ui>

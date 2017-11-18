@@ -31,3 +31,21 @@ class LogData(DataBase):
         except Exception as e:
             print("sql插入异常", e.args)
 
+    def deleteData(self, dict):
+        try:
+            str = "delete from "  + globaldef.TABCHATLOG              + " where "
+
+            str += "username = '" + dict.get(globaldef.USERNAME)      + "' and  "
+
+            str += "text = '"     + dict.get(globaldef.CHATTEXT)      + "' and  "
+
+            str += "time = '"     + dict.get(globaldef.CHATTIME)      + "' ;    "
+
+            print(str)
+
+            data = self.cursor.execute(str)
+
+            self.conn.commit()
+
+        except Exception as e:
+            print("sql删除异常", e.args)

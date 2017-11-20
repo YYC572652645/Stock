@@ -12,7 +12,7 @@ DataBase::DataBase()
 bool DataBase::mysqlDataCnn()
 {
 
-    mysqlDb = QSqlDatabase::addDatabase(DATACONFIG.mysqlVersion);       //设置数据库类型
+    mysqlDb = QSqlDatabase::addDatabase(DATACONFIG.mysqlVersion);           //设置数据库类型
 
     mysqlDb.setDatabaseName(DATACONFIG.dataBaseName);                       //设置数据库名
     mysqlDb.setHostName(DATACONFIG.ip);                                     //设置数据库主机名

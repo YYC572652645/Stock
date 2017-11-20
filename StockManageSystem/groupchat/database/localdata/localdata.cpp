@@ -111,7 +111,7 @@ bool LocalData::insertData(const MessageData &dataLocal)
 
     bool success = query.exec(str);
 
-     qDebug()<<str;
+     qDebug()<<success;
 
     if(!success) return false;
 

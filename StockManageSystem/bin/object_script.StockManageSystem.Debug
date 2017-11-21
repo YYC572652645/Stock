@@ -20,7 +20,6 @@ INPUT(
 ./debug\client.o
 ./debug\messagehandler.o
 ./debug\qreadini.o
-./debug\database.o
 ./debug\chattogether.o
 ./debug\logindata.o
 ./debug\logdata.o
@@ -30,6 +29,7 @@ INPUT(
 ./debug\logmanage.o
 ./debug\localdata.o
 ./debug\sqlitedatabase.o
+./debug\mysqldatabase.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_messagedialog.o

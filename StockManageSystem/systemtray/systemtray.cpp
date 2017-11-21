@@ -5,6 +5,8 @@
 
 SystemTray::SystemTray(QWidget * parent)
     :QSystemTrayIcon(parent)
+    ,myMenu(NULL)
+    ,exitSoftWare(NULL)
 {
     this->createAction();  //创建托盘菜单
     this->addAction();     //菜单添加事件
@@ -13,7 +15,8 @@ SystemTray::SystemTray(QWidget * parent)
 
 SystemTray::~SystemTray()
 {
-
+    SAFEDELETE(myMenu);
+    SAFEDELETE(exitSoftWare);
 }
 
 void SystemTray::addAction()
@@ -23,7 +26,7 @@ void SystemTray::addAction()
 
 void SystemTray::createAction()
 {
-    myMenu = new QMenu();                                      //托盘菜单
+    myMenu = new QMenu();                                  //托盘菜单
     exitSoftWare = new QAction(tr("退出软件 "), this);           //退出软件
 
     this->setIcon(QIcon(GLOBALDEF::LOGOIMG));

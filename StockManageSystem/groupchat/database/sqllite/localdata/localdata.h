@@ -1,7 +1,13 @@
 #ifndef LOCALDATA_H
 #define LOCALDATA_H
-#include "groupchat/database/sqlitedatabase.h"
+#include <QString>
+#include <QSqlDriver>
+#include <QSqlRecord>
+#include <QSqlQuery>
+#include <QSqlDatabase>
+#include "groupchat/config/qreadini.h"
 #include "groupchat/database/databasedef.h"
+#include "groupchat/database/sqllite/sqlitedatabase.h"
 #include "globaldef.h"
 
 /***************************************************************
@@ -16,9 +22,10 @@ class LocalData : public SqliteDataBase
 {
 public:
     LocalData();
-    bool selectData(QString beginTime, QString endTime); //查询消息记录
-    bool deleteData(const MessageData &dataLocal);                //删除消息记录
-    bool insertData(const MessageData &dataLocal);                //插入消息记录
+
+    bool selectData(QString beginTime, QString endTime);    //查询消息记录
+    bool deleteData(const MessageData &dataLocal);          //删除消息记录
+    bool insertData(const MessageData &dataLocal);          //插入消息记录
 
     QList<MessageData> getLocalList() const;
 

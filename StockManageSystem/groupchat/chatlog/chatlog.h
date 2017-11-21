@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "titlebar/titlebar.h"
-#include "groupchat/database/logdata/logdata.h"
+#include "groupchat/database/mysql/logdata/logdata.h"
 
 /***************************************************************
    功能: 查询聊天记录

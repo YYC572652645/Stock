@@ -5,7 +5,7 @@
 /**********************    构造函数         *************************/
 LogData::LogData()
 {
-    if(!this->mysqlDataCnn())
+    if(!mysqlDataCnn())
     {
         qDebug()<<"连接数据库失败";
     }
@@ -18,11 +18,11 @@ bool LogData::selectData(QString beginTime, QString endTime)
 
     logList.clear();
 
-    QSqlQuery query;
-
     QString str;
 
     str = QString("select * from chatlog where time between '%1' and '%2'").arg(beginTime).arg(endTime);
+
+    QSqlQuery query(NULL, mysqlDb);
 
     bool success = query.exec(str);
 
@@ -52,11 +52,11 @@ bool LogData::selectData(QString chatText)
 
     logList.clear();
 
-    QSqlQuery query;
-
     QString str;
 
     str = QString("select * from chatlog where text like '%%1%'").arg(chatText);
+
+    QSqlQuery query(NULL, mysqlDb);
 
     bool success = query.exec(str);
 

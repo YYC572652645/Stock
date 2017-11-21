@@ -1,15 +1,15 @@
-#ifndef CHATDEMO_H
-#define CHATDEMO_H
+#ifndef CHATTOGETHER_H
+#define CHATTOGETHER_H
 
 #include <QWidget>
 #include "titlebar/titlebar.h"
-#include "groupchat/database/database.h"
+#include "groupchat/database/mysql/mysqldatabase.h"
 #include <QResizeEvent>
 #include <QKeyEvent>
 #include "groupchat/chatlog/chatlog.h"
 #include <QTimer>
 #include "groupchat/logmanage/logmanage.h"
-#include "groupchat/database/localdata/localdata.h"
+#include "groupchat/database/sqllite/localdata/localdata.h"
 
 /***************************************************************
    功能: 聊天类
@@ -67,4 +67,4 @@ private:
     void resizeEvent(QResizeEvent *event);                             //界面更改事件
 };
 
-#endif // CHATDEMO_H
+#endif // CHATTOGETHER_H

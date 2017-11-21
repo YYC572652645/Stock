@@ -33,16 +33,16 @@ SOURCES += main.cpp\
     groupchat/client/client.cpp \
     groupchat/messagehandler/messagehandler.cpp \
     groupchat/config/qreadini.cpp \
-    groupchat/database/database.cpp \
     groupchat/chattogether/chattogether.cpp \
-    groupchat/database/logindata/logindata.cpp \
-    groupchat/database/logdata/logdata.cpp \
+    groupchat/database/mysql/logindata/logindata.cpp \
+    groupchat/database/mysql/logdata/logdata.cpp \
     groupchat/chatlog/chatlog.cpp \
     globaldef.cpp \
     pushmessage/pushmessage.cpp \
     groupchat/logmanage/logmanage.cpp \
-    groupchat/database/localdata/localdata.cpp \
-    groupchat/database/sqlitedatabase.cpp
+    groupchat/database/sqllite/localdata/localdata.cpp \
+    groupchat/database/sqllite/sqlitedatabase.cpp \
+    groupchat/database/mysql/mysqldatabase.cpp
 
 HEADERS  += mainwindow/mainwindow.h \
     messagebox/messagedialog.h \
@@ -66,17 +66,17 @@ HEADERS  += mainwindow/mainwindow.h \
     groupchat/messagehandler/messagehandler.h \
     groupchat/protocol.h \
     groupchat/config/qreadini.h \
-    groupchat/database/database.h \
     groupchat/chattogether/chattogether.h \
-    groupchat/database/logindata/logindata.h \
-    groupchat/database/logdata/logdata.h \
+    groupchat/database/mysql/logindata/logindata.h \
+    groupchat/database/mysql/logdata/logdata.h \
     groupchat/chatlog/chatlog.h \
     groupchat/database/databasedef.h \
     messageinfo.h \
     pushmessage/pushmessage.h \
     groupchat/logmanage/logmanage.h \
-    groupchat/database/localdata/localdata.h \
-    groupchat/database/sqlitedatabase.h
+    groupchat/database/sqllite/localdata/localdata.h \
+    groupchat/database/sqllite/sqlitedatabase.h \
+    groupchat/database/mysql/mysqldatabase.h
 
 FORMS    += mainwindow/mainwindow.ui \
     messagebox/messagedialog.ui \

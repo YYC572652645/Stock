@@ -225,7 +225,6 @@ void ChatTogether::on_pushButtonSend_clicked()
 
     this->setUpText(messageData);
 
-
     //插入本地数据库
     localData->insertData(messageData);
 

@@ -1,6 +1,13 @@
 #ifndef LOGDATA_H
 #define LOGDATA_H
-#include "groupchat/database/database.h"
+#include<QString>
+#include<QSqlDriver>
+#include<QSqlRecord>
+#include<QSqlQuery>
+#include<QSqlDatabase>
+#include "groupchat/config/qreadini.h"
+#include "groupchat/database/databasedef.h"
+#include "groupchat/database/mysql/mysqldatabase.h"
 
 /***************************************************************
    功能: 数据库日志类
@@ -17,11 +24,10 @@ typedef struct DataLog
     QString dateTime;
 }DataLog;
 
-class LogData : public DataBase
+class LogData : public MySqlDataBase
 {
 public:
     LogData();
-
     bool selectData(QString beginTime, QString endTime); //查询消息记录
     bool selectData(QString chatText);                   //查询消息记录
     QList<DataLog> getLogList() const;                   //获取消息列表

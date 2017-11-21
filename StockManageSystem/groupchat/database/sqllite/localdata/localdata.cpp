@@ -4,12 +4,11 @@
 /**********************    构造函数     *************************/
 LocalData::LocalData()
 {
-    if(!this->sqliteDataCnn())
+    if(!sqliteDataCnn())
     {
         qDebug()<<"连接数据库失败";
     }
 }
-
 
 /**********************    聊天记录查询     *************************/
 bool LocalData::selectData(QString beginTime, QString endTime)
@@ -18,13 +17,11 @@ bool LocalData::selectData(QString beginTime, QString endTime)
 
     localList.clear();
 
-    QSqlQuery query;
-
     QString str;
 
     str = QString("select * from chatlog where time between '%1' and '%2'").arg(beginTime).arg(endTime);
 
-    qDebug()<<str;
+    QSqlQuery query(NULL, sqliteDb);
 
     bool success = query.exec(str);
 
@@ -57,8 +54,6 @@ bool LocalData::deleteData(const MessageData &dataLocal)
 {
     if(!sqliteDb.isOpen()) sqliteDb.open();
 
-    QSqlQuery query;
-
     QString str;
 
     str = "delete from chatlog where ";
@@ -69,7 +64,7 @@ bool LocalData::deleteData(const MessageData &dataLocal)
 
     str += "time = '"     + dataLocal.dateTime    + "' ;" ;
 
-    qDebug()<<str;
+    QSqlQuery query(NULL, sqliteDb);
 
     bool success = query.exec(str);
 
@@ -86,8 +81,6 @@ bool LocalData::deleteData(const MessageData &dataLocal)
 bool LocalData::insertData(const MessageData &dataLocal)
 {
     if(!sqliteDb.isOpen()) sqliteDb.open();
-
-    QSqlQuery query;
 
     QString str;
 
@@ -107,11 +100,9 @@ bool LocalData::insertData(const MessageData &dataLocal)
 
     str +=  dataLocal.dateTime    + "' ) ;";
 
-    qDebug()<<str;
+    QSqlQuery query(NULL, sqliteDb);
 
     bool success = query.exec(str);
-
-     qDebug()<<success;
 
     if(!success) return false;
 

@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "titlebar/titlebar.h"
-#include "groupchat/database/logdata/logdata.h"
+#include "groupchat/database/mysql/logdata/logdata.h"
 
 namespace Ui {
 class logmanage;

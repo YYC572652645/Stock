@@ -4,7 +4,7 @@
 /*************************    构造函数      *********************/
 LoginData::LoginData()
 {
-    if(!this->mysqlDataCnn())
+    if(!mysqlDataCnn())
     {
         qDebug()<<"连接数据库失败";
     }
@@ -15,11 +15,11 @@ bool LoginData::selectData(QString userName, QString passWord)
 {
     if(!mysqlDb.isOpen()) mysqlDb.open();
 
-    QSqlQuery query;
-
     QString str;
 
     str = QString("select * from user where username = '%1' and password = '%2';").arg(userName).arg(passWord);
+
+    QSqlQuery query(NULL, mysqlDb);
 
     bool success = query.exec(str);
 
@@ -46,8 +46,6 @@ bool LoginData::insertData(UserData data)
 {
     if(!mysqlDb.isOpen()) mysqlDb.open();
 
-    QSqlQuery query;
-
     QString str;
 
     str  = "insert into user values('";
@@ -61,6 +59,8 @@ bool LoginData::insertData(UserData data)
     str += data.email       + "' , '";
 
     str += data.phone       + "' ) ;";
+
+    QSqlQuery query(NULL, mysqlDb);
 
     bool success = query.exec(str);
 

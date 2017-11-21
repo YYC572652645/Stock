@@ -14,19 +14,18 @@
    创建时间: 2017-11-15
 **************************************************************/
 
-class DataBase
+class MySqlDataBase
 {
 public:
 
     /************         构造函数         *************/
-    DataBase();
+    MySqlDataBase();
 
     /************         连接数据库       *************/
     bool mysqlDataCnn();
 
 
     QSqlDatabase mysqlDb;
-
 };
 
 #endif // DATABASE_H

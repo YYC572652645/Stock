@@ -7,6 +7,7 @@
 #include<QMenu>
 #include<QWidget>
 #include<QObject>
+#include "globaldef.h"
 
 /***************************************************************
    功能:系统托盘

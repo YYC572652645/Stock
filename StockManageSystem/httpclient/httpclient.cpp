@@ -5,7 +5,7 @@ HttpClient::HttpClient() :accessManger(NULL), netWorkReplay(NULL), file(NULL)
 {
     this->initValue();
 
-    this->getUrl("http://127.0.0.1:9090/YunNiuProject.rar");
+    this->getUrlDownLoad("http://127.0.0.1:9090/YunNiuProject.rar");
 }
 
 /*********************     初始化数据      *******************/

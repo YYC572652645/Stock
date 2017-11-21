@@ -58,7 +58,7 @@ bool LoginData::insertData(UserData data)
 
     str += data.email       + "' , '";
 
-    str += data.phone       + "' ) ;";
+    str += data.phone       + "' , '0')";
 
     QSqlQuery query(NULL, mysqlDb);
 

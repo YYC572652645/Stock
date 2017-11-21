@@ -30,6 +30,7 @@ INPUT(
 ./release\localdata.o
 ./release\sqlitedatabase.o
 ./release\mysqldatabase.o
+./release\httpclient.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_messagedialog.o
@@ -53,4 +54,5 @@ INPUT(
 ./release\moc_chatlog.o
 ./release\moc_pushmessage.o
 ./release\moc_logmanage.o
+./release\moc_httpclient.o
 );

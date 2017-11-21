@@ -42,7 +42,8 @@ SOURCES += main.cpp\
     groupchat/logmanage/logmanage.cpp \
     groupchat/database/sqllite/localdata/localdata.cpp \
     groupchat/database/sqllite/sqlitedatabase.cpp \
-    groupchat/database/mysql/mysqldatabase.cpp
+    groupchat/database/mysql/mysqldatabase.cpp \
+    httpclient/httpclient.cpp
 
 HEADERS  += mainwindow/mainwindow.h \
     messagebox/messagedialog.h \
@@ -76,7 +77,8 @@ HEADERS  += mainwindow/mainwindow.h \
     groupchat/logmanage/logmanage.h \
     groupchat/database/sqllite/localdata/localdata.h \
     groupchat/database/sqllite/sqlitedatabase.h \
-    groupchat/database/mysql/mysqldatabase.h
+    groupchat/database/mysql/mysqldatabase.h \
+    httpclient/httpclient.h
 
 FORMS    += mainwindow/mainwindow.ui \
     messagebox/messagedialog.ui \

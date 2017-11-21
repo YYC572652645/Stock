@@ -73,7 +73,8 @@ SOURCES       = ..\main.cpp \
 		..\groupchat\logmanage\logmanage.cpp \
 		..\groupchat\database\sqllite\localdata\localdata.cpp \
 		..\groupchat\database\sqllite\sqlitedatabase.cpp \
-		..\groupchat\database\mysql\mysqldatabase.cpp release\qrc_res.cpp \
+		..\groupchat\database\mysql\mysqldatabase.cpp \
+		..\httpclient\httpclient.cpp release\qrc_res.cpp \
 		release\moc_mainwindow.cpp \
 		release\moc_messagedialog.cpp \
 		release\moc_titlebar.cpp \
@@ -95,7 +96,8 @@ SOURCES       = ..\main.cpp \
 		release\moc_chattogether.cpp \
 		release\moc_chatlog.cpp \
 		release\moc_pushmessage.cpp \
-		release\moc_logmanage.cpp
+		release\moc_logmanage.cpp \
+		release\moc_httpclient.cpp
 OBJECTS       = release/main.o \
 		release/mainwindow.o \
 		release/messagedialog.o \
@@ -127,6 +129,7 @@ OBJECTS       = release/main.o \
 		release/localdata.o \
 		release/sqlitedatabase.o \
 		release/mysqldatabase.o \
+		release/httpclient.o \
 		release/qrc_res.o \
 		release/moc_mainwindow.o \
 		release/moc_messagedialog.o \
@@ -149,7 +152,8 @@ OBJECTS       = release/main.o \
 		release/moc_chattogether.o \
 		release/moc_chatlog.o \
 		release/moc_pushmessage.o \
-		release/moc_logmanage.o
+		release/moc_logmanage.o \
+		release/moc_httpclient.o
 
 DIST          =  ..\mainwindow\mainwindow.h \
 		..\messagebox\messagedialog.h \
@@ -183,7 +187,8 @@ DIST          =  ..\mainwindow\mainwindow.h \
 		..\groupchat\logmanage\logmanage.h \
 		..\groupchat\database\sqllite\localdata\localdata.h \
 		..\groupchat\database\sqllite\sqlitedatabase.h \
-		..\groupchat\database\mysql\mysqldatabase.h ..\main.cpp \
+		..\groupchat\database\mysql\mysqldatabase.h \
+		..\httpclient\httpclient.h ..\main.cpp \
 		..\mainwindow\mainwindow.cpp \
 		..\messagebox\messagedialog.cpp \
 		..\titlebar\titlebar.cpp \
@@ -213,7 +218,8 @@ DIST          =  ..\mainwindow\mainwindow.h \
 		..\groupchat\logmanage\logmanage.cpp \
 		..\groupchat\database\sqllite\localdata\localdata.cpp \
 		..\groupchat\database\sqllite\sqlitedatabase.cpp \
-		..\groupchat\database\mysql\mysqldatabase.cpp
+		..\groupchat\database\mysql\mysqldatabase.cpp \
+		..\httpclient\httpclient.cpp
 QMAKE_TARGET  = StockManageSystem
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = StockManageSystem.exe
@@ -239,7 +245,7 @@ dist:
 	$(ZIP) StockManageSystem.zip $(SOURCES) $(DIST) ..\..\StockManageSystem.pro D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\spec_pre.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\qdevice.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\device_config.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\common\angle.conf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\qconfig.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dcore.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dcore_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dinput.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dinput_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dlogic.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dlogic_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquick.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquick_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickinput.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickinput_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickrender.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3dquickrender_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3drender.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_3drender_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_axbase.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_axbase_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_axcontainer.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_axcontainer_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_axserver.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_axserver_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_bluetooth.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_bluetooth_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_bootstrap_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_clucene_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_concurrent.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_concurrent_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_core.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_core_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_dbus.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_dbus_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_designer.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_designer_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_designercomponents_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_gui.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_gui_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_help.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_help_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_labscontrols_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_labstemplates_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_location.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_location_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_multimedia.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_multimedia_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_multimediawidgets.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_network.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_network_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_nfc.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_nfc_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_opengl.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_opengl_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_openglextensions.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_openglextensions_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_platformsupport_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_positioning.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_positioning_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_printsupport.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_printsupport_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_qml.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_qml_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_qmldevtools_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_qmltest.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_qmltest_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_quick.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_quick_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_quickparticles_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_quickwidgets.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_quickwidgets_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_script.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_script_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_scripttools.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_scripttools_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_sensors.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_sensors_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_serialbus.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_serialbus_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_serialport.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_serialport_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_sql.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_sql_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_svg.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_svg_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_testlib.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_testlib_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_uiplugin.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_uitools.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_uitools_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_webchannel.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_webchannel_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_websockets.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_websockets_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_widgets.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_widgets_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_winextras.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_winextras_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_xml.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_xml_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_xmlpatterns.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\qt_functions.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\qt_config.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\win32\qt_config.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\win32-g++\qmake.conf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\spec_post.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\exclusive_builds.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\default_pre.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\win32\default_pre.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\resolve_config.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\exclusive_builds_post.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\default_post.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\build_pass.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\win32\rtti.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\precompile_header.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\warn_on.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\qt.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\resources.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\moc.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\win32\opengl.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\uic.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\win32\dumpcpp.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\file_copies.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\win32\windows.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\testcase_targets.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\exceptions.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\yacc.prf D:\SoftWare\QtCreater\5.6\mingw49_32\mkspecs\features\lex.prf ..\StockManageSystem.pro ..\res.qrc D:\SoftWare\QtCreater\5.6\mingw49_32\lib\qtmain.prl D:\SoftWare\QtCreater\5.6\mingw49_32\lib\Qt5AxContainer.prl D:\SoftWare\QtCreater\5.6\mingw49_32\lib\Qt5AxBase.prl D:\SoftWare\QtCreater\5.6\mingw49_32\lib\Qt5Widgets.prl D:\SoftWare\QtCreater\5.6\mingw49_32\lib\Qt5Gui.prl D:\SoftWare\QtCreater\5.6\mingw49_32\lib\Qt5Sql.prl D:\SoftWare\QtCreater\5.6\mingw49_32\lib\Qt5Network.prl D:\SoftWare\QtCreater\5.6\mingw49_32\lib\Qt5Core.prl  NO_PCH_SOURCES RESOURCES TYPELIBS HEADERS TYPELIBS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\mainwindow.o release\messagedialog.o release\titlebar.o release\maincontent.o release\systemtray.o release\homepage.o release\starchoose.o release\plantemplate.o release\peopleplan.o release\godlensection.o release\twostarshrink.o release\threestarshirnk.o release\normalcalc.o release\pushcalc.o release\uvslsplic.o release\registeruser.o release\vertool.o release\client.o release\messagehandler.o release\qreadini.o release\chattogether.o release\logindata.o release\logdata.o release\chatlog.o release\globaldef.o release\pushmessage.o release\logmanage.o release\localdata.o release\sqlitedatabase.o release\mysqldatabase.o release\qrc_res.o release\moc_mainwindow.o release\moc_messagedialog.o release\moc_titlebar.o release\moc_maincontent.o release\moc_systemtray.o release\moc_homepage.o release\moc_starchoose.o release\moc_plantemplate.o release\moc_peopleplan.o release\moc_godlensection.o release\moc_twostarshrink.o release\moc_threestarshirnk.o release\moc_normalcalc.o release\moc_pushcalc.o release\moc_uvslsplic.o release\moc_registeruser.o release\moc_vertool.o release\moc_client.o release\moc_chattogether.o release\moc_chatlog.o release\moc_pushmessage.o release\moc_logmanage.o
+	-$(DEL_FILE) release\main.o release\mainwindow.o release\messagedialog.o release\titlebar.o release\maincontent.o release\systemtray.o release\homepage.o release\starchoose.o release\plantemplate.o release\peopleplan.o release\godlensection.o release\twostarshrink.o release\threestarshirnk.o release\normalcalc.o release\pushcalc.o release\uvslsplic.o release\registeruser.o release\vertool.o release\client.o release\messagehandler.o release\qreadini.o release\chattogether.o release\logindata.o release\logdata.o release\chatlog.o release\globaldef.o release\pushmessage.o release\logmanage.o release\localdata.o release\sqlitedatabase.o release\mysqldatabase.o release\httpclient.o release\qrc_res.o release\moc_mainwindow.o release\moc_messagedialog.o release\moc_titlebar.o release\moc_maincontent.o release\moc_systemtray.o release\moc_homepage.o release\moc_starchoose.o release\moc_plantemplate.o release\moc_peopleplan.o release\moc_godlensection.o release\moc_twostarshrink.o release\moc_threestarshirnk.o release\moc_normalcalc.o release\moc_pushcalc.o release\moc_uvslsplic.o release\moc_registeruser.o release\moc_vertool.o release\moc_client.o release\moc_chattogether.o release\moc_chatlog.o release\moc_pushmessage.o release\moc_logmanage.o release\moc_httpclient.o
 	-$(DEL_FILE) release\myapp_res.o
 
 distclean: clean 
@@ -294,9 +300,9 @@ release/qrc_res.cpp: ../res.qrc \
 
 compiler_dumpcpp_decl_make_all:
 compiler_dumpcpp_decl_clean:
-compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_messagedialog.cpp release/moc_titlebar.cpp release/moc_maincontent.cpp release/moc_systemtray.cpp release/moc_homepage.cpp release/moc_starchoose.cpp release/moc_plantemplate.cpp release/moc_peopleplan.cpp release/moc_godlensection.cpp release/moc_twostarshrink.cpp release/moc_threestarshirnk.cpp release/moc_normalcalc.cpp release/moc_pushcalc.cpp release/moc_uvslsplic.cpp release/moc_registeruser.cpp release/moc_vertool.cpp release/moc_client.cpp release/moc_chattogether.cpp release/moc_chatlog.cpp release/moc_pushmessage.cpp release/moc_logmanage.cpp
+compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_messagedialog.cpp release/moc_titlebar.cpp release/moc_maincontent.cpp release/moc_systemtray.cpp release/moc_homepage.cpp release/moc_starchoose.cpp release/moc_plantemplate.cpp release/moc_peopleplan.cpp release/moc_godlensection.cpp release/moc_twostarshrink.cpp release/moc_threestarshirnk.cpp release/moc_normalcalc.cpp release/moc_pushcalc.cpp release/moc_uvslsplic.cpp release/moc_registeruser.cpp release/moc_vertool.cpp release/moc_client.cpp release/moc_chattogether.cpp release/moc_chatlog.cpp release/moc_pushmessage.cpp release/moc_logmanage.cpp release/moc_httpclient.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) release\moc_mainwindow.cpp release\moc_messagedialog.cpp release\moc_titlebar.cpp release\moc_maincontent.cpp release\moc_systemtray.cpp release\moc_homepage.cpp release\moc_starchoose.cpp release\moc_plantemplate.cpp release\moc_peopleplan.cpp release\moc_godlensection.cpp release\moc_twostarshrink.cpp release\moc_threestarshirnk.cpp release\moc_normalcalc.cpp release\moc_pushcalc.cpp release\moc_uvslsplic.cpp release\moc_registeruser.cpp release\moc_vertool.cpp release\moc_client.cpp release\moc_chattogether.cpp release\moc_chatlog.cpp release\moc_pushmessage.cpp release\moc_logmanage.cpp
+	-$(DEL_FILE) release\moc_mainwindow.cpp release\moc_messagedialog.cpp release\moc_titlebar.cpp release\moc_maincontent.cpp release\moc_systemtray.cpp release\moc_homepage.cpp release\moc_starchoose.cpp release\moc_plantemplate.cpp release\moc_peopleplan.cpp release\moc_godlensection.cpp release\moc_twostarshrink.cpp release\moc_threestarshirnk.cpp release\moc_normalcalc.cpp release\moc_pushcalc.cpp release\moc_uvslsplic.cpp release\moc_registeruser.cpp release\moc_vertool.cpp release\moc_client.cpp release\moc_chattogether.cpp release\moc_chatlog.cpp release\moc_pushmessage.cpp release\moc_logmanage.cpp release\moc_httpclient.cpp
 release/moc_mainwindow.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QMainWindow \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qmainwindow.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qwidget.h \
@@ -439,6 +445,17 @@ release/moc_mainwindow.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidge
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qmenu.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QObject \
+		../globaldef.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDebug \
+		../groupchat/client/client.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QTcpSocket \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QHostAddress \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
+		../groupchat/protocol.h \
+		../messageinfo.h \
 		../titlebar/titlebar.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QPushButton \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qpushbutton.h \
@@ -460,17 +477,6 @@ release/moc_mainwindow.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidge
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qabstractitemmodel.h \
-		../globaldef.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDebug \
-		../groupchat/client/client.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QTcpSocket \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QHostAddress \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
-		../groupchat/protocol.h \
-		../messageinfo.h \
 		../maincontent/maincontent.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QListView \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qlistview.h \
@@ -498,11 +504,30 @@ release/moc_mainwindow.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidge
 		../pushcalc/pushcalc.h \
 		../uvslsplic/uvslsplic.h \
 		../registeruser/registeruser.h \
+		../groupchat/database/mysql/logindata/logindata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMutex \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../vertool/vertool.h \
 		../groupchat/chattogether/chattogether.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/database/databasedef.h \
 		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h \
 		../pushmessage/pushmessage.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QDesktopWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkConfigurationManager \
@@ -960,14 +985,33 @@ release/moc_maincontent.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidg
 		../pushcalc/pushcalc.h \
 		../uvslsplic/uvslsplic.h \
 		../registeruser/registeruser.h \
+		../groupchat/database/mysql/logindata/logindata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMutex \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../vertool/vertool.h \
 		../groupchat/chattogether/chattogether.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/database/databasedef.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QTimer \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtimer.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasictimer.h \
 		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h \
 		../pushmessage/pushmessage.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QDesktopWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qdesktopwidget.h \
@@ -1094,6 +1138,17 @@ release/moc_systemtray.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidge
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qmenu.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QObject \
+		../globaldef.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDebug \
+		../groupchat/client/client.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QTcpSocket \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QHostAddress \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
+		../groupchat/protocol.h \
+		../messageinfo.h \
 		../systemtray/systemtray.h
 	D:\SoftWare\QtCreater\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/SoftWare/QtCreater/5.6/mingw49_32/mkspecs/win32-g++ -ID:/Program/Qt/Stock/StockManageSystem -ID:/SoftWare/QtCreater/5.6/mingw49_32/include -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/ActiveQt -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtANGLE -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore -I. ..\systemtray\systemtray.h -o release\moc_systemtray.cpp
 
@@ -2396,6 +2451,21 @@ release/moc_registeruser.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWid
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/logindata/logindata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMutex \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../registeruser/registeruser.h
 	D:\SoftWare\QtCreater\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/SoftWare/QtCreater/5.6/mingw49_32/mkspecs/win32-g++ -ID:/Program/Qt/Stock/StockManageSystem -ID:/SoftWare/QtCreater/5.6/mingw49_32/include -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/ActiveQt -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtANGLE -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore -I. ..\registeruser\registeruser.h -o release\moc_registeruser.cpp
 
@@ -2766,13 +2836,30 @@ release/moc_chattogether.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWid
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/mysqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QResizeEvent \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QTimer \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtimer.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasictimer.h \
 		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h \
 		../groupchat/chattogether/chattogether.h
 	D:\SoftWare\QtCreater\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/SoftWare/QtCreater/5.6/mingw49_32/mkspecs/win32-g++ -ID:/Program/Qt/Stock/StockManageSystem -ID:/SoftWare/QtCreater/5.6/mingw49_32/include -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/ActiveQt -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtANGLE -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore -I. ..\groupchat\chattogether\chattogether.h -o release\moc_chattogether.cpp
 
@@ -2920,6 +3007,21 @@ release/moc_chatlog.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../groupchat/chatlog/chatlog.h
 	D:\SoftWare\QtCreater\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/SoftWare/QtCreater/5.6/mingw49_32/mkspecs/win32-g++ -ID:/Program/Qt/Stock/StockManageSystem -ID:/SoftWare/QtCreater/5.6/mingw49_32/include -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/ActiveQt -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtANGLE -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore -I. ..\groupchat\chatlog\chatlog.h -o release\moc_chatlog.cpp
 
@@ -3220,8 +3322,126 @@ release/moc_logmanage.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidget
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../groupchat/logmanage/logmanage.h
 	D:\SoftWare\QtCreater\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/SoftWare/QtCreater/5.6/mingw49_32/mkspecs/win32-g++ -ID:/Program/Qt/Stock/StockManageSystem -ID:/SoftWare/QtCreater/5.6/mingw49_32/include -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/ActiveQt -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtANGLE -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore -I. ..\groupchat\logmanage\logmanage.h -o release\moc_logmanage.cpp
+
+release/moc_httpclient.cpp: D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkReply \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkreply.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QIODevice \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qiodevice.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qglobal.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qconfig.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qfeatures.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsystemdetection.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qprocessordetection.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcompilerdetection.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtypeinfo.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtypetraits.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qisenum.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsysinfo.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qlogging.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qflags.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasicatomic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_bootstrap.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qgenericatomic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_cxx11.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_gcc.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_msvc.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_armv7.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_armv6.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_armv5.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_ia64.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_x86.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_unix.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qglobalstatic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qmutex.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qnumeric.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qversiontagging.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobject.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobjectdefs.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qnamespace.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobjectdefs_impl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstring.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qchar.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbytearray.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qrefcount.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qarraydata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstringbuilder.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qlist.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qalgorithms.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qiterator.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qhashfunctions.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qpair.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbytearraylist.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstringlist.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qregexp.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstringmatcher.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcoreevent.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qscopedpointer.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qmetatype.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qvarlengtharray.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcontainerfwd.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobject_impl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QVariant \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qvariant.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qmap.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qdebug.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qhash.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtextstream.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qlocale.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qshareddata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qvector.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qpoint.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qset.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcontiguouscache.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkRequest \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkrequest.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSharedDataPointer \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QUrl \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qurl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qurlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkAccessManager \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QObject \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QSslConfiguration \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslconfiguration.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslerror.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslcertificate.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcryptographichash.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qdatetime.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsharedpointer.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsharedpointer_impl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qssl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QFlags \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QtGlobal \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMetaType \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QFile \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qfile.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qfiledevice.h \
+		../httpclient/httpclient.h
+	D:\SoftWare\QtCreater\5.6\mingw49_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/SoftWare/QtCreater/5.6/mingw49_32/mkspecs/win32-g++ -ID:/Program/Qt/Stock/StockManageSystem -ID:/SoftWare/QtCreater/5.6/mingw49_32/include -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/ActiveQt -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtANGLE -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork -ID:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore -I. ..\httpclient\httpclient.h -o release\moc_httpclient.cpp
 
 compiler_dumpcpp_impl_make_all:
 compiler_dumpcpp_impl_clean:
@@ -3548,6 +3768,17 @@ release/main.o: ../main.cpp ../mainwindow/mainwindow.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qmenu.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QObject \
+		../globaldef.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDebug \
+		../groupchat/client/client.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QTcpSocket \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QHostAddress \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
+		../groupchat/protocol.h \
+		../messageinfo.h \
 		../titlebar/titlebar.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QPushButton \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qpushbutton.h \
@@ -3569,17 +3800,6 @@ release/main.o: ../main.cpp ../mainwindow/mainwindow.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qabstractitemmodel.h \
-		../globaldef.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDebug \
-		../groupchat/client/client.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QTcpSocket \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QHostAddress \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
-		../groupchat/protocol.h \
-		../messageinfo.h \
 		../maincontent/maincontent.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QListView \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qlistview.h \
@@ -3607,16 +3827,60 @@ release/main.o: ../main.cpp ../mainwindow/mainwindow.h \
 		../pushcalc/pushcalc.h \
 		../uvslsplic/uvslsplic.h \
 		../registeruser/registeruser.h \
+		../groupchat/database/mysql/logindata/logindata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMutex \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../vertool/vertool.h \
 		../groupchat/chattogether/chattogether.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/database/databasedef.h \
 		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h \
 		../pushmessage/pushmessage.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QDesktopWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkConfigurationManager \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkconfigmanager.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkconfiguration.h
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkconfiguration.h \
+		../httpclient/httpclient.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkReply \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkreply.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QIODevice \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QVariant \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkRequest \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkrequest.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSharedDataPointer \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QUrl \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkAccessManager \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QSslConfiguration \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslconfiguration.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslerror.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslcertificate.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcryptographichash.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qdatetime.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qssl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QFlags \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QtGlobal \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMetaType \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QFile
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\main.cpp
 
 release/mainwindow.o: ../mainwindow/mainwindow.cpp ../mainwindow/mainwindow.h \
@@ -3762,6 +4026,17 @@ release/mainwindow.o: ../mainwindow/mainwindow.cpp ../mainwindow/mainwindow.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qmenu.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QObject \
+		../globaldef.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDebug \
+		../groupchat/client/client.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QTcpSocket \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QHostAddress \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
+		../groupchat/protocol.h \
+		../messageinfo.h \
 		../titlebar/titlebar.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QPushButton \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qpushbutton.h \
@@ -3783,17 +4058,6 @@ release/mainwindow.o: ../mainwindow/mainwindow.cpp ../mainwindow/mainwindow.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qtabbar.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qrubberband.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qabstractitemmodel.h \
-		../globaldef.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDebug \
-		../groupchat/client/client.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QTcpSocket \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QHostAddress \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
-		../groupchat/protocol.h \
-		../messageinfo.h \
 		../maincontent/maincontent.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QListView \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qlistview.h \
@@ -3821,11 +4085,30 @@ release/mainwindow.o: ../mainwindow/mainwindow.cpp ../mainwindow/mainwindow.h \
 		../pushcalc/pushcalc.h \
 		../uvslsplic/uvslsplic.h \
 		../registeruser/registeruser.h \
+		../groupchat/database/mysql/logindata/logindata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMutex \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../vertool/vertool.h \
 		../groupchat/chattogether/chattogether.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/database/databasedef.h \
 		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h \
 		../pushmessage/pushmessage.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QDesktopWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkConfigurationManager \
@@ -4344,14 +4627,33 @@ release/maincontent.o: ../maincontent/maincontent.cpp ../maincontent/maincontent
 		../pushcalc/pushcalc.h \
 		../uvslsplic/uvslsplic.h \
 		../registeruser/registeruser.h \
+		../groupchat/database/mysql/logindata/logindata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMutex \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		../vertool/vertool.h \
 		../groupchat/chattogether/chattogether.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/database/databasedef.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QTimer \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtimer.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasictimer.h \
 		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h \
 		../pushmessage/pushmessage.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QDesktopWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qdesktopwidget.h \
@@ -4391,9 +4693,6 @@ release/maincontent.o: ../maincontent/maincontent.cpp ../maincontent/maincontent
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QBitmap \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/qbitmap.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QStyle \
-		../groupchat/config/qreadini.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QDateTime \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qdatetime.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\maincontent.o ..\maincontent\maincontent.cpp
@@ -6361,6 +6660,21 @@ release/registeruser.o: ../registeruser/registeruser.cpp ../registeruser/registe
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/logindata/logindata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMutex \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		ui_registeruser.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QVariant \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QAction \
@@ -6748,13 +7062,30 @@ release/client.o: ../groupchat/client/client.cpp ../groupchat/client/client.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qlayout.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qlayoutitem.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qgridlayout.h \
+		../groupchat/database/mysql/mysqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QResizeEvent \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QTimer \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtimer.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasictimer.h \
-		../groupchat/logmanage/logmanage.h
+		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\client.o ..\groupchat\client\client.cpp
 
 release/messagehandler.o: ../groupchat/messagehandler/messagehandler.cpp ../groupchat/messagehandler/messagehandler.h \
@@ -6904,13 +7235,30 @@ release/messagehandler.o: ../groupchat/messagehandler/messagehandler.cpp ../grou
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qlayout.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qlayoutitem.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qgridlayout.h \
+		../groupchat/database/mysql/mysqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QResizeEvent \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QTimer \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtimer.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasictimer.h \
-		../groupchat/logmanage/logmanage.h
+		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\messagehandler.o ..\groupchat\messagehandler\messagehandler.cpp
 
 release/qreadini.o: ../groupchat/config/qreadini.cpp ../groupchat/config/qreadini.h \
@@ -7143,13 +7491,30 @@ release/chattogether.o: ../groupchat/chattogether/chattogether.cpp ../groupchat/
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/mysqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QResizeEvent \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtGui/QKeyEvent \
 		../groupchat/chatlog/chatlog.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QTimer \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtimer.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasictimer.h \
 		../groupchat/logmanage/logmanage.h \
+		../groupchat/database/sqllite/localdata/localdata.h \
+		../groupchat/database/sqllite/sqlitedatabase.h \
 		ui_chattogether.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QVariant \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QAction \
@@ -7526,6 +7891,21 @@ release/chatlog.o: ../groupchat/chatlog/chatlog.cpp ../groupchat/chatlog/chatlog
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		ui_chatlog.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QVariant \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QAction \
@@ -7959,6 +8339,21 @@ release/logmanage.o: ../groupchat/logmanage/logmanage.cpp ../groupchat/logmanage
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qhostaddress.h \
 		../groupchat/protocol.h \
 		../messageinfo.h \
+		../groupchat/database/mysql/logdata/logdata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDriver \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldriver.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsql.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlRecord \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlrecord.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlQuery \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/qsqldatabase.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtSql/QSqlDatabase \
+		../groupchat/config/qreadini.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSettings \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsettings.h \
+		../groupchat/database/databasedef.h \
+		../groupchat/database/mysql/mysqldatabase.h \
 		ui_logmanage.h \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QVariant \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QAction \
@@ -7992,8 +8387,7 @@ release/logmanage.o: ../groupchat/logmanage/logmanage.cpp ../groupchat/logmanage
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QSpacerItem \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/QTableWidget \
 		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qtablewidget.h \
-		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qtableview.h \
-		../groupchat/database/databasedef.h
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtWidgets/qtableview.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\logmanage.o ..\groupchat\logmanage\logmanage.cpp
 
 release/localdata.o: ../groupchat/database/sqllite/localdata/localdata.cpp ../groupchat/database/sqllite/localdata/localdata.h \
@@ -8267,6 +8661,109 @@ release/mysqldatabase.o: ../groupchat/database/mysql/mysqldatabase.cpp ../groupc
 		../messageinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mysqldatabase.o ..\groupchat\database\mysql\mysqldatabase.cpp
 
+release/httpclient.o: ../httpclient/httpclient.cpp ../httpclient/httpclient.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkReply \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkreply.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QIODevice \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qiodevice.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qglobal.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qconfig.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qfeatures.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsystemdetection.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qprocessordetection.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcompilerdetection.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtypeinfo.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtypetraits.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qisenum.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsysinfo.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qlogging.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qflags.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbasicatomic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_bootstrap.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qgenericatomic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_cxx11.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_gcc.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_msvc.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_armv7.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_armv6.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_armv5.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_ia64.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_x86.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qatomic_unix.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qglobalstatic.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qmutex.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qnumeric.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qversiontagging.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobject.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobjectdefs.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qnamespace.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobjectdefs_impl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstring.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qchar.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbytearray.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qrefcount.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qarraydata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstringbuilder.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qlist.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qalgorithms.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qiterator.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qhashfunctions.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qpair.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qbytearraylist.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstringlist.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qregexp.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qstringmatcher.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcoreevent.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qscopedpointer.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qmetatype.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qvarlengtharray.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcontainerfwd.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qobject_impl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QString \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QVariant \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qvariant.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qmap.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qdebug.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qhash.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qtextstream.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qlocale.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qshareddata.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qvector.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qpoint.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qset.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcontiguouscache.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkRequest \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkrequest.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QSharedDataPointer \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QUrl \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qurl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qurlquery.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QNetworkAccessManager \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QObject \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QSslConfiguration \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslconfiguration.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qtcpsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qabstractsocket.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslerror.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslcertificate.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qcryptographichash.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qdatetime.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsharedpointer.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qsharedpointer_impl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qssl.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QFlags \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QtGlobal \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QMetaType \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/QFile \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qfile.h \
+		D:/SoftWare/QtCreater/5.6/mingw49_32/include/QtCore/qfiledevice.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\httpclient.o ..\httpclient\httpclient.cpp
+
 release/qrc_res.o: release/qrc_res.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\qrc_res.o release\qrc_res.cpp
 
@@ -8335,6 +8832,9 @@ release/moc_pushmessage.o: release/moc_pushmessage.cpp
 
 release/moc_logmanage.o: release/moc_logmanage.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_logmanage.o release\moc_logmanage.cpp
+
+release/moc_httpclient.o: release/moc_httpclient.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_httpclient.o release\moc_httpclient.cpp
 
 ####### Install
 

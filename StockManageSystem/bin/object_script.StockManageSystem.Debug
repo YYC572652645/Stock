@@ -31,6 +31,8 @@ INPUT(
 ./debug\sqlitedatabase.o
 ./debug\mysqldatabase.o
 ./debug\httpclient.o
+./debug\label.o
+./debug\jsonconfig.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_messagedialog.o
@@ -55,4 +57,5 @@ INPUT(
 ./debug\moc_pushmessage.o
 ./debug\moc_logmanage.o
 ./debug\moc_httpclient.o
+./debug\moc_label.o
 );

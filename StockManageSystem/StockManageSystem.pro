@@ -43,7 +43,9 @@ SOURCES += main.cpp\
     groupchat/database/sqllite/localdata/localdata.cpp \
     groupchat/database/sqllite/sqlitedatabase.cpp \
     groupchat/database/mysql/mysqldatabase.cpp \
-    httpclient/httpclient.cpp
+    httpclient/httpclient.cpp \
+    label/label.cpp \
+    jsonconfig/jsonconfig.cpp
 
 HEADERS  += mainwindow/mainwindow.h \
     messagebox/messagedialog.h \
@@ -78,7 +80,9 @@ HEADERS  += mainwindow/mainwindow.h \
     groupchat/database/sqllite/localdata/localdata.h \
     groupchat/database/sqllite/sqlitedatabase.h \
     groupchat/database/mysql/mysqldatabase.h \
-    httpclient/httpclient.h
+    httpclient/httpclient.h \
+    label/label.h \
+    jsonconfig/jsonconfig.h
 
 FORMS    += mainwindow/mainwindow.ui \
     messagebox/messagedialog.ui \

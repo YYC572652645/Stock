@@ -23,6 +23,7 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "label/label.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -51,7 +52,7 @@ public:
     QPushButton *pushButton_4;
     QSpacerItem *horizontalSpacer_4;
     QLabel *label_2;
-    QLabel *labelImage;
+    Label *labelImage;
     QWidget *widgetMainContent;
     QStatusBar *statusBar;
 
@@ -199,7 +200,7 @@ public:
 
         horizontalLayout->addWidget(groupBox);
 
-        labelImage = new QLabel(centralWidget);
+        labelImage = new Label(centralWidget);
         labelImage->setObjectName(QStringLiteral("labelImage"));
         labelImage->setMinimumSize(QSize(0, 0));
         labelImage->setMaximumSize(QSize(16777215, 130));

@@ -5,6 +5,7 @@
 #include "groupchat/config/qreadini.h"
 #include <QDebug>
 #include <QDateTime>
+#include <windows.h>
 
 /************************   构造函数             ************************/
 MainContent::MainContent(QWidget *parent) :
@@ -157,6 +158,18 @@ void MainContent::initControl()
     connect(CHATTOGETHER, SIGNAL(sendNetStatus(int)), this, SLOT(receiveNetStatus(int)));
 }
 
+/*********************      添加窗口          *******************/
+void MainContent::addTabWidget(QWidget *widget, const QString &title)
+{
+    if(NULL == widget) return;
+
+    if(ui->tabWidgetContent->indexOf(widget) < 0)
+    {
+        ui->tabWidgetContent->addTab(widget, title);
+    }
+    ui->tabWidgetContent->setCurrentWidget(widget);
+}
+
 /************************   设置窗口             ************************/
 void MainContent::setTreeClickWidget(QString treeItemName)
 {
@@ -164,62 +177,51 @@ void MainContent::setTreeClickWidget(QString treeItemName)
 
     if(GLOBALDEF::HOMEPAGE == treeItemName)
     {
-        ui->tabWidgetContent->addTab(homePage, GLOBALDEF::HOMEPAGE);
-
+        this->addTabWidget(homePage, GLOBALDEF::HOMEPAGE);
         homePage->showWeb(GLOBALDEF::HOMEPAGEURL);
-        ui->tabWidgetContent->setCurrentWidget(homePage);
     }
     else if(GLOBALDEF::DWDAN == treeItemName)
     {
         dwDan->setHideType(DWDAN);
-        ui->tabWidgetContent->addTab(dwDan, GLOBALDEF::DWDAN);
-        ui->tabWidgetContent->setCurrentWidget(dwDan);
+        this->addTabWidget(dwDan, GLOBALDEF::DWDAN);
     }
     else if(GLOBALDEF::TWOSTARZ == treeItemName)
     {
         widgetTwoZ->setHideType(FRAMTWOZ);
-        ui->tabWidgetContent->addTab(widgetTwoZ, GLOBALDEF::TWOSTARZ);
-        ui->tabWidgetContent->setCurrentWidget(widgetTwoZ);
+        this->addTabWidget(widgetTwoZ, GLOBALDEF::TWOSTARZ);
     }
     else if(GLOBALDEF::THREESTARZ == treeItemName)
     {
         widgetThreeZ->setHideType(THREESTARZ);
-        ui->tabWidgetContent->addTab(widgetThreeZ, GLOBALDEF::THREESTARZ);
-        ui->tabWidgetContent->setCurrentWidget(widgetThreeZ);
+        this->addTabWidget(widgetThreeZ, GLOBALDEF::THREESTARZ);
     }
     else if(GLOBALDEF::FOURSTARZ == treeItemName)
     {
         widgetFourZ->setHideType(FOURSTARZ);
-        ui->tabWidgetContent->addTab(widgetFourZ, GLOBALDEF::FOURSTARZ);
-        ui->tabWidgetContent->setCurrentWidget(widgetFourZ);
+        this->addTabWidget(widgetFourZ, GLOBALDEF::FOURSTARZ);
     }
     else if(GLOBALDEF::FIVESTARZ == treeItemName)
     {
         widgetFiveZ->setHideType(FIVESTARZ);
-        ui->tabWidgetContent->addTab(widgetFiveZ, GLOBALDEF::FIVESTARZ);
-        ui->tabWidgetContent->setCurrentWidget(widgetFiveZ);
+        this->addTabWidget(widgetFiveZ, GLOBALDEF::FIVESTARZ);
     }
     else if(GLOBALDEF::TWOSTARH == treeItemName)
     {
         widgetTwoH->setHideType(TWOSTARH);
-        ui->tabWidgetContent->addTab(widgetTwoH, GLOBALDEF::TWOSTARH);
-        ui->tabWidgetContent->setCurrentWidget(widgetTwoH);
+        this->addTabWidget(widgetTwoH, GLOBALDEF::TWOSTARH);
     }
     else if(GLOBALDEF::THREESTARH == treeItemName)
     {
         widgetThreeH->setHideType(THREESTARH);
-        ui->tabWidgetContent->addTab(widgetThreeH, GLOBALDEF::THREESTARH);
-        ui->tabWidgetContent->setCurrentWidget(widgetThreeH);
+        this->addTabWidget(widgetThreeH, GLOBALDEF::THREESTARH);
     }
     else if(GLOBALDEF::PLANTEMPLATE == treeItemName)
     {
-        ui->tabWidgetContent->addTab(planTemplate, GLOBALDEF::PLANTEMPLATE);
-        ui->tabWidgetContent->setCurrentWidget(planTemplate);
+        this->addTabWidget(planTemplate, GLOBALDEF::PLANTEMPLATE);
     }
     else if(GLOBALDEF::PEOPLEPLAN == treeItemName)
     {
-        ui->tabWidgetContent->addTab(peoplePlan, GLOBALDEF::PEOPLEPLAN);
-        ui->tabWidgetContent->setCurrentWidget(peoplePlan);
+        this->addTabWidget(peoplePlan, GLOBALDEF::PEOPLEPLAN);
     }
     else if(GLOBALDEF::GOLDENSECTION == treeItemName)
     {
@@ -227,23 +229,19 @@ void MainContent::setTreeClickWidget(QString treeItemName)
     }
     else if(GLOBALDEF::TWOSTARSHRINK == treeItemName)
     {
-        ui->tabWidgetContent->addTab(twoStarShrink, GLOBALDEF::TWOSTARSHRINK);
-        ui->tabWidgetContent->setCurrentWidget(twoStarShrink);
+        this->addTabWidget(twoStarShrink, GLOBALDEF::TWOSTARSHRINK);
     }
     else if(GLOBALDEF::THREESTARSHRINK == treeItemName)
     {
-        ui->tabWidgetContent->addTab(threeStarShrink, GLOBALDEF::THREESTARSHRINK);
-        ui->tabWidgetContent->setCurrentWidget(threeStarShrink);
+        this->addTabWidget(threeStarShrink, GLOBALDEF::THREESTARSHRINK);
     }
     else if(GLOBALDEF::NORMALCALC == treeItemName)
     {
-        ui->tabWidgetContent->addTab(normalCalc, GLOBALDEF::NORMALCALC);
-        ui->tabWidgetContent->setCurrentWidget(normalCalc);
+        this->addTabWidget(normalCalc, GLOBALDEF::NORMALCALC);
     }
     else if(GLOBALDEF::TBCALC == treeItemName)
     {
-        ui->tabWidgetContent->addTab(pushCalc, GLOBALDEF::TBCALC);
-        ui->tabWidgetContent->setCurrentWidget(pushCalc);
+        this->addTabWidget(pushCalc, GLOBALDEF::TBCALC);
     }
     else if(GLOBALDEF::UNIVERSALSPLIC == treeItemName)
     {
@@ -252,6 +250,14 @@ void MainContent::setTreeClickWidget(QString treeItemName)
     else if(GLOBALDEF::VERTOOL == treeItemName)
     {
         verTool->showWidget();
+    }
+    else if(GLOBALDEF::QQSEND == treeItemName)
+    {
+        QString strAddress;
+
+        strAddress = QString("tencent://message?v=3&uin=2595141225&site=qq&menu=yes");
+        LPCWSTR wcharAddress = reinterpret_cast<const wchar_t*>(strAddress.utf16());
+        ShellExecute(0, L"open", wcharAddress, L"", L"", SW_SHOW );
     }
 }
 

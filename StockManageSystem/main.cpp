@@ -6,10 +6,9 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    MainWindow w;
 
     HttpClient h;
-
-    MainWindow w;
 
     LOADQSS(GLOBALDEF::QSSPATH);
     w.show();

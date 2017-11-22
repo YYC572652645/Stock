@@ -1,0 +1,19 @@
+{  
+    "urllist" : [
+        {  
+            "imageurl" : "http://127.0.0.1:9090/config/link.gif",  
+            "imagepath" : "456454545",  
+            "linkurl" : "4454545" 
+        }, 
+        {  
+            "imageurl" : "http://127.0.0.1:9090/config/contacts.png",  
+            "imagepath" : "456454545",  
+            "linkurl" : "4454545" 
+        }, 
+         {  
+             "imageurl" : "http://127.0.0.1:9090/config/session.png",  
+            "imagepath" : "456454545",  
+            "linkurl" : "4454545" 
+        }
+    ]  
+}  

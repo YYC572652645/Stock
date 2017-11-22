@@ -31,6 +31,8 @@ INPUT(
 ./release\sqlitedatabase.o
 ./release\mysqldatabase.o
 ./release\httpclient.o
+./release\label.o
+./release\jsonconfig.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_messagedialog.o
@@ -55,4 +57,5 @@ INPUT(
 ./release\moc_pushmessage.o
 ./release\moc_logmanage.o
 ./release\moc_httpclient.o
+./release\moc_label.o
 );

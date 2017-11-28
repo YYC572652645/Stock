@@ -38,5 +38,5 @@ void MessageHandler::receiveHeartMessageInfo(QMap<QString, QString> &mapData)
 /*************************   接收删除数据消息          *********************/
 void MessageHandler::receiveDelDataMessageInfo(QMap<QString, QString> &mapData)
 {
-    qDebug()<<"收到了";
+    CHATTOGETHER->clearIllegalData(mapData);
 }

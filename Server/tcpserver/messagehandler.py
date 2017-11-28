@@ -50,6 +50,7 @@ class MessageHandler():
     # 接收删除数据请求
     def receiveDelDataRequest(self, dict, sock):
         sock.netSendAll(PROTOCOL.SENDDELCHATTEXTINFO, dict)
+        sock.netSend(PROTOCOL.SENDDELCHATTEXTINFO, dict)
         self.logData.deleteData(dict)
 
 

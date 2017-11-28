@@ -21,6 +21,7 @@ bool LocalData::selectData(QString beginTime, QString endTime)
 
     str = QString("select * from chatlog where time between '%1' and '%2'").arg(beginTime).arg(endTime);
 
+    qDebug()<<str;
     QSqlQuery query(NULL, sqliteDb);
 
     bool success = query.exec(str);

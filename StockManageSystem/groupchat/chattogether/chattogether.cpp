@@ -103,8 +103,8 @@ void ChatTogether::clearIllegalData(const QMap<QString, QString> &mapData)
     localData->deleteData(messageData);
 
     //重新查询显示
-    QString beginTime = QDateTime::currentDateTime().toString(GLOBALDEF::TIMEFORMAT);
-    QString endTime = QDateTime::currentDateTime().toString(GLOBALDEF::BEGINTIMEFORMAT);
+    QString beginTime = QDateTime::currentDateTime().toString(GLOBALDEF::BEGINTIMEFORMAT);
+    QString endTime = QDateTime::currentDateTime().toString(GLOBALDEF::TIMEFORMAT);
     localData->selectData(beginTime, endTime);
 
     for(int i = 0; i < localData->getLocalList().size(); i ++)

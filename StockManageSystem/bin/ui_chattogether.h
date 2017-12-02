@@ -149,6 +149,7 @@ public:
 
         labelInfo = new QLabel(chatdemo);
         labelInfo->setObjectName(QStringLiteral("labelInfo"));
+        labelInfo->setStyleSheet(QStringLiteral("color: rgb(255, 0, 0);"));
         labelInfo->setAlignment(Qt::AlignCenter);
 
         horizontalLayout_3->addWidget(labelInfo);

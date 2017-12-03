@@ -46,10 +46,12 @@ private slots:
     void on_actionChat_triggered();
     void on_actionFogetPwd_triggered();
     void receiveNetStatus(int type);
+    void on_actionOutLogin_triggered();
 
 signals:
     void sendLoginStatus(QString);
     void sendNetStatus(int);
+    void sendLoginOut();
 
 private:
     Ui::maincontent *ui;

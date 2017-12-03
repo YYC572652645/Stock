@@ -5,6 +5,7 @@ namespace MESSAGEINFO
 {
 
 const static QString LOGINSUCCESS    = "登录成功";
+const static QString LOGINOUTSUCCESS = "退出成功";
 const static QString LOGINFAILED     = "登录失败，请检查用户名和密码！";
 const static QString LOGINEMPTY      = "用户名或密码不能为空！";
 const static QString LOGINUSED       = "请先登录！";

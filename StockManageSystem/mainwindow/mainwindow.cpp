@@ -49,6 +49,13 @@ void MainWindow::receiveNetStatus(int type)
     }
 }
 
+/************************   退出登录              ************************/
+void MainWindow::receiveLoginOut()
+{
+    userMsgButton->setText(MESSAGEINFO::NOTLOGIN);
+    userMsgButton->setIcon(QIcon(GLOBALDEF::LOGINFAILIMG));
+}
+
 /************************   初始化控件              ************************/
 void MainWindow::initControl()
 {
@@ -95,7 +102,7 @@ void MainWindow::initControl()
     ui->labelImage->setScaledContents(true);
 
     //添加界面
-    QVBoxLayout *vBoxLayout = new QVBoxLayout(this);
+    QVBoxLayout *vBoxLayout = new QVBoxLayout(ui->widgetMainContent);
     vBoxLayout->addWidget(mainContend);
     ui->widgetMainContent->setLayout(vBoxLayout);
 
@@ -103,6 +110,7 @@ void MainWindow::initControl()
 
     //初始化信号与槽
     connect(mainContend, SIGNAL(sendNetStatus(int)), this, SLOT(receiveNetStatus(int)));
+     connect(mainContend, SIGNAL(sendNetStatus(int)), this, SLOT(receiveNetStatus(int)));
 }
 
 /************************   初始化信号与槽              ************************/

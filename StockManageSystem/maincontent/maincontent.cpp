@@ -104,6 +104,7 @@ void MainContent::initControl()
     ui->toolBar->addAction(ui->actionRegister);
     ui->toolBar->addAction(ui->actionFogetPwd);
     ui->toolBar->addAction(ui->actionChat);
+    ui->toolBar->addAction(ui->actionOutLogin);
 
     //添加窗口
     homePage = new HomePage();
@@ -251,14 +252,6 @@ void MainContent::setTreeClickWidget(QString treeItemName)
     {
         verTool->showWidget();
     }
-    else if(GLOBALDEF::QQSEND == treeItemName)
-    {
-        QString strAddress;
-
-        strAddress = QString("tencent://message?v=3&uin=2595141225&site=qq&menu=yes");
-        LPCWSTR wcharAddress = reinterpret_cast<const wchar_t*>(strAddress.utf16());
-        ShellExecute(0, L"open", wcharAddress, L"", L"", SW_SHOW );
-    }
 }
 
 /************************   菜单双击事件          ************************/
@@ -321,4 +314,17 @@ void MainContent::on_actionFogetPwd_triggered()
 void MainContent::receiveNetStatus(int type)
 {
     emit sendNetStatus(type);
+}
+
+/************************     退出登录        ************************/
+void MainContent::on_actionOutLogin_triggered()
+{
+    CHATTOGETHER->closeConn();
+
+    GLOBALDEF::myUserName.clear();
+    GLOBALDEF::myNickName.clear();
+    GLOBALDEF::myVip      = 0;
+
+    emit sendLoginOut();
+    MESSAGEBOX->setInfo(GLOBALDEF::SYSTEMINFO, MESSAGEINFO::LOGINOUTSUCCESS ,GLOBALDEF::SUCCESSIMG, true);
 }

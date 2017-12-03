@@ -43,6 +43,17 @@ void Client::connectServer()
     this->netSend(Protocol::ADDSOCKETREQ, GLOBALDEF::myUserName, mapData);
 }
 
+/**********************    关闭连接       58         *************************/
+void Client::closeSocket()
+{
+    if(GLOBALDEF::myUserName.isEmpty()) return;
+
+    QMap<QString, QString> mapData;
+    this->netSend(Protocol::CLOSEREQ, GLOBALDEF::myUserName, mapData);
+
+    tcpSocket->abort();
+}
+
 /**********************    输出错误信息              *************************/
 void Client::displayError(QAbstractSocket::SocketError)
 {

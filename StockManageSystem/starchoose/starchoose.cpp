@@ -27,26 +27,32 @@ void StarChoose::initControl()
     frameList.append(ui->frameTwoStartH);
     frameList.append(ui->frameThreeStartH);
 
+    this->setTableWidget(ui->tableWidgetPut);
+    this->setTableWidget(ui->tableWidgetPlan);
+}
+
+void StarChoose::setTableWidget(QTableWidget *tableWidget)
+{
 
     //设置单行选中
-    ui->tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
-    ui->tableWidget->setAlternatingRowColors(true);
+    tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
+    tableWidget->setAlternatingRowColors(true);
 
     //纵向隐藏序号
-    ui->tableWidget->verticalHeader()->setHidden(true);
+    tableWidget->verticalHeader()->setHidden(true);
 
     //设置为不可编辑
-    ui->tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
 
     //设置表头点击禁止塌陷
-    ui->tableWidget->horizontalHeader()->setHighlightSections(false);
+    tableWidget->horizontalHeader()->setHighlightSections(false);
 
     //设置点击表头排序
-    ui->tableWidget->setSortingEnabled(true);
+    tableWidget->setSortingEnabled(true);
 
     //设置根据内容调整列宽
-    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 }
 
 void StarChoose::setHideType(int type)

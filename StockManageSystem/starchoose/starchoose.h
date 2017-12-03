@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QFrame>
 
+class QTableWidget;
+
 namespace Ui {
 class starchoose;
 }
@@ -21,6 +23,8 @@ private:
     Ui::starchoose *ui;
     QList<QFrame*>frameList;
     void initControl();
+
+    void setTableWidget(QTableWidget * tableWidget);
 };
 
 #endif // STARCHOOSE_H

@@ -106,7 +106,7 @@ padding: 0px 0px;
             <item>
              <widget class="QPushButton" name="pushButton_26">
               <property name="text">
-               <string>    反</string>
+               <string> 反</string>
               </property>
              </widget>
             </item>
@@ -243,7 +243,7 @@ padding: 0px 0px;
             <item>
              <widget class="QPushButton" name="pushButton_9">
               <property name="text">
-               <string>    反</string>
+               <string> 反</string>
               </property>
              </widget>
             </item>
@@ -374,7 +374,7 @@ padding: 0px 0px;
             <item>
              <widget class="QPushButton" name="pushButton_11">
               <property name="text">
-               <string>    反</string>
+               <string> 反</string>
               </property>
              </widget>
             </item>
@@ -470,7 +470,7 @@ padding: 0px 0px;
             <item>
              <widget class="QPushButton" name="pushButton_14">
               <property name="text">
-               <string>    反</string>
+               <string> 反</string>
               </property>
              </widget>
             </item>
@@ -538,7 +538,7 @@ padding: 0px 0px;
             <item>
              <widget class="QPushButton" name="pushButton_23">
               <property name="text">
-               <string>    反</string>
+               <string> 反</string>
               </property>
              </widget>
             </item>
@@ -669,7 +669,7 @@ padding: 0px 0px;
             <item>
              <widget class="QPushButton" name="pushButton_20">
               <property name="text">
-               <string>    反</string>
+               <string> 反</string>
               </property>
              </widget>
             </item>
@@ -800,7 +800,7 @@ padding: 0px 0px;
             <item>
              <widget class="QPushButton" name="pushButton_17">
               <property name="text">
-               <string>    反</string>
+               <string> 反</string>
               </property>
              </widget>
             </item>
@@ -812,12 +812,18 @@ padding: 0px 0px;
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_22">
+      <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="1,2">
        <property name="spacing">
         <number>6</number>
        </property>
        <item>
         <widget class="QWidget" name="widget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
          <layout class="QVBoxLayout" name="verticalLayout_10">
           <property name="spacing">
            <number>0</number>
@@ -1762,7 +1768,7 @@ padding: 0px 0px;
              </spacer>
             </item>
             <item>
-             <widget class="QTableWidget" name="tableWidget">
+             <widget class="QTableWidget" name="tableWidgetPut">
               <column>
                <property name="text">
                 <string>期号</string>
@@ -1892,7 +1898,7 @@ padding: 0px 0px;
             </attribute>
             <layout class="QVBoxLayout" name="verticalLayout_15">
              <item>
-              <widget class="QTableWidget" name="tableWidget_2">
+              <widget class="QTableWidget" name="tableWidgetPlan">
                <column>
                 <property name="text">
                  <string>期号</string>

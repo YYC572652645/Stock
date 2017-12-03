@@ -41,7 +41,7 @@ void ChatLog::initControl()
     titleBar->setTitle(GLOBALDEF::GROUPCHAT);
 
     titleBar->subButton(TITLEBAR::MAXMINWIDGET);
-
+    this->setWindowModality(Qt::ApplicationModal);
     this->setWindowFlags(Qt::CoverWindow | Qt::FramelessWindowHint);
 }
 

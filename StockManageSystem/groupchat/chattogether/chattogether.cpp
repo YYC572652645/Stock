@@ -54,7 +54,12 @@ void ChatTogether::initControl()
 
     titleBar->subButton(TITLEBAR::MAXMINWIDGET);
 
+    this->setWindowModality(Qt::ApplicationModal);
     this->setWindowFlags(Qt::CoverWindow | Qt::FramelessWindowHint);
+
+    timer->setInterval(GLOBALDEF::INTERNAL);
+
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateTimer()));
 }
 
 /************************   显示窗口              ************************/
@@ -93,10 +98,13 @@ void ChatTogether::receiveData(const QMap<QString, QString> &mapData)
 /************************   清除不合法信息              ************************/
 void ChatTogether::clearIllegalData(const QMap<QString, QString> &mapData)
 {
+    //清空重新显示
+    ui->textBrowserContent->clear();
+
     //将不合法信息删除
     MessageData messageData;
 
-    messageData.userName    = mapData.value(Protocol::user);
+    messageData.userName    = mapData.value(Protocol::userName);
     messageData.textContent = mapData.value(Protocol::sendContext);
     messageData.dateTime    = mapData.value(Protocol::dateTime);
 
@@ -111,6 +119,8 @@ void ChatTogether::clearIllegalData(const QMap<QString, QString> &mapData)
     {
         this->setUpText(localData->getLocalList().at(i));
     }
+
+    logManage->on_pushButtonSelect_clicked();
 }
 
 /************************   进行连接              ************************/
@@ -118,11 +128,15 @@ void ChatTogether::initConn()
 {
     CLIENT->connectServer();
 
-    timer->setInterval(GLOBALDEF::INTERNAL);
-
-    connect(timer, SIGNAL(timeout()), this, SLOT(updateTimer()));
-
     timer->start();
+}
+
+/************************   关闭连接              ************************/
+void ChatTogether::closeConn()
+{
+    timer->stop();
+
+    CLIENT->closeSocket();
 }
 
 /************************   改变事件              ************************/

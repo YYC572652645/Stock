@@ -17,7 +17,7 @@ public:
     explicit LogManage(QWidget *parent = 0);
     ~LogManage();
     void showWidget();                      //显示窗口
-private slots:
+public slots:
     void on_pushButtonSelect_clicked();     //查询记录
     void on_pushButtonDelete_clicked();     //删除记录
 

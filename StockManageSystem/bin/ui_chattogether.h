@@ -168,6 +168,9 @@ public:
 
         retranslateUi(chatdemo);
 
+        comboBoxSize->setCurrentIndex(5);
+
+
         QMetaObject::connectSlotsByName(chatdemo);
     } // setupUi
 
@@ -195,7 +198,7 @@ public:
          << QApplication::translate("chatdemo", "34", 0)
          << QApplication::translate("chatdemo", "36", 0)
         );
-        comboBoxSize->setCurrentText(QApplication::translate("chatdemo", "2", 0));
+        comboBoxSize->setCurrentText(QApplication::translate("chatdemo", "12", 0));
         pushButtonColor->setText(QString());
         pushButtonChatLog->setText(QApplication::translate("chatdemo", "  \350\201\212\345\244\251\350\256\260\345\275\225", 0));
         pushButtonManage->setText(QApplication::translate("chatdemo", "  \350\201\212\345\244\251\347\256\241\347\220\206", 0));

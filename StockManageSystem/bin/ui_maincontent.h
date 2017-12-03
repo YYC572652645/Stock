@@ -31,6 +31,7 @@ public:
     QAction *actionRegister;
     QAction *actionFogetPwd;
     QAction *actionChat;
+    QAction *actionOutLogin;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
@@ -64,6 +65,8 @@ public:
         QIcon icon3;
         icon3.addFile(QStringLiteral(":/image/image/session.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionChat->setIcon(icon3);
+        actionOutLogin = new QAction(maincontent);
+        actionOutLogin->setObjectName(QStringLiteral("actionOutLogin"));
         centralwidget = new QWidget(maincontent);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -86,15 +89,13 @@ public:
         QIcon icon8;
         icon8.addFile(QStringLiteral(":/image/image/MixFileType.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon9;
-        icon9.addFile(QStringLiteral(":/image/image/qq.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon9.addFile(QStringLiteral(":/image/image/v009_24.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon10;
-        icon10.addFile(QStringLiteral(":/image/image/v009_24.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon10.addFile(QStringLiteral(":/image/image/money.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon11;
-        icon11.addFile(QStringLiteral(":/image/image/money.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon11.addFile(QStringLiteral(":/image/image/jskt_1.png"), QSize(), QIcon::Normal, QIcon::Off);
         QIcon icon12;
-        icon12.addFile(QStringLiteral(":/image/image/jskt_1.png"), QSize(), QIcon::Normal, QIcon::Off);
-        QIcon icon13;
-        icon13.addFile(QStringLiteral(":/image/image/calc.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon12.addFile(QStringLiteral(":/image/image/calc.png"), QSize(), QIcon::Normal, QIcon::Off);
         QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem(treeWidgetMenu);
         __qtreewidgetitem->setIcon(0, icon4);
         QTreeWidgetItem *__qtreewidgetitem1 = new QTreeWidgetItem(treeWidgetMenu);
@@ -124,21 +125,19 @@ public:
         QTreeWidgetItem *__qtreewidgetitem13 = new QTreeWidgetItem(treeWidgetMenu);
         __qtreewidgetitem13->setIcon(0, icon10);
         QTreeWidgetItem *__qtreewidgetitem14 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem14->setIcon(0, icon11);
+        __qtreewidgetitem14->setIcon(0, icon10);
         QTreeWidgetItem *__qtreewidgetitem15 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem15->setIcon(0, icon11);
+        __qtreewidgetitem15->setIcon(0, icon10);
         QTreeWidgetItem *__qtreewidgetitem16 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem16->setIcon(0, icon11);
+        __qtreewidgetitem16->setIcon(0, icon10);
         QTreeWidgetItem *__qtreewidgetitem17 = new QTreeWidgetItem(treeWidgetMenu);
         __qtreewidgetitem17->setIcon(0, icon11);
         QTreeWidgetItem *__qtreewidgetitem18 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem18->setIcon(0, icon12);
+        __qtreewidgetitem18->setIcon(0, icon11);
         QTreeWidgetItem *__qtreewidgetitem19 = new QTreeWidgetItem(treeWidgetMenu);
         __qtreewidgetitem19->setIcon(0, icon12);
         QTreeWidgetItem *__qtreewidgetitem20 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem20->setIcon(0, icon13);
-        QTreeWidgetItem *__qtreewidgetitem21 = new QTreeWidgetItem(treeWidgetMenu);
-        __qtreewidgetitem21->setIcon(0, icon13);
+        __qtreewidgetitem20->setIcon(0, icon12);
         treeWidgetMenu->setObjectName(QStringLiteral("treeWidgetMenu"));
         treeWidgetMenu->setMinimumSize(QSize(180, 0));
         treeWidgetMenu->setMaximumSize(QSize(180, 16777215));
@@ -190,6 +189,10 @@ public:
         actionChat->setToolTip(QApplication::translate("maincontent", "<html><head/><body><font color=\"#123456\">\350\201\212\345\244\251\347\252\227\345\217\243</font></body></html>\n"
 "", 0));
 #endif // QT_NO_TOOLTIP
+        actionOutLogin->setText(QApplication::translate("maincontent", "\351\200\200\345\207\272\347\231\273\345\275\225", 0));
+#ifndef QT_NO_TOOLTIP
+        actionOutLogin->setToolTip(QApplication::translate("maincontent", "\351\200\200\345\207\272\347\231\273\345\275\225", 0));
+#endif // QT_NO_TOOLTIP
         QTreeWidgetItem *___qtreewidgetitem = treeWidgetMenu->headerItem();
         ___qtreewidgetitem->setText(0, QApplication::translate("maincontent", "\350\241\250\345\244\264", 0));
 
@@ -220,25 +223,23 @@ public:
         QTreeWidgetItem *___qtreewidgetitem12 = treeWidgetMenu->topLevelItem(4);
         ___qtreewidgetitem12->setText(0, QApplication::translate("maincontent", "\344\272\272\345\267\245\350\256\241\345\210\222\345\271\263\345\217\260", 0));
         QTreeWidgetItem *___qtreewidgetitem13 = treeWidgetMenu->topLevelItem(5);
-        ___qtreewidgetitem13->setText(0, QApplication::translate("maincontent", "\350\207\252\345\256\232\344\271\211QQ\347\276\244\345\217\221", 0));
+        ___qtreewidgetitem13->setText(0, QApplication::translate("maincontent", "\345\244\247\345\272\225\351\273\204\351\207\221\345\210\206\345\211\262", 0));
         QTreeWidgetItem *___qtreewidgetitem14 = treeWidgetMenu->topLevelItem(6);
-        ___qtreewidgetitem14->setText(0, QApplication::translate("maincontent", "\345\244\247\345\272\225\351\273\204\351\207\221\345\210\206\345\211\262", 0));
+        ___qtreewidgetitem14->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\344\272\214\346\230\237\347\274\251\346\260\264", 0));
         QTreeWidgetItem *___qtreewidgetitem15 = treeWidgetMenu->topLevelItem(7);
-        ___qtreewidgetitem15->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\344\272\214\346\230\237\347\274\251\346\260\264", 0));
+        ___qtreewidgetitem15->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\344\270\211\346\230\237\347\274\251\346\260\264", 0));
         QTreeWidgetItem *___qtreewidgetitem16 = treeWidgetMenu->topLevelItem(8);
-        ___qtreewidgetitem16->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\344\270\211\346\230\237\347\274\251\346\260\264", 0));
+        ___qtreewidgetitem16->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\345\233\233\346\230\237\347\274\251\346\260\264", 0));
         QTreeWidgetItem *___qtreewidgetitem17 = treeWidgetMenu->topLevelItem(9);
-        ___qtreewidgetitem17->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\345\233\233\346\230\237\347\274\251\346\260\264", 0));
+        ___qtreewidgetitem17->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\344\272\224\346\230\237\347\274\251\346\260\264", 0));
         QTreeWidgetItem *___qtreewidgetitem18 = treeWidgetMenu->topLevelItem(10);
-        ___qtreewidgetitem18->setText(0, QApplication::translate("maincontent", "\346\227\266\346\227\266\345\275\251\344\272\224\346\230\237\347\274\251\346\260\264", 0));
+        ___qtreewidgetitem18->setText(0, QApplication::translate("maincontent", "\344\270\207\350\203\275\346\213\274\346\216\245\345\267\245\345\205\267", 0));
         QTreeWidgetItem *___qtreewidgetitem19 = treeWidgetMenu->topLevelItem(11);
-        ___qtreewidgetitem19->setText(0, QApplication::translate("maincontent", "\344\270\207\350\203\275\346\213\274\346\216\245\345\267\245\345\205\267", 0));
+        ___qtreewidgetitem19->setText(0, QApplication::translate("maincontent", "\345\244\247\345\272\225\351\252\214\350\257\201\345\267\245\345\205\267", 0));
         QTreeWidgetItem *___qtreewidgetitem20 = treeWidgetMenu->topLevelItem(12);
-        ___qtreewidgetitem20->setText(0, QApplication::translate("maincontent", "\345\244\247\345\272\225\351\252\214\350\257\201\345\267\245\345\205\267", 0));
+        ___qtreewidgetitem20->setText(0, QApplication::translate("maincontent", "\345\270\270\350\247\204\345\200\215\346\212\225\350\256\241\347\256\227", 0));
         QTreeWidgetItem *___qtreewidgetitem21 = treeWidgetMenu->topLevelItem(13);
-        ___qtreewidgetitem21->setText(0, QApplication::translate("maincontent", "\345\270\270\350\247\204\345\200\215\346\212\225\350\256\241\347\256\227", 0));
-        QTreeWidgetItem *___qtreewidgetitem22 = treeWidgetMenu->topLevelItem(14);
-        ___qtreewidgetitem22->setText(0, QApplication::translate("maincontent", "\346\216\250\346\263\242\345\200\215\346\212\225\350\256\241\347\256\227", 0));
+        ___qtreewidgetitem21->setText(0, QApplication::translate("maincontent", "\346\216\250\346\263\242\345\200\215\346\212\225\350\256\241\347\256\227", 0));
         treeWidgetMenu->setSortingEnabled(__sortingEnabled);
 
         toolBar->setWindowTitle(QApplication::translate("maincontent", "toolBar", 0));

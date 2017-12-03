@@ -34,6 +34,7 @@ public:
 private slots:
     void receiveStatus(QString nickName);
     void receiveNetStatus(int type);
+    void receiveLoginOut();
 
 private:
     Ui::MainWindow *ui;

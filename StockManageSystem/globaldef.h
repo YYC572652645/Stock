@@ -90,7 +90,6 @@ const static QString TWOSTARH        = "二星混选";
 const static QString THREESTARH      = "三星混选";
 const static QString PLANTEMPLATE    = "计划模板设置";
 const static QString PEOPLEPLAN      = "人工计划平台";
-const static QString QQSEND          = "自定义QQ群发";
 const static QString GOLDENSECTION   = "大底黄金分割";
 const static QString TWOSTARSHRINK   = "时时彩二星缩水";
 const static QString THREESTARSHRINK = "时时彩三星缩水";

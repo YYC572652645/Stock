@@ -28,8 +28,6 @@ class Role(object):
     def addRole(self, userName, sock):
         self.roleDict[userName] = sock
 
-        print(userName)
-
     # 删除用户
     def deleteRole(self, userName):
         if(userName in self.roleDict):

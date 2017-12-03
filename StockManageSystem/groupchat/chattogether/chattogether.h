@@ -38,6 +38,7 @@ public:
     void clearIllegalData(const QMap<QString, QString> &mapData);      //清除不合法信息
 
     void initConn();                                                   //进行连接
+    void closeConn();                                                  //关闭连接
     void showWidget();                                                 //显示窗体
 signals:
     void sendNetStatus(int);

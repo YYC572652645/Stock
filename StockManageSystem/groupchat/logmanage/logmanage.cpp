@@ -40,6 +40,7 @@ void LogManage::initControl()
 
     titleBar->subButton(TITLEBAR::MAXMINWIDGET);
 
+    this->setWindowModality(Qt::ApplicationModal);
     this->setWindowFlags(Qt::CoverWindow | Qt::FramelessWindowHint);
 
     //设置单行选中
@@ -110,7 +111,4 @@ void LogManage::on_pushButtonDelete_clicked()
     mapData[Protocol::dateTime]    = logData->getLogList().at(ui->tableWidget->currentRow()).dateTime;
 
     CLIENT->netSend(Protocol::SENDDELCHATTEXTREQ, GLOBALDEF::myUserName, mapData);
-
-    ui->tableWidget->removeRow(ui->tableWidget->currentRow());
-    logData->changeLogeList(ui->tableWidget->currentRow());
 }

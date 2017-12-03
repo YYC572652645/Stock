@@ -170,15 +170,6 @@
         </item>
         <item>
          <property name="text">
-          <string>自定义QQ群发</string>
-         </property>
-         <property name="icon">
-          <iconset resource="../res.qrc">
-           <normaloff>:/image/image/qq.png</normaloff>:/image/image/qq.png</iconset>
-         </property>
-        </item>
-        <item>
-         <property name="text">
           <string>大底黄金分割</string>
          </property>
          <property name="icon">
@@ -343,6 +334,14 @@
    <property name="toolTip">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;font color=&quot;#123456&quot;&gt;聊天窗口&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;
 </string>
+   </property>
+  </action>
+  <action name="actionOutLogin">
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+   <property name="toolTip">
+    <string>退出登录</string>
    </property>
   </action>
  </widget>

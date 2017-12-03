@@ -73,20 +73,33 @@ class TcpDataHandler(BaseRequestHandler):
 
     # 读取json数据
     def readJson(self, jsonStr):
-        beginIndex = 0
-        for index in range(len(jsonStr)):
-            if(self.isJson(jsonStr[beginIndex:index])):
-                data = json.loads(jsonStr[beginIndex:index])
-                data = data["data"]
 
-                self.protocolNumber = int(data[globaldef.PROTOCOLNAME])
-                del data[globaldef.PROTOCOLNAME]
+        # 判斷如果是合法JSON数据，直接取数据
+        if(self.isJson(jsonStr)):
+            data = json.loads(jsonStr)
+            data = data.get("data")
 
-                beginIndex = index
+            self.protocolNumber = int(data.get(globaldef.PROTOCOLNAME))
+            del data[globaldef.PROTOCOLNAME]
 
-                if(self.protocolNumber == PROTOCOL.ADDSOCKETREQ):
-                    self.data = data
-                    self.messageHandler.onCommand(self.protocolNumber, data, self)
+            self.data = data
+
+        # 判斷如果不是合法JSON数据，进行拆解数据包
+        else:
+            beginIndex = 0
+            for index in range(len(jsonStr)):
+                if(self.isJson(jsonStr[beginIndex:index])):
+                    data = json.loads(jsonStr[beginIndex:index])
+                    data = data.get("data")
+
+                    self.protocolNumber = int(data[globaldef.PROTOCOLNAME])
+                    del data[globaldef.PROTOCOLNAME]
+
+                    beginIndex = index
+
+                    if(self.protocolNumber == PROTOCOL.ADDSOCKETREQ):
+                        self.data = data
+                        self.messageHandler.onCommand(self.protocolNumber, data, self)
 
         return data
 

@@ -203,7 +203,7 @@ public:
     QSpacerItem *horizontalSpacer_9;
     QPushButton *pushButton_6;
     QSpacerItem *horizontalSpacer_17;
-    QTableWidget *tableWidget;
+    QTableWidget *tableWidgetPut;
     QVBoxLayout *verticalLayout_12;
     QFrame *frame;
     QVBoxLayout *verticalLayout_11;
@@ -217,7 +217,7 @@ public:
     QWidget *tab;
     QWidget *tab_2;
     QVBoxLayout *verticalLayout_15;
-    QTableWidget *tableWidget_2;
+    QTableWidget *tableWidgetPlan;
 
     void setupUi(QWidget *starchoose)
     {
@@ -801,6 +801,11 @@ public:
         horizontalLayout_22->setObjectName(QStringLiteral("horizontalLayout_22"));
         widget = new QWidget(starchoose);
         widget->setObjectName(QStringLiteral("widget"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(1);
+        sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
+        widget->setSizePolicy(sizePolicy);
         verticalLayout_10 = new QVBoxLayout(widget);
         verticalLayout_10->setSpacing(0);
         verticalLayout_10->setObjectName(QStringLiteral("verticalLayout_10"));
@@ -1108,26 +1113,26 @@ public:
 
         verticalLayout_9->addItem(horizontalSpacer_17);
 
-        tableWidget = new QTableWidget(widget);
-        if (tableWidget->columnCount() < 7)
-            tableWidget->setColumnCount(7);
+        tableWidgetPut = new QTableWidget(widget);
+        if (tableWidgetPut->columnCount() < 7)
+            tableWidgetPut->setColumnCount(7);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        tableWidgetPut->setHorizontalHeaderItem(0, __qtablewidgetitem);
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        tableWidgetPut->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        tableWidgetPut->setHorizontalHeaderItem(2, __qtablewidgetitem2);
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
+        tableWidgetPut->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(4, __qtablewidgetitem4);
+        tableWidgetPut->setHorizontalHeaderItem(4, __qtablewidgetitem4);
         QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(5, __qtablewidgetitem5);
+        tableWidgetPut->setHorizontalHeaderItem(5, __qtablewidgetitem5);
         QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(6, __qtablewidgetitem6);
-        tableWidget->setObjectName(QStringLiteral("tableWidget"));
+        tableWidgetPut->setHorizontalHeaderItem(6, __qtablewidgetitem6);
+        tableWidgetPut->setObjectName(QStringLiteral("tableWidgetPut"));
 
-        verticalLayout_9->addWidget(tableWidget);
+        verticalLayout_9->addWidget(tableWidgetPut);
 
 
         verticalLayout_10->addLayout(verticalLayout_9);
@@ -1188,30 +1193,30 @@ public:
         tab_2->setObjectName(QStringLiteral("tab_2"));
         verticalLayout_15 = new QVBoxLayout(tab_2);
         verticalLayout_15->setObjectName(QStringLiteral("verticalLayout_15"));
-        tableWidget_2 = new QTableWidget(tab_2);
-        if (tableWidget_2->columnCount() < 9)
-            tableWidget_2->setColumnCount(9);
+        tableWidgetPlan = new QTableWidget(tab_2);
+        if (tableWidgetPlan->columnCount() < 9)
+            tableWidgetPlan->setColumnCount(9);
         QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(0, __qtablewidgetitem7);
+        tableWidgetPlan->setHorizontalHeaderItem(0, __qtablewidgetitem7);
         QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(1, __qtablewidgetitem8);
+        tableWidgetPlan->setHorizontalHeaderItem(1, __qtablewidgetitem8);
         QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(2, __qtablewidgetitem9);
+        tableWidgetPlan->setHorizontalHeaderItem(2, __qtablewidgetitem9);
         QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(3, __qtablewidgetitem10);
+        tableWidgetPlan->setHorizontalHeaderItem(3, __qtablewidgetitem10);
         QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(4, __qtablewidgetitem11);
+        tableWidgetPlan->setHorizontalHeaderItem(4, __qtablewidgetitem11);
         QTableWidgetItem *__qtablewidgetitem12 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(5, __qtablewidgetitem12);
+        tableWidgetPlan->setHorizontalHeaderItem(5, __qtablewidgetitem12);
         QTableWidgetItem *__qtablewidgetitem13 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(6, __qtablewidgetitem13);
+        tableWidgetPlan->setHorizontalHeaderItem(6, __qtablewidgetitem13);
         QTableWidgetItem *__qtablewidgetitem14 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(7, __qtablewidgetitem14);
+        tableWidgetPlan->setHorizontalHeaderItem(7, __qtablewidgetitem14);
         QTableWidgetItem *__qtablewidgetitem15 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(8, __qtablewidgetitem15);
-        tableWidget_2->setObjectName(QStringLiteral("tableWidget_2"));
+        tableWidgetPlan->setHorizontalHeaderItem(8, __qtablewidgetitem15);
+        tableWidgetPlan->setObjectName(QStringLiteral("tableWidgetPlan"));
 
-        verticalLayout_15->addWidget(tableWidget_2);
+        verticalLayout_15->addWidget(tableWidgetPlan);
 
         tabWidget->addTab(tab_2, QString());
 
@@ -1220,6 +1225,8 @@ public:
 
         horizontalLayout_22->addLayout(verticalLayout_12);
 
+        horizontalLayout_22->setStretch(0, 1);
+        horizontalLayout_22->setStretch(1, 2);
 
         verticalLayout_13->addLayout(horizontalLayout_22);
 
@@ -1242,7 +1249,7 @@ public:
         checkBox_48->setText(QApplication::translate("starchoose", "  \345\256\232\344\275\215\350\203\206", 0));
         pushButton_28->setText(QApplication::translate("starchoose", " \346\270\205", 0));
         pushButton_27->setText(QApplication::translate("starchoose", "\345\205\250", 0));
-        pushButton_26->setText(QApplication::translate("starchoose", "    \345\217\215", 0));
+        pushButton_26->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
         checkBox->setText(QApplication::translate("starchoose", "\345\211\215\344\272\214", 0));
         checkBox_2->setText(QApplication::translate("starchoose", "\345\220\216\344\272\214", 0));
@@ -1256,7 +1263,7 @@ public:
         checkBox_10->setText(QApplication::translate("starchoose", "\347\231\276\344\270\252", 0));
         pushButton_8->setText(QApplication::translate("starchoose", "\345\205\250", 0));
         pushButton_7->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_9->setText(QApplication::translate("starchoose", "    \345\217\215", 0));
+        pushButton_9->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_2->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
         checkBox_11->setText(QApplication::translate("starchoose", "\345\220\216\344\270\211", 0));
         checkBox_12->setText(QApplication::translate("starchoose", "\345\211\215\344\270\211", 0));
@@ -1270,7 +1277,7 @@ public:
         checkBox_19->setText(QApplication::translate("starchoose", "\345\215\203\345\215\201\344\270\252", 0));
         pushButton_13->setText(QApplication::translate("starchoose", "\345\205\250", 0));
         pushButton_12->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_11->setText(QApplication::translate("starchoose", "    \345\217\215", 0));
+        pushButton_11->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_3->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
         checkBox_20->setText(QApplication::translate("starchoose", "\345\211\215\345\233\233", 0));
         checkBox_22->setText(QApplication::translate("starchoose", "\345\220\216\345\233\233", 0));
@@ -1279,12 +1286,12 @@ public:
         checkBox_25->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276\345\215\201\344\270\252", 0));
         pushButton_16->setText(QApplication::translate("starchoose", "\345\205\250", 0));
         pushButton_15->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_14->setText(QApplication::translate("starchoose", "    \345\217\215", 0));
+        pushButton_14->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_4->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
         checkBox_26->setText(QApplication::translate("starchoose", "\344\272\224\346\230\237", 0));
         pushButton_25->setText(QApplication::translate("starchoose", "\345\205\250", 0));
         pushButton_24->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_23->setText(QApplication::translate("starchoose", "    \345\217\215", 0));
+        pushButton_23->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_5->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
         checkBox_27->setText(QApplication::translate("starchoose", "\345\211\215\344\272\214", 0));
         checkBox_28->setText(QApplication::translate("starchoose", "\345\220\216\344\272\214", 0));
@@ -1298,7 +1305,7 @@ public:
         checkBox_36->setText(QApplication::translate("starchoose", "\347\231\276\344\270\252", 0));
         pushButton_22->setText(QApplication::translate("starchoose", " \346\270\205", 0));
         pushButton_21->setText(QApplication::translate("starchoose", "\345\205\250", 0));
-        pushButton_20->setText(QApplication::translate("starchoose", "    \345\217\215", 0));
+        pushButton_20->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_6->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
         checkBox_37->setText(QApplication::translate("starchoose", "\345\220\216\344\270\211", 0));
         checkBox_38->setText(QApplication::translate("starchoose", "\345\211\215\344\270\211", 0));
@@ -1312,7 +1319,7 @@ public:
         checkBox_46->setText(QApplication::translate("starchoose", "\345\215\203\345\215\201\344\270\252", 0));
         pushButton_18->setText(QApplication::translate("starchoose", " \346\270\205", 0));
         pushButton_19->setText(QApplication::translate("starchoose", "\345\205\250", 0));
-        pushButton_17->setText(QApplication::translate("starchoose", "    \345\217\215", 0));
+        pushButton_17->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_7->setText(QApplication::translate("starchoose", "\346\210\221\347\232\204\345\217\267\347\240\201\357\274\232", 0));
         label_8->setText(QApplication::translate("starchoose", "0\346\263\250", 0));
         checkBox_47->setText(QApplication::translate("starchoose", "\345\260\206\346\255\244\350\256\241\345\210\222\345\210\206\344\272\253\345\210\260\350\256\241\345\210\222\345\271\263\345\217\260", 0));
@@ -1405,41 +1412,41 @@ public:
         lineEdit_4->setText(QApplication::translate("starchoose", "200", 0));
         radioButton_4->setText(QApplication::translate("starchoose", "\350\207\252\347\224\261\345\200\215\346\225\260\357\274\214\350\207\252\345\256\232\344\271\211\345\200\215\346\225\260", 0));
         pushButton_6->setText(QApplication::translate("starchoose", "\350\256\241\347\256\227\345\200\215\346\212\225", 0));
-        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
+        QTableWidgetItem *___qtablewidgetitem = tableWidgetPut->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QApplication::translate("starchoose", "\346\234\237\345\217\267", 0));
-        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
+        QTableWidgetItem *___qtablewidgetitem1 = tableWidgetPut->horizontalHeaderItem(1);
         ___qtablewidgetitem1->setText(QApplication::translate("starchoose", "\345\200\215\346\225\260", 0));
-        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
+        QTableWidgetItem *___qtablewidgetitem2 = tableWidgetPut->horizontalHeaderItem(2);
         ___qtablewidgetitem2->setText(QApplication::translate("starchoose", "\345\275\223\346\234\237\346\212\225\345\205\245", 0));
-        QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
+        QTableWidgetItem *___qtablewidgetitem3 = tableWidgetPut->horizontalHeaderItem(3);
         ___qtablewidgetitem3->setText(QApplication::translate("starchoose", "\347\264\257\350\256\241\346\212\225\345\205\245", 0));
-        QTableWidgetItem *___qtablewidgetitem4 = tableWidget->horizontalHeaderItem(4);
+        QTableWidgetItem *___qtablewidgetitem4 = tableWidgetPut->horizontalHeaderItem(4);
         ___qtablewidgetitem4->setText(QApplication::translate("starchoose", "\346\224\266\347\233\212", 0));
-        QTableWidgetItem *___qtablewidgetitem5 = tableWidget->horizontalHeaderItem(5);
+        QTableWidgetItem *___qtablewidgetitem5 = tableWidgetPut->horizontalHeaderItem(5);
         ___qtablewidgetitem5->setText(QApplication::translate("starchoose", "\345\210\251\346\266\246", 0));
-        QTableWidgetItem *___qtablewidgetitem6 = tableWidget->horizontalHeaderItem(6);
+        QTableWidgetItem *___qtablewidgetitem6 = tableWidgetPut->horizontalHeaderItem(6);
         ___qtablewidgetitem6->setText(QApplication::translate("starchoose", "\346\224\266\347\233\212\347\216\207%", 0));
         label_15->setText(QApplication::translate("starchoose", " \345\275\223\345\211\215\346\250\241\346\235\277;", 0));
         label_16->setText(QApplication::translate("starchoose", " \345\210\267\346\226\260\346\227\266\351\227\264\357\274\232", 0));
         label_17->setText(QApplication::translate("starchoose", "00:00:00", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("starchoose", "  \346\226\207\346\234\254\350\256\241\345\210\222", 0));
-        QTableWidgetItem *___qtablewidgetitem7 = tableWidget_2->horizontalHeaderItem(0);
+        QTableWidgetItem *___qtablewidgetitem7 = tableWidgetPlan->horizontalHeaderItem(0);
         ___qtablewidgetitem7->setText(QApplication::translate("starchoose", "\346\234\237\345\217\267", 0));
-        QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(1);
+        QTableWidgetItem *___qtablewidgetitem8 = tableWidgetPlan->horizontalHeaderItem(1);
         ___qtablewidgetitem8->setText(QApplication::translate("starchoose", "\347\216\251\346\263\225", 0));
-        QTableWidgetItem *___qtablewidgetitem9 = tableWidget_2->horizontalHeaderItem(2);
+        QTableWidgetItem *___qtablewidgetitem9 = tableWidgetPlan->horizontalHeaderItem(2);
         ___qtablewidgetitem9->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256", 0));
-        QTableWidgetItem *___qtablewidgetitem10 = tableWidget_2->horizontalHeaderItem(3);
+        QTableWidgetItem *___qtablewidgetitem10 = tableWidgetPlan->horizontalHeaderItem(3);
         ___qtablewidgetitem10->setText(QApplication::translate("starchoose", "\345\221\250\346\234\237", 0));
-        QTableWidgetItem *___qtablewidgetitem11 = tableWidget_2->horizontalHeaderItem(4);
+        QTableWidgetItem *___qtablewidgetitem11 = tableWidgetPlan->horizontalHeaderItem(4);
         ___qtablewidgetitem11->setText(QApplication::translate("starchoose", "\346\263\250\346\225\260", 0));
-        QTableWidgetItem *___qtablewidgetitem12 = tableWidget_2->horizontalHeaderItem(5);
+        QTableWidgetItem *___qtablewidgetitem12 = tableWidgetPlan->horizontalHeaderItem(5);
         ___qtablewidgetitem12->setText(QApplication::translate("starchoose", "\345\200\215\346\212\225", 0));
-        QTableWidgetItem *___qtablewidgetitem13 = tableWidget_2->horizontalHeaderItem(6);
+        QTableWidgetItem *___qtablewidgetitem13 = tableWidgetPlan->horizontalHeaderItem(6);
         ___qtablewidgetitem13->setText(QApplication::translate("starchoose", "\347\233\210\344\272\217", 0));
-        QTableWidgetItem *___qtablewidgetitem14 = tableWidget_2->horizontalHeaderItem(7);
+        QTableWidgetItem *___qtablewidgetitem14 = tableWidgetPlan->horizontalHeaderItem(7);
         ___qtablewidgetitem14->setText(QApplication::translate("starchoose", "\347\212\266\346\200\201", 0));
-        QTableWidgetItem *___qtablewidgetitem15 = tableWidget_2->horizontalHeaderItem(8);
+        QTableWidgetItem *___qtablewidgetitem15 = tableWidgetPlan->horizontalHeaderItem(8);
         ___qtablewidgetitem15->setText(QApplication::translate("starchoose", "\346\223\215\344\275\234", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("starchoose", "\350\256\241\345\210\222\350\257\246\346\203\205", 0));
     } // retranslateUi

@@ -38,7 +38,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    TitleBar *titleBar;
     MainContent *mainContend;
     QMovie  *movie;
     QTimer  *timer;
@@ -48,7 +47,6 @@ private:
 
     void initControl();
     void initConnect();
-    void resizeEvent(QResizeEvent *event);
     bool isNetWorkOnline();
 };
 

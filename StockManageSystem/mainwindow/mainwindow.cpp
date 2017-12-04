@@ -6,7 +6,6 @@
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent)
   ,ui(new Ui::MainWindow)
-  ,titleBar(NULL)
   ,mainContend(NULL)
   ,movie(NULL)
   ,timer(NULL)
@@ -16,7 +15,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     this->initControl();
     this->initConnect();
 }
@@ -60,7 +58,6 @@ void MainWindow::receiveLoginOut()
 void MainWindow::initControl()
 {
     //实例化对象
-    titleBar = new TitleBar(this);
     mainContend = new MainContent(this);
     timer = new QTimer(this);
     systemTray = new SystemTray(this);
@@ -89,10 +86,6 @@ void MainWindow::initControl()
     ui->statusBar->addWidget(userMsgButton);
     ui->statusBar->addPermanentWidget(netMsgButton);
 
-    //添加图标和标题
-    titleBar->setIcon(GLOBALDEF::LOGOIMG);
-    titleBar->setTitle(GLOBALDEF::APPNAME);
-
     //设置Gif动画
     movie = new QMovie(GLOBALDEF::LINKIMAGE);
     ui->labelImage->setMovie(movie);
@@ -110,19 +103,13 @@ void MainWindow::initControl()
 
     //初始化信号与槽
     connect(mainContend, SIGNAL(sendNetStatus(int)), this, SLOT(receiveNetStatus(int)));
-     connect(mainContend, SIGNAL(sendNetStatus(int)), this, SLOT(receiveNetStatus(int)));
+    connect(mainContend, SIGNAL(sendNetStatus(int)), this, SLOT(receiveNetStatus(int)));
 }
 
 /************************   初始化信号与槽              ************************/
 void MainWindow::initConnect()
 {
     connect(mainContend, SIGNAL(sendLoginStatus(QString)), this ,SLOT(receiveStatus(QString)));
-}
-
-/************************   改变事件              ************************/
-void MainWindow::resizeEvent(QResizeEvent *event)
-{
-    titleBar->resize(this->width(), titleBar->getTitleBarHeight());
 }
 
 /************************   判断是否联网              ************************/

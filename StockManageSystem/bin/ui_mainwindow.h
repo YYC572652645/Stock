@@ -34,8 +34,6 @@ public:
     QVBoxLayout *verticalLayout_7;
     QVBoxLayout *verticalLayout_6;
     QVBoxLayout *verticalLayout;
-    QSpacerItem *horizontalSpacer;
-    QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout;
     QGroupBox *groupBox;
     QVBoxLayout *verticalLayout_2;
@@ -60,7 +58,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(810, 771);
+        MainWindow->resize(538, 518);
         MainWindow->setMinimumSize(QSize(0, 0));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
@@ -75,14 +73,6 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        horizontalSpacer = new QSpacerItem(40, 25, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        verticalLayout->addItem(horizontalSpacer);
-
-        horizontalSpacer_2 = new QSpacerItem(40, 22, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        verticalLayout->addItem(horizontalSpacer_2);
-
 
         verticalLayout_6->addLayout(verticalLayout);
 
@@ -213,7 +203,7 @@ public:
 
         widgetMainContent = new QWidget(centralWidget);
         widgetMainContent->setObjectName(QStringLiteral("widgetMainContent"));
-        widgetMainContent->setMinimumSize(QSize(0, 600));
+        widgetMainContent->setMinimumSize(QSize(0, 400));
 
         verticalLayout_6->addWidget(widgetMainContent);
 

@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     HttpClient h;
 
     LOADQSS(GLOBALDEF::QSSPATH);
-    w.show();
+    w.showMaximized();
 
     return a.exec();
 }

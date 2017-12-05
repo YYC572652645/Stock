@@ -880,6 +880,16 @@ padding: 0px 0px;
              <widget class="QTextEdit" name="textEdit"/>
             </item>
             <item>
+             <widget class="QWidget" name="widget_2" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
              <spacer name="horizontalSpacer_24">
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
@@ -1741,7 +1751,7 @@ QPushButton
 background-color:rgb(100, 85, 80);
 color:white;
 border-radius:5px;
-height: 40px;
+height: 30px;
 min-width: 120px;
 spacing: 10px;
 padding: 0px 0px;

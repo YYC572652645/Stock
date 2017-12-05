@@ -27,6 +27,8 @@
         <file>image/picture.jpg</file>
         <file>image/administrator.png</file>
         <file>image/delete.png</file>
+        <file>image/putdown.png</file>
+        <file>image/puton.png</file>
     </qresource>
     <qresource prefix="/qss">
         <file>qss/style.qss</file>

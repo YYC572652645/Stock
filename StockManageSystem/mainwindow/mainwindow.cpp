@@ -98,6 +98,8 @@ void MainWindow::initControl()
     QVBoxLayout *vBoxLayout = new QVBoxLayout(ui->widgetMainContent);
     vBoxLayout->addWidget(mainContend);
     ui->widgetMainContent->setLayout(vBoxLayout);
+    vBoxLayout->setContentsMargins(0,0,0,0);
+    ui->widgetMainContent->setContentsMargins(0,0,0,0);
 
     this->setWindowTitle(GLOBALDEF::APPNAME);
 

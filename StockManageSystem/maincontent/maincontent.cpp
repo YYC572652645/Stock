@@ -184,6 +184,7 @@ void MainContent::setTreeClickWidget(QString treeItemName)
     else if(GLOBALDEF::DWDAN == treeItemName)
     {
         dwDan->setHideType(DWDAN);
+        dwDan->setMinimumHeight(600);
         this->addTabWidget(dwDan, GLOBALDEF::DWDAN);
     }
     else if(GLOBALDEF::TWOSTARZ == treeItemName)

@@ -485,35 +485,35 @@ padding: 0px 0px;
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_20">
+               <widget class="QCheckBox" name="checkBoxFZqianSi">
                 <property name="text">
                  <string>前四</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_22">
+               <widget class="QCheckBox" name="checkBoxFZHouSi">
                 <property name="text">
                  <string>后四</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_23">
+               <widget class="QCheckBox" name="checkBoxFZWanQIanBaiGe">
                 <property name="text">
                  <string>万千百个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_24">
+               <widget class="QCheckBox" name="checkBoxFZWanQianShiGe">
                 <property name="text">
                  <string>万千十个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_25">
+               <widget class="QCheckBox" name="checkBoxFZWanBaiShiGe">
                 <property name="text">
                  <string>万百十个</string>
                 </property>
@@ -535,21 +535,21 @@ padding: 0px 0px;
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_16">
+             <widget class="QPushButton" name="pushButtonFZQuan">
               <property name="text">
                <string>全</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_15">
+             <widget class="QPushButton" name="pushButtonFZQing">
               <property name="text">
                <string> 清</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_14">
+             <widget class="QPushButton" name="pushButtonFZFan">
               <property name="text">
                <string> 反</string>
               </property>
@@ -607,7 +607,7 @@ padding: 0px 0px;
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_26">
+               <widget class="QCheckBox" name="checkBoxFiveZ">
                 <property name="text">
                  <string>五星</string>
                 </property>
@@ -629,21 +629,21 @@ padding: 0px 0px;
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_25">
+             <widget class="QPushButton" name="pushButtonFiveZQuan">
               <property name="text">
                <string>全</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_24">
+             <widget class="QPushButton" name="pushButtonFiveZQing">
               <property name="text">
                <string> 清</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_23">
+             <widget class="QPushButton" name="pushButtonFiveZFan">
               <property name="text">
                <string> 反</string>
               </property>
@@ -701,70 +701,70 @@ padding: 0px 0px;
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_27">
+               <widget class="QCheckBox" name="checkBoxTHQianEr">
                 <property name="text">
                  <string>前二</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_28">
+               <widget class="QCheckBox" name="checkBoxTHHouEr">
                 <property name="text">
                  <string>后二</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_29">
+               <widget class="QCheckBox" name="checkBoxTHWanBai">
                 <property name="text">
                  <string>万百</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_30">
+               <widget class="QCheckBox" name="checkBoxTHWanShi">
                 <property name="text">
                  <string>万十</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_31">
+               <widget class="QCheckBox" name="checkBoxTHWanGe">
                 <property name="text">
                  <string>万个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_32">
+               <widget class="QCheckBox" name="checkBoxTHQianBai">
                 <property name="text">
                  <string>千百</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_33">
+               <widget class="QCheckBox" name="checkBoxTHQianShi">
                 <property name="text">
                  <string>千十</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_34">
+               <widget class="QCheckBox" name="checkBoxTHQianGe">
                 <property name="text">
                  <string>千个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_35">
+               <widget class="QCheckBox" name="checkBoxTHBaiShi">
                 <property name="text">
                  <string>百十</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_36">
+               <widget class="QCheckBox" name="checkBoxTHBaiGe">
                 <property name="text">
                  <string>百个</string>
                 </property>
@@ -786,21 +786,21 @@ padding: 0px 0px;
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_21">
+             <widget class="QPushButton" name="pushButtonTwoHQuan">
               <property name="text">
                <string>全</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_22">
+             <widget class="QPushButton" name="pushButtonTwoHQing">
               <property name="text">
                <string> 清</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_20">
+             <widget class="QPushButton" name="pushButtonTwoHFan">
               <property name="text">
                <string> 反</string>
               </property>
@@ -858,70 +858,70 @@ padding: 0px 0px;
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_37">
+               <widget class="QCheckBox" name="checkBoxThreeHHouSan">
                 <property name="text">
                  <string>后三</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_38">
+               <widget class="QCheckBox" name="checkBoxThreeHQianSan">
                 <property name="text">
                  <string>前三</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_39">
+               <widget class="QCheckBox" name="checkBoxThreeHZhongSan">
                 <property name="text">
                  <string>中三</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_40">
+               <widget class="QCheckBox" name="checkBoxThreeHWanQIanShi">
                 <property name="text">
                  <string>万千十</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_41">
+               <widget class="QCheckBox" name="checkBoxThreeHWanQianGe">
                 <property name="text">
                  <string>万千个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_42">
+               <widget class="QCheckBox" name="checkBoxThreeHWanBaiShi">
                 <property name="text">
                  <string>万百十</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_43">
+               <widget class="QCheckBox" name="checkBoxThreeHWanBaiGe">
                 <property name="text">
                  <string>万百个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_44">
+               <widget class="QCheckBox" name="checkBoxThreeHWanSHiGe">
                 <property name="text">
                  <string>万十个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_45">
+               <widget class="QCheckBox" name="checkBoxThreeHQianBaiGe">
                 <property name="text">
                  <string>千百个</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QCheckBox" name="checkBox_46">
+               <widget class="QCheckBox" name="checkBoxThreeHQianShiGe">
                 <property name="text">
                  <string>千十个</string>
                 </property>
@@ -943,21 +943,21 @@ padding: 0px 0px;
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_19">
+             <widget class="QPushButton" name="pushButtonThreeHQuan">
               <property name="text">
                <string>全</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_18">
+             <widget class="QPushButton" name="pushButtonThreeHQing">
               <property name="text">
                <string> 清</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_17">
+             <widget class="QPushButton" name="pushButtonThreeHFan">
               <property name="text">
                <string> 反</string>
               </property>
@@ -1063,10 +1063,8 @@ min-width:20;
 max-width:20;
 min-height:20;
 max-height:20;
-border-image: url(:/image/image/puton.png);
 }
-
-border:2px solid rgb(170, 170, 170);</string>
+</string>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_18">
                <property name="spacing">
@@ -1102,11 +1100,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_10">
+                    <widget class="QPushButton" name="pushButtonWanZero">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1115,24 +1113,30 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_29">
+                    <widget class="QPushButton" name="pushButtonWanOne">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
                       <string>1</string>
                      </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_30">
+                    <widget class="QPushButton" name="pushButtonWanTwo">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1141,11 +1145,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_32">
+                    <widget class="QPushButton" name="pushButtonWanThree">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1154,11 +1158,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_33">
+                    <widget class="QPushButton" name="pushButtonWanFour">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1167,11 +1171,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_31">
+                    <widget class="QPushButton" name="pushButtonWanFive">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1180,11 +1184,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_34">
+                    <widget class="QPushButton" name="pushButtonWanSix">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1193,11 +1197,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_35">
+                    <widget class="QPushButton" name="pushButtonWanSeven">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1206,11 +1210,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_39">
+                    <widget class="QPushButton" name="pushButtonWanEight">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1219,11 +1223,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_38">
+                    <widget class="QPushButton" name="pushButtonWanNine">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1232,41 +1236,41 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_36">
+                    <widget class="QPushButton" name="pushButtonWanQuan">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string> 全</string>
+                      <string>全</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_37">
+                    <widget class="QPushButton" name="pushButtonWanQing">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string> 反</string>
+                      <string>清</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_40">
+                    <widget class="QPushButton" name="pushButtonWanFan">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string> 清</string>
+                      <string>反</string>
                      </property>
                     </widget>
                    </item>
@@ -1301,11 +1305,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_41">
+                    <widget class="QPushButton" name="pushButtonQianZero">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1314,11 +1318,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_42">
+                    <widget class="QPushButton" name="pushButtonQianOne">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1327,11 +1331,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_43">
+                    <widget class="QPushButton" name="pushButtonQianTwo">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1340,11 +1344,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_44">
+                    <widget class="QPushButton" name="pushButtonQianThree">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1353,11 +1357,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_45">
+                    <widget class="QPushButton" name="pushButtonQianFour">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1366,11 +1370,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_46">
+                    <widget class="QPushButton" name="pushButtonQianFive">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1379,11 +1383,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_47">
+                    <widget class="QPushButton" name="pushButtonQianSix">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1392,11 +1396,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_48">
+                    <widget class="QPushButton" name="pushButtonQianSeven">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1405,11 +1409,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_49">
+                    <widget class="QPushButton" name="pushButtonQianEight">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1418,11 +1422,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_50">
+                    <widget class="QPushButton" name="pushButtonQianNine">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1431,41 +1435,41 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_51">
+                    <widget class="QPushButton" name="pushButtonQianQuan">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string> 全</string>
+                      <string>全</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_52">
+                    <widget class="QPushButton" name="pushButtonQianQing">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>清</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonQianFan">
+                     <property name="minimumSize">
+                      <size>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
                       <string>反</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QPushButton" name="pushButton_53">
-                     <property name="minimumSize">
-                      <size>
-                       <width>20</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string> 清</string>
                      </property>
                     </widget>
                    </item>
@@ -1500,11 +1504,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_54">
+                    <widget class="QPushButton" name="pushButtonBaiZero">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1513,11 +1517,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_55">
+                    <widget class="QPushButton" name="pushButtonBaiOne">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1526,11 +1530,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_56">
+                    <widget class="QPushButton" name="pushButtonBaiTwo">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1539,11 +1543,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_57">
+                    <widget class="QPushButton" name="pushButtonBaiThree">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1552,11 +1556,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_58">
+                    <widget class="QPushButton" name="pushButtonBaiFour">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1565,11 +1569,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_59">
+                    <widget class="QPushButton" name="pushButtonBaiFive">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1578,11 +1582,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_60">
+                    <widget class="QPushButton" name="pushButtonBaiSix">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1591,11 +1595,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_61">
+                    <widget class="QPushButton" name="pushButtonBaiSeven">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1604,11 +1608,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_62">
+                    <widget class="QPushButton" name="pushButtonBaiEight">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1617,11 +1621,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_63">
+                    <widget class="QPushButton" name="pushButtonBaiNine">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1630,41 +1634,41 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_64">
+                    <widget class="QPushButton" name="pushButtonBaiQuan">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string> 全</string>
+                      <string>全</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_65">
+                    <widget class="QPushButton" name="pushButtonBaiQing">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>清</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonBaiFan">
+                     <property name="minimumSize">
+                      <size>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
                       <string>反</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QPushButton" name="pushButton_66">
-                     <property name="minimumSize">
-                      <size>
-                       <width>20</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string> 清</string>
                      </property>
                     </widget>
                    </item>
@@ -1699,11 +1703,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_93">
+                    <widget class="QPushButton" name="pushButtonShiZero">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1712,11 +1716,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_94">
+                    <widget class="QPushButton" name="pushButtonShiOne">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1725,11 +1729,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_95">
+                    <widget class="QPushButton" name="pushButtonShiTwo">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1738,11 +1742,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_96">
+                    <widget class="QPushButton" name="pushButtonShiThree">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1751,11 +1755,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_97">
+                    <widget class="QPushButton" name="pushButtonShiFour">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1764,11 +1768,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_98">
+                    <widget class="QPushButton" name="pushButtonShiFive">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1777,11 +1781,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_99">
+                    <widget class="QPushButton" name="pushButtonShiSix">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1790,11 +1794,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_100">
+                    <widget class="QPushButton" name="pushButtonShiSeven">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1803,11 +1807,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_101">
+                    <widget class="QPushButton" name="pushButtonShiEight">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1816,11 +1820,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_102">
+                    <widget class="QPushButton" name="pushButtonShiNine">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1829,41 +1833,41 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_103">
+                    <widget class="QPushButton" name="pushButtonShiQuan">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string> 全</string>
+                      <string>全</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_104">
+                    <widget class="QPushButton" name="pushButtonShiQing">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>清</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonShiFan">
+                     <property name="minimumSize">
+                      <size>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
                       <string>反</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QPushButton" name="pushButton_105">
-                     <property name="minimumSize">
-                      <size>
-                       <width>20</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string> 清</string>
                      </property>
                     </widget>
                    </item>
@@ -1898,11 +1902,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_67">
+                    <widget class="QPushButton" name="pushButtonGeZero">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1911,11 +1915,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_68">
+                    <widget class="QPushButton" name="pushButtonGeOne">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1924,11 +1928,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_69">
+                    <widget class="QPushButton" name="pushButtonGeTwo">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1937,11 +1941,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_70">
+                    <widget class="QPushButton" name="pushButtonGeThree">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1950,11 +1954,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_71">
+                    <widget class="QPushButton" name="pushButtonGeFour">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1963,11 +1967,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_72">
+                    <widget class="QPushButton" name="pushButtonGeFive">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1976,11 +1980,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_73">
+                    <widget class="QPushButton" name="pushButtonGeSix">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -1989,11 +1993,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_74">
+                    <widget class="QPushButton" name="pushButtonGeSeven">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -2002,11 +2006,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_75">
+                    <widget class="QPushButton" name="pushButtonGeEight">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -2015,11 +2019,11 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_76">
+                    <widget class="QPushButton" name="pushButtonGeNine">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
@@ -2028,41 +2032,41 @@ border:2px solid rgb(170, 170, 170);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_77">
+                    <widget class="QPushButton" name="pushButtonGeQuan">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
-                      <string> 全</string>
+                      <string>全</string>
                      </property>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_78">
+                    <widget class="QPushButton" name="pushButtonGeQing">
                      <property name="minimumSize">
                       <size>
-                       <width>20</width>
-                       <height>20</height>
+                       <width>22</width>
+                       <height>22</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>清</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButtonGeFan">
+                     <property name="minimumSize">
+                      <size>
+                       <width>22</width>
+                       <height>22</height>
                       </size>
                      </property>
                      <property name="text">
                       <string>反</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QPushButton" name="pushButton_79">
-                     <property name="minimumSize">
-                      <size>
-                       <width>20</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="text">
-                      <string> 清</string>
                      </property>
                     </widget>
                    </item>
@@ -2619,7 +2623,7 @@ padding: 0px 0px;
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_16">
               <item>
-               <widget class="QRadioButton" name="radioButton">
+               <widget class="QRadioButton" name="radioButtonRevenueRatio">
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
@@ -2635,10 +2639,13 @@ padding: 0px 0px;
                 <property name="text">
                  <string>收益比率</string>
                 </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox_3">
+               <widget class="QComboBox" name="comboBoxRate">
                 <property name="minimumSize">
                  <size>
                   <width>100</width>
@@ -2740,7 +2747,7 @@ padding: 0px 0px;
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox_2">
+               <widget class="QComboBox" name="comboBoxCost">
                 <property name="minimumSize">
                  <size>
                   <width>113</width>
@@ -2778,7 +2785,7 @@ padding: 0px 0px;
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_17">
               <item>
-               <widget class="QRadioButton" name="radioButton_2">
+               <widget class="QRadioButton" name="radioButtonFixedIncom">
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
@@ -2797,7 +2804,7 @@ padding: 0px 0px;
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit">
+               <widget class="QLineEdit" name="lineEditFixedIncom">
                 <property name="minimumSize">
                  <size>
                   <width>100</width>
@@ -2848,7 +2855,7 @@ padding: 0px 0px;
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_2">
+               <widget class="QLineEdit" name="lineEditBonusMode">
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
@@ -2860,6 +2867,9 @@ padding: 0px 0px;
                   <width>80</width>
                   <height>16777215</height>
                  </size>
+                </property>
+                <property name="text">
+                 <string>1000</string>
                 </property>
                </widget>
               </item>
@@ -2895,7 +2905,7 @@ padding: 0px 0px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_18">
                   <item>
-                   <widget class="QRadioButton" name="radioButton_3">
+                   <widget class="QRadioButton" name="radioButtonAccumulateProfits">
                     <property name="minimumSize">
                      <size>
                       <width>80</width>
@@ -2921,7 +2931,7 @@ padding: 0px 0px;
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_3">
+                   <widget class="QLineEdit" name="lineEditBegin">
                     <property name="minimumSize">
                      <size>
                       <width>40</width>
@@ -2947,7 +2957,7 @@ padding: 0px 0px;
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLineEdit" name="lineEdit_4">
+                   <widget class="QLineEdit" name="lineEditAdd">
                     <property name="minimumSize">
                      <size>
                       <width>40</width>
@@ -2983,7 +2993,7 @@ padding: 0px 0px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_19">
                   <item>
-                   <widget class="QRadioButton" name="radioButton_4">
+                   <widget class="QRadioButton" name="radioButtonFreeTimes">
                     <property name="minimumSize">
                      <size>
                       <width>145</width>

@@ -90,63 +90,63 @@ public:
     QHBoxLayout *horizontalLayout_7;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_3;
-    QCheckBox *checkBox_20;
-    QCheckBox *checkBox_22;
-    QCheckBox *checkBox_23;
-    QCheckBox *checkBox_24;
-    QCheckBox *checkBox_25;
+    QCheckBox *checkBoxFZqianSi;
+    QCheckBox *checkBoxFZHouSi;
+    QCheckBox *checkBoxFZWanQIanBaiGe;
+    QCheckBox *checkBoxFZWanQianShiGe;
+    QCheckBox *checkBoxFZWanBaiShiGe;
     QSpacerItem *horizontalSpacer_3;
-    QPushButton *pushButton_16;
-    QPushButton *pushButton_15;
-    QPushButton *pushButton_14;
+    QPushButton *pushButtonFZQuan;
+    QPushButton *pushButtonFZQing;
+    QPushButton *pushButtonFZFan;
     QFrame *frameFiveStartZ;
     QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout_8;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_4;
-    QCheckBox *checkBox_26;
+    QCheckBox *checkBoxFiveZ;
     QSpacerItem *horizontalSpacer_4;
-    QPushButton *pushButton_25;
-    QPushButton *pushButton_24;
-    QPushButton *pushButton_23;
+    QPushButton *pushButtonFiveZQuan;
+    QPushButton *pushButtonFiveZQing;
+    QPushButton *pushButtonFiveZFan;
     QFrame *frameTwoStartH;
     QVBoxLayout *verticalLayout_5;
     QHBoxLayout *horizontalLayout_9;
     QHBoxLayout *horizontalLayout_10;
     QLabel *label_5;
-    QCheckBox *checkBox_27;
-    QCheckBox *checkBox_28;
-    QCheckBox *checkBox_29;
-    QCheckBox *checkBox_30;
-    QCheckBox *checkBox_31;
-    QCheckBox *checkBox_32;
-    QCheckBox *checkBox_33;
-    QCheckBox *checkBox_34;
-    QCheckBox *checkBox_35;
-    QCheckBox *checkBox_36;
+    QCheckBox *checkBoxTHQianEr;
+    QCheckBox *checkBoxTHHouEr;
+    QCheckBox *checkBoxTHWanBai;
+    QCheckBox *checkBoxTHWanShi;
+    QCheckBox *checkBoxTHWanGe;
+    QCheckBox *checkBoxTHQianBai;
+    QCheckBox *checkBoxTHQianShi;
+    QCheckBox *checkBoxTHQianGe;
+    QCheckBox *checkBoxTHBaiShi;
+    QCheckBox *checkBoxTHBaiGe;
     QSpacerItem *horizontalSpacer_5;
-    QPushButton *pushButton_21;
-    QPushButton *pushButton_22;
-    QPushButton *pushButton_20;
+    QPushButton *pushButtonTwoHQuan;
+    QPushButton *pushButtonTwoHQing;
+    QPushButton *pushButtonTwoHFan;
     QFrame *frameThreeStartH;
     QVBoxLayout *verticalLayout_6;
     QHBoxLayout *horizontalLayout_11;
     QHBoxLayout *horizontalLayout_12;
     QLabel *label_6;
-    QCheckBox *checkBox_37;
-    QCheckBox *checkBox_38;
-    QCheckBox *checkBox_39;
-    QCheckBox *checkBox_40;
-    QCheckBox *checkBox_41;
-    QCheckBox *checkBox_42;
-    QCheckBox *checkBox_43;
-    QCheckBox *checkBox_44;
-    QCheckBox *checkBox_45;
-    QCheckBox *checkBox_46;
+    QCheckBox *checkBoxThreeHHouSan;
+    QCheckBox *checkBoxThreeHQianSan;
+    QCheckBox *checkBoxThreeHZhongSan;
+    QCheckBox *checkBoxThreeHWanQIanShi;
+    QCheckBox *checkBoxThreeHWanQianGe;
+    QCheckBox *checkBoxThreeHWanBaiShi;
+    QCheckBox *checkBoxThreeHWanBaiGe;
+    QCheckBox *checkBoxThreeHWanSHiGe;
+    QCheckBox *checkBoxThreeHQianBaiGe;
+    QCheckBox *checkBoxThreeHQianShiGe;
     QSpacerItem *horizontalSpacer_6;
-    QPushButton *pushButton_19;
-    QPushButton *pushButton_18;
-    QPushButton *pushButton_17;
+    QPushButton *pushButtonThreeHQuan;
+    QPushButton *pushButtonThreeHQing;
+    QPushButton *pushButtonThreeHFan;
     QHBoxLayout *horizontalLayout_22;
     QWidget *widget;
     QVBoxLayout *verticalLayout_10;
@@ -162,83 +162,83 @@ public:
     QVBoxLayout *verticalLayout_17;
     QHBoxLayout *horizontalLayout_25;
     QLabel *label_19;
-    QPushButton *pushButton_10;
-    QPushButton *pushButton_29;
-    QPushButton *pushButton_30;
-    QPushButton *pushButton_32;
-    QPushButton *pushButton_33;
-    QPushButton *pushButton_31;
-    QPushButton *pushButton_34;
-    QPushButton *pushButton_35;
-    QPushButton *pushButton_39;
-    QPushButton *pushButton_38;
-    QPushButton *pushButton_36;
-    QPushButton *pushButton_37;
-    QPushButton *pushButton_40;
+    QPushButton *pushButtonWanZero;
+    QPushButton *pushButtonWanOne;
+    QPushButton *pushButtonWanTwo;
+    QPushButton *pushButtonWanThree;
+    QPushButton *pushButtonWanFour;
+    QPushButton *pushButtonWanFive;
+    QPushButton *pushButtonWanSix;
+    QPushButton *pushButtonWanSeven;
+    QPushButton *pushButtonWanEight;
+    QPushButton *pushButtonWanNine;
+    QPushButton *pushButtonWanQuan;
+    QPushButton *pushButtonWanQing;
+    QPushButton *pushButtonWanFan;
     QSpacerItem *horizontalSpacer_25;
     QHBoxLayout *horizontalLayout_26;
     QLabel *label_20;
-    QPushButton *pushButton_41;
-    QPushButton *pushButton_42;
-    QPushButton *pushButton_43;
-    QPushButton *pushButton_44;
-    QPushButton *pushButton_45;
-    QPushButton *pushButton_46;
-    QPushButton *pushButton_47;
-    QPushButton *pushButton_48;
-    QPushButton *pushButton_49;
-    QPushButton *pushButton_50;
-    QPushButton *pushButton_51;
-    QPushButton *pushButton_52;
-    QPushButton *pushButton_53;
+    QPushButton *pushButtonQianZero;
+    QPushButton *pushButtonQianOne;
+    QPushButton *pushButtonQianTwo;
+    QPushButton *pushButtonQianThree;
+    QPushButton *pushButtonQianFour;
+    QPushButton *pushButtonQianFive;
+    QPushButton *pushButtonQianSix;
+    QPushButton *pushButtonQianSeven;
+    QPushButton *pushButtonQianEight;
+    QPushButton *pushButtonQianNine;
+    QPushButton *pushButtonQianQuan;
+    QPushButton *pushButtonQianQing;
+    QPushButton *pushButtonQianFan;
     QSpacerItem *horizontalSpacer_26;
     QHBoxLayout *horizontalLayout_27;
     QLabel *label_21;
-    QPushButton *pushButton_54;
-    QPushButton *pushButton_55;
-    QPushButton *pushButton_56;
-    QPushButton *pushButton_57;
-    QPushButton *pushButton_58;
-    QPushButton *pushButton_59;
-    QPushButton *pushButton_60;
-    QPushButton *pushButton_61;
-    QPushButton *pushButton_62;
-    QPushButton *pushButton_63;
-    QPushButton *pushButton_64;
-    QPushButton *pushButton_65;
-    QPushButton *pushButton_66;
+    QPushButton *pushButtonBaiZero;
+    QPushButton *pushButtonBaiOne;
+    QPushButton *pushButtonBaiTwo;
+    QPushButton *pushButtonBaiThree;
+    QPushButton *pushButtonBaiFour;
+    QPushButton *pushButtonBaiFive;
+    QPushButton *pushButtonBaiSix;
+    QPushButton *pushButtonBaiSeven;
+    QPushButton *pushButtonBaiEight;
+    QPushButton *pushButtonBaiNine;
+    QPushButton *pushButtonBaiQuan;
+    QPushButton *pushButtonBaiQing;
+    QPushButton *pushButtonBaiFan;
     QSpacerItem *horizontalSpacer_27;
     QHBoxLayout *horizontalLayout_30;
     QLabel *label_24;
-    QPushButton *pushButton_93;
-    QPushButton *pushButton_94;
-    QPushButton *pushButton_95;
-    QPushButton *pushButton_96;
-    QPushButton *pushButton_97;
-    QPushButton *pushButton_98;
-    QPushButton *pushButton_99;
-    QPushButton *pushButton_100;
-    QPushButton *pushButton_101;
-    QPushButton *pushButton_102;
-    QPushButton *pushButton_103;
-    QPushButton *pushButton_104;
-    QPushButton *pushButton_105;
+    QPushButton *pushButtonShiZero;
+    QPushButton *pushButtonShiOne;
+    QPushButton *pushButtonShiTwo;
+    QPushButton *pushButtonShiThree;
+    QPushButton *pushButtonShiFour;
+    QPushButton *pushButtonShiFive;
+    QPushButton *pushButtonShiSix;
+    QPushButton *pushButtonShiSeven;
+    QPushButton *pushButtonShiEight;
+    QPushButton *pushButtonShiNine;
+    QPushButton *pushButtonShiQuan;
+    QPushButton *pushButtonShiQing;
+    QPushButton *pushButtonShiFan;
     QSpacerItem *horizontalSpacer_28;
     QHBoxLayout *horizontalLayout_28;
     QLabel *label_22;
-    QPushButton *pushButton_67;
-    QPushButton *pushButton_68;
-    QPushButton *pushButton_69;
-    QPushButton *pushButton_70;
-    QPushButton *pushButton_71;
-    QPushButton *pushButton_72;
-    QPushButton *pushButton_73;
-    QPushButton *pushButton_74;
-    QPushButton *pushButton_75;
-    QPushButton *pushButton_76;
-    QPushButton *pushButton_77;
-    QPushButton *pushButton_78;
-    QPushButton *pushButton_79;
+    QPushButton *pushButtonGeZero;
+    QPushButton *pushButtonGeOne;
+    QPushButton *pushButtonGeTwo;
+    QPushButton *pushButtonGeThree;
+    QPushButton *pushButtonGeFour;
+    QPushButton *pushButtonGeFive;
+    QPushButton *pushButtonGeSix;
+    QPushButton *pushButtonGeSeven;
+    QPushButton *pushButtonGeEight;
+    QPushButton *pushButtonGeNine;
+    QPushButton *pushButtonGeQuan;
+    QPushButton *pushButtonGeQing;
+    QPushButton *pushButtonGeFan;
     QFrame *line_2;
     QHBoxLayout *horizontalLayout_15;
     QSpacerItem *horizontalSpacer_19;
@@ -258,29 +258,29 @@ public:
     QSpacerItem *horizontalSpacer_32;
     QFrame *line_3;
     QHBoxLayout *horizontalLayout_16;
-    QRadioButton *radioButton;
-    QComboBox *comboBox_3;
+    QRadioButton *radioButtonRevenueRatio;
+    QComboBox *comboBoxRate;
     QLabel *label_14;
     QLabel *label_10;
-    QComboBox *comboBox_2;
+    QComboBox *comboBoxCost;
     QHBoxLayout *horizontalLayout_17;
-    QRadioButton *radioButton_2;
-    QLineEdit *lineEdit;
+    QRadioButton *radioButtonFixedIncom;
+    QLineEdit *lineEditFixedIncom;
     QSpacerItem *horizontalSpacer_8;
     QLabel *label_11;
-    QLineEdit *lineEdit_2;
+    QLineEdit *lineEditBonusMode;
     QPushButton *pushButtonInfo;
     QHBoxLayout *horizontalLayout_20;
     QVBoxLayout *verticalLayout_8;
     QHBoxLayout *horizontalLayout_18;
-    QRadioButton *radioButton_3;
+    QRadioButton *radioButtonAccumulateProfits;
     QLabel *label_12;
-    QLineEdit *lineEdit_3;
+    QLineEdit *lineEditBegin;
     QLabel *label_13;
-    QLineEdit *lineEdit_4;
+    QLineEdit *lineEditAdd;
     QSpacerItem *horizontalSpacer_7;
     QHBoxLayout *horizontalLayout_19;
-    QRadioButton *radioButton_4;
+    QRadioButton *radioButtonFreeTimes;
     QSpacerItem *horizontalSpacer_9;
     QSpacerItem *horizontalSpacer_18;
     QPushButton *pushButtonCalCGusts;
@@ -662,30 +662,30 @@ public:
 
         horizontalLayout_3->addWidget(label_3);
 
-        checkBox_20 = new QCheckBox(frameFourStartZ);
-        checkBox_20->setObjectName(QStringLiteral("checkBox_20"));
+        checkBoxFZqianSi = new QCheckBox(frameFourStartZ);
+        checkBoxFZqianSi->setObjectName(QStringLiteral("checkBoxFZqianSi"));
 
-        horizontalLayout_3->addWidget(checkBox_20);
+        horizontalLayout_3->addWidget(checkBoxFZqianSi);
 
-        checkBox_22 = new QCheckBox(frameFourStartZ);
-        checkBox_22->setObjectName(QStringLiteral("checkBox_22"));
+        checkBoxFZHouSi = new QCheckBox(frameFourStartZ);
+        checkBoxFZHouSi->setObjectName(QStringLiteral("checkBoxFZHouSi"));
 
-        horizontalLayout_3->addWidget(checkBox_22);
+        horizontalLayout_3->addWidget(checkBoxFZHouSi);
 
-        checkBox_23 = new QCheckBox(frameFourStartZ);
-        checkBox_23->setObjectName(QStringLiteral("checkBox_23"));
+        checkBoxFZWanQIanBaiGe = new QCheckBox(frameFourStartZ);
+        checkBoxFZWanQIanBaiGe->setObjectName(QStringLiteral("checkBoxFZWanQIanBaiGe"));
 
-        horizontalLayout_3->addWidget(checkBox_23);
+        horizontalLayout_3->addWidget(checkBoxFZWanQIanBaiGe);
 
-        checkBox_24 = new QCheckBox(frameFourStartZ);
-        checkBox_24->setObjectName(QStringLiteral("checkBox_24"));
+        checkBoxFZWanQianShiGe = new QCheckBox(frameFourStartZ);
+        checkBoxFZWanQianShiGe->setObjectName(QStringLiteral("checkBoxFZWanQianShiGe"));
 
-        horizontalLayout_3->addWidget(checkBox_24);
+        horizontalLayout_3->addWidget(checkBoxFZWanQianShiGe);
 
-        checkBox_25 = new QCheckBox(frameFourStartZ);
-        checkBox_25->setObjectName(QStringLiteral("checkBox_25"));
+        checkBoxFZWanBaiShiGe = new QCheckBox(frameFourStartZ);
+        checkBoxFZWanBaiShiGe->setObjectName(QStringLiteral("checkBoxFZWanBaiShiGe"));
 
-        horizontalLayout_3->addWidget(checkBox_25);
+        horizontalLayout_3->addWidget(checkBoxFZWanBaiShiGe);
 
 
         horizontalLayout_7->addLayout(horizontalLayout_3);
@@ -694,20 +694,20 @@ public:
 
         horizontalLayout_7->addItem(horizontalSpacer_3);
 
-        pushButton_16 = new QPushButton(frameFourStartZ);
-        pushButton_16->setObjectName(QStringLiteral("pushButton_16"));
+        pushButtonFZQuan = new QPushButton(frameFourStartZ);
+        pushButtonFZQuan->setObjectName(QStringLiteral("pushButtonFZQuan"));
 
-        horizontalLayout_7->addWidget(pushButton_16);
+        horizontalLayout_7->addWidget(pushButtonFZQuan);
 
-        pushButton_15 = new QPushButton(frameFourStartZ);
-        pushButton_15->setObjectName(QStringLiteral("pushButton_15"));
+        pushButtonFZQing = new QPushButton(frameFourStartZ);
+        pushButtonFZQing->setObjectName(QStringLiteral("pushButtonFZQing"));
 
-        horizontalLayout_7->addWidget(pushButton_15);
+        horizontalLayout_7->addWidget(pushButtonFZQing);
 
-        pushButton_14 = new QPushButton(frameFourStartZ);
-        pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
+        pushButtonFZFan = new QPushButton(frameFourStartZ);
+        pushButtonFZFan->setObjectName(QStringLiteral("pushButtonFZFan"));
 
-        horizontalLayout_7->addWidget(pushButton_14);
+        horizontalLayout_7->addWidget(pushButtonFZFan);
 
 
         verticalLayout_3->addLayout(horizontalLayout_7);
@@ -754,10 +754,10 @@ public:
 
         horizontalLayout_4->addWidget(label_4);
 
-        checkBox_26 = new QCheckBox(frameFiveStartZ);
-        checkBox_26->setObjectName(QStringLiteral("checkBox_26"));
+        checkBoxFiveZ = new QCheckBox(frameFiveStartZ);
+        checkBoxFiveZ->setObjectName(QStringLiteral("checkBoxFiveZ"));
 
-        horizontalLayout_4->addWidget(checkBox_26);
+        horizontalLayout_4->addWidget(checkBoxFiveZ);
 
 
         horizontalLayout_8->addLayout(horizontalLayout_4);
@@ -766,20 +766,20 @@ public:
 
         horizontalLayout_8->addItem(horizontalSpacer_4);
 
-        pushButton_25 = new QPushButton(frameFiveStartZ);
-        pushButton_25->setObjectName(QStringLiteral("pushButton_25"));
+        pushButtonFiveZQuan = new QPushButton(frameFiveStartZ);
+        pushButtonFiveZQuan->setObjectName(QStringLiteral("pushButtonFiveZQuan"));
 
-        horizontalLayout_8->addWidget(pushButton_25);
+        horizontalLayout_8->addWidget(pushButtonFiveZQuan);
 
-        pushButton_24 = new QPushButton(frameFiveStartZ);
-        pushButton_24->setObjectName(QStringLiteral("pushButton_24"));
+        pushButtonFiveZQing = new QPushButton(frameFiveStartZ);
+        pushButtonFiveZQing->setObjectName(QStringLiteral("pushButtonFiveZQing"));
 
-        horizontalLayout_8->addWidget(pushButton_24);
+        horizontalLayout_8->addWidget(pushButtonFiveZQing);
 
-        pushButton_23 = new QPushButton(frameFiveStartZ);
-        pushButton_23->setObjectName(QStringLiteral("pushButton_23"));
+        pushButtonFiveZFan = new QPushButton(frameFiveStartZ);
+        pushButtonFiveZFan->setObjectName(QStringLiteral("pushButtonFiveZFan"));
 
-        horizontalLayout_8->addWidget(pushButton_23);
+        horizontalLayout_8->addWidget(pushButtonFiveZFan);
 
 
         verticalLayout_4->addLayout(horizontalLayout_8);
@@ -826,55 +826,55 @@ public:
 
         horizontalLayout_10->addWidget(label_5);
 
-        checkBox_27 = new QCheckBox(frameTwoStartH);
-        checkBox_27->setObjectName(QStringLiteral("checkBox_27"));
+        checkBoxTHQianEr = new QCheckBox(frameTwoStartH);
+        checkBoxTHQianEr->setObjectName(QStringLiteral("checkBoxTHQianEr"));
 
-        horizontalLayout_10->addWidget(checkBox_27);
+        horizontalLayout_10->addWidget(checkBoxTHQianEr);
 
-        checkBox_28 = new QCheckBox(frameTwoStartH);
-        checkBox_28->setObjectName(QStringLiteral("checkBox_28"));
+        checkBoxTHHouEr = new QCheckBox(frameTwoStartH);
+        checkBoxTHHouEr->setObjectName(QStringLiteral("checkBoxTHHouEr"));
 
-        horizontalLayout_10->addWidget(checkBox_28);
+        horizontalLayout_10->addWidget(checkBoxTHHouEr);
 
-        checkBox_29 = new QCheckBox(frameTwoStartH);
-        checkBox_29->setObjectName(QStringLiteral("checkBox_29"));
+        checkBoxTHWanBai = new QCheckBox(frameTwoStartH);
+        checkBoxTHWanBai->setObjectName(QStringLiteral("checkBoxTHWanBai"));
 
-        horizontalLayout_10->addWidget(checkBox_29);
+        horizontalLayout_10->addWidget(checkBoxTHWanBai);
 
-        checkBox_30 = new QCheckBox(frameTwoStartH);
-        checkBox_30->setObjectName(QStringLiteral("checkBox_30"));
+        checkBoxTHWanShi = new QCheckBox(frameTwoStartH);
+        checkBoxTHWanShi->setObjectName(QStringLiteral("checkBoxTHWanShi"));
 
-        horizontalLayout_10->addWidget(checkBox_30);
+        horizontalLayout_10->addWidget(checkBoxTHWanShi);
 
-        checkBox_31 = new QCheckBox(frameTwoStartH);
-        checkBox_31->setObjectName(QStringLiteral("checkBox_31"));
+        checkBoxTHWanGe = new QCheckBox(frameTwoStartH);
+        checkBoxTHWanGe->setObjectName(QStringLiteral("checkBoxTHWanGe"));
 
-        horizontalLayout_10->addWidget(checkBox_31);
+        horizontalLayout_10->addWidget(checkBoxTHWanGe);
 
-        checkBox_32 = new QCheckBox(frameTwoStartH);
-        checkBox_32->setObjectName(QStringLiteral("checkBox_32"));
+        checkBoxTHQianBai = new QCheckBox(frameTwoStartH);
+        checkBoxTHQianBai->setObjectName(QStringLiteral("checkBoxTHQianBai"));
 
-        horizontalLayout_10->addWidget(checkBox_32);
+        horizontalLayout_10->addWidget(checkBoxTHQianBai);
 
-        checkBox_33 = new QCheckBox(frameTwoStartH);
-        checkBox_33->setObjectName(QStringLiteral("checkBox_33"));
+        checkBoxTHQianShi = new QCheckBox(frameTwoStartH);
+        checkBoxTHQianShi->setObjectName(QStringLiteral("checkBoxTHQianShi"));
 
-        horizontalLayout_10->addWidget(checkBox_33);
+        horizontalLayout_10->addWidget(checkBoxTHQianShi);
 
-        checkBox_34 = new QCheckBox(frameTwoStartH);
-        checkBox_34->setObjectName(QStringLiteral("checkBox_34"));
+        checkBoxTHQianGe = new QCheckBox(frameTwoStartH);
+        checkBoxTHQianGe->setObjectName(QStringLiteral("checkBoxTHQianGe"));
 
-        horizontalLayout_10->addWidget(checkBox_34);
+        horizontalLayout_10->addWidget(checkBoxTHQianGe);
 
-        checkBox_35 = new QCheckBox(frameTwoStartH);
-        checkBox_35->setObjectName(QStringLiteral("checkBox_35"));
+        checkBoxTHBaiShi = new QCheckBox(frameTwoStartH);
+        checkBoxTHBaiShi->setObjectName(QStringLiteral("checkBoxTHBaiShi"));
 
-        horizontalLayout_10->addWidget(checkBox_35);
+        horizontalLayout_10->addWidget(checkBoxTHBaiShi);
 
-        checkBox_36 = new QCheckBox(frameTwoStartH);
-        checkBox_36->setObjectName(QStringLiteral("checkBox_36"));
+        checkBoxTHBaiGe = new QCheckBox(frameTwoStartH);
+        checkBoxTHBaiGe->setObjectName(QStringLiteral("checkBoxTHBaiGe"));
 
-        horizontalLayout_10->addWidget(checkBox_36);
+        horizontalLayout_10->addWidget(checkBoxTHBaiGe);
 
 
         horizontalLayout_9->addLayout(horizontalLayout_10);
@@ -883,20 +883,20 @@ public:
 
         horizontalLayout_9->addItem(horizontalSpacer_5);
 
-        pushButton_21 = new QPushButton(frameTwoStartH);
-        pushButton_21->setObjectName(QStringLiteral("pushButton_21"));
+        pushButtonTwoHQuan = new QPushButton(frameTwoStartH);
+        pushButtonTwoHQuan->setObjectName(QStringLiteral("pushButtonTwoHQuan"));
 
-        horizontalLayout_9->addWidget(pushButton_21);
+        horizontalLayout_9->addWidget(pushButtonTwoHQuan);
 
-        pushButton_22 = new QPushButton(frameTwoStartH);
-        pushButton_22->setObjectName(QStringLiteral("pushButton_22"));
+        pushButtonTwoHQing = new QPushButton(frameTwoStartH);
+        pushButtonTwoHQing->setObjectName(QStringLiteral("pushButtonTwoHQing"));
 
-        horizontalLayout_9->addWidget(pushButton_22);
+        horizontalLayout_9->addWidget(pushButtonTwoHQing);
 
-        pushButton_20 = new QPushButton(frameTwoStartH);
-        pushButton_20->setObjectName(QStringLiteral("pushButton_20"));
+        pushButtonTwoHFan = new QPushButton(frameTwoStartH);
+        pushButtonTwoHFan->setObjectName(QStringLiteral("pushButtonTwoHFan"));
 
-        horizontalLayout_9->addWidget(pushButton_20);
+        horizontalLayout_9->addWidget(pushButtonTwoHFan);
 
 
         verticalLayout_5->addLayout(horizontalLayout_9);
@@ -943,55 +943,55 @@ public:
 
         horizontalLayout_12->addWidget(label_6);
 
-        checkBox_37 = new QCheckBox(frameThreeStartH);
-        checkBox_37->setObjectName(QStringLiteral("checkBox_37"));
+        checkBoxThreeHHouSan = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHHouSan->setObjectName(QStringLiteral("checkBoxThreeHHouSan"));
 
-        horizontalLayout_12->addWidget(checkBox_37);
+        horizontalLayout_12->addWidget(checkBoxThreeHHouSan);
 
-        checkBox_38 = new QCheckBox(frameThreeStartH);
-        checkBox_38->setObjectName(QStringLiteral("checkBox_38"));
+        checkBoxThreeHQianSan = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHQianSan->setObjectName(QStringLiteral("checkBoxThreeHQianSan"));
 
-        horizontalLayout_12->addWidget(checkBox_38);
+        horizontalLayout_12->addWidget(checkBoxThreeHQianSan);
 
-        checkBox_39 = new QCheckBox(frameThreeStartH);
-        checkBox_39->setObjectName(QStringLiteral("checkBox_39"));
+        checkBoxThreeHZhongSan = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHZhongSan->setObjectName(QStringLiteral("checkBoxThreeHZhongSan"));
 
-        horizontalLayout_12->addWidget(checkBox_39);
+        horizontalLayout_12->addWidget(checkBoxThreeHZhongSan);
 
-        checkBox_40 = new QCheckBox(frameThreeStartH);
-        checkBox_40->setObjectName(QStringLiteral("checkBox_40"));
+        checkBoxThreeHWanQIanShi = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHWanQIanShi->setObjectName(QStringLiteral("checkBoxThreeHWanQIanShi"));
 
-        horizontalLayout_12->addWidget(checkBox_40);
+        horizontalLayout_12->addWidget(checkBoxThreeHWanQIanShi);
 
-        checkBox_41 = new QCheckBox(frameThreeStartH);
-        checkBox_41->setObjectName(QStringLiteral("checkBox_41"));
+        checkBoxThreeHWanQianGe = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHWanQianGe->setObjectName(QStringLiteral("checkBoxThreeHWanQianGe"));
 
-        horizontalLayout_12->addWidget(checkBox_41);
+        horizontalLayout_12->addWidget(checkBoxThreeHWanQianGe);
 
-        checkBox_42 = new QCheckBox(frameThreeStartH);
-        checkBox_42->setObjectName(QStringLiteral("checkBox_42"));
+        checkBoxThreeHWanBaiShi = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHWanBaiShi->setObjectName(QStringLiteral("checkBoxThreeHWanBaiShi"));
 
-        horizontalLayout_12->addWidget(checkBox_42);
+        horizontalLayout_12->addWidget(checkBoxThreeHWanBaiShi);
 
-        checkBox_43 = new QCheckBox(frameThreeStartH);
-        checkBox_43->setObjectName(QStringLiteral("checkBox_43"));
+        checkBoxThreeHWanBaiGe = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHWanBaiGe->setObjectName(QStringLiteral("checkBoxThreeHWanBaiGe"));
 
-        horizontalLayout_12->addWidget(checkBox_43);
+        horizontalLayout_12->addWidget(checkBoxThreeHWanBaiGe);
 
-        checkBox_44 = new QCheckBox(frameThreeStartH);
-        checkBox_44->setObjectName(QStringLiteral("checkBox_44"));
+        checkBoxThreeHWanSHiGe = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHWanSHiGe->setObjectName(QStringLiteral("checkBoxThreeHWanSHiGe"));
 
-        horizontalLayout_12->addWidget(checkBox_44);
+        horizontalLayout_12->addWidget(checkBoxThreeHWanSHiGe);
 
-        checkBox_45 = new QCheckBox(frameThreeStartH);
-        checkBox_45->setObjectName(QStringLiteral("checkBox_45"));
+        checkBoxThreeHQianBaiGe = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHQianBaiGe->setObjectName(QStringLiteral("checkBoxThreeHQianBaiGe"));
 
-        horizontalLayout_12->addWidget(checkBox_45);
+        horizontalLayout_12->addWidget(checkBoxThreeHQianBaiGe);
 
-        checkBox_46 = new QCheckBox(frameThreeStartH);
-        checkBox_46->setObjectName(QStringLiteral("checkBox_46"));
+        checkBoxThreeHQianShiGe = new QCheckBox(frameThreeStartH);
+        checkBoxThreeHQianShiGe->setObjectName(QStringLiteral("checkBoxThreeHQianShiGe"));
 
-        horizontalLayout_12->addWidget(checkBox_46);
+        horizontalLayout_12->addWidget(checkBoxThreeHQianShiGe);
 
 
         horizontalLayout_11->addLayout(horizontalLayout_12);
@@ -1000,20 +1000,20 @@ public:
 
         horizontalLayout_11->addItem(horizontalSpacer_6);
 
-        pushButton_19 = new QPushButton(frameThreeStartH);
-        pushButton_19->setObjectName(QStringLiteral("pushButton_19"));
+        pushButtonThreeHQuan = new QPushButton(frameThreeStartH);
+        pushButtonThreeHQuan->setObjectName(QStringLiteral("pushButtonThreeHQuan"));
 
-        horizontalLayout_11->addWidget(pushButton_19);
+        horizontalLayout_11->addWidget(pushButtonThreeHQuan);
 
-        pushButton_18 = new QPushButton(frameThreeStartH);
-        pushButton_18->setObjectName(QStringLiteral("pushButton_18"));
+        pushButtonThreeHQing = new QPushButton(frameThreeStartH);
+        pushButtonThreeHQing->setObjectName(QStringLiteral("pushButtonThreeHQing"));
 
-        horizontalLayout_11->addWidget(pushButton_18);
+        horizontalLayout_11->addWidget(pushButtonThreeHQing);
 
-        pushButton_17 = new QPushButton(frameThreeStartH);
-        pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
+        pushButtonThreeHFan = new QPushButton(frameThreeStartH);
+        pushButtonThreeHFan->setObjectName(QStringLiteral("pushButtonThreeHFan"));
 
-        horizontalLayout_11->addWidget(pushButton_17);
+        horizontalLayout_11->addWidget(pushButtonThreeHFan);
 
 
         verticalLayout_6->addLayout(horizontalLayout_11);
@@ -1083,10 +1083,8 @@ public:
 "max-width:20;\n"
 "min-height:20;\n"
 "max-height:20;\n"
-"border-image: url(:/image/image/puton.png);\n"
 "}\n"
-"\n"
-"border:2px solid rgb(170, 170, 170);"));
+""));
         verticalLayout_18 = new QVBoxLayout(widgetGuts);
         verticalLayout_18->setSpacing(3);
         verticalLayout_18->setObjectName(QStringLiteral("verticalLayout_18"));
@@ -1101,83 +1099,85 @@ public:
 
         horizontalLayout_25->addWidget(label_19);
 
-        pushButton_10 = new QPushButton(widgetGuts);
-        pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
-        pushButton_10->setMinimumSize(QSize(20, 20));
+        pushButtonWanZero = new QPushButton(widgetGuts);
+        pushButtonWanZero->setObjectName(QStringLiteral("pushButtonWanZero"));
+        pushButtonWanZero->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_10);
+        horizontalLayout_25->addWidget(pushButtonWanZero);
 
-        pushButton_29 = new QPushButton(widgetGuts);
-        pushButton_29->setObjectName(QStringLiteral("pushButton_29"));
-        pushButton_29->setMinimumSize(QSize(20, 20));
+        pushButtonWanOne = new QPushButton(widgetGuts);
+        pushButtonWanOne->setObjectName(QStringLiteral("pushButtonWanOne"));
+        pushButtonWanOne->setMinimumSize(QSize(22, 22));
+        pushButtonWanOne->setCheckable(true);
+        pushButtonWanOne->setChecked(false);
 
-        horizontalLayout_25->addWidget(pushButton_29);
+        horizontalLayout_25->addWidget(pushButtonWanOne);
 
-        pushButton_30 = new QPushButton(widgetGuts);
-        pushButton_30->setObjectName(QStringLiteral("pushButton_30"));
-        pushButton_30->setMinimumSize(QSize(20, 20));
+        pushButtonWanTwo = new QPushButton(widgetGuts);
+        pushButtonWanTwo->setObjectName(QStringLiteral("pushButtonWanTwo"));
+        pushButtonWanTwo->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_30);
+        horizontalLayout_25->addWidget(pushButtonWanTwo);
 
-        pushButton_32 = new QPushButton(widgetGuts);
-        pushButton_32->setObjectName(QStringLiteral("pushButton_32"));
-        pushButton_32->setMinimumSize(QSize(20, 20));
+        pushButtonWanThree = new QPushButton(widgetGuts);
+        pushButtonWanThree->setObjectName(QStringLiteral("pushButtonWanThree"));
+        pushButtonWanThree->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_32);
+        horizontalLayout_25->addWidget(pushButtonWanThree);
 
-        pushButton_33 = new QPushButton(widgetGuts);
-        pushButton_33->setObjectName(QStringLiteral("pushButton_33"));
-        pushButton_33->setMinimumSize(QSize(20, 20));
+        pushButtonWanFour = new QPushButton(widgetGuts);
+        pushButtonWanFour->setObjectName(QStringLiteral("pushButtonWanFour"));
+        pushButtonWanFour->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_33);
+        horizontalLayout_25->addWidget(pushButtonWanFour);
 
-        pushButton_31 = new QPushButton(widgetGuts);
-        pushButton_31->setObjectName(QStringLiteral("pushButton_31"));
-        pushButton_31->setMinimumSize(QSize(20, 20));
+        pushButtonWanFive = new QPushButton(widgetGuts);
+        pushButtonWanFive->setObjectName(QStringLiteral("pushButtonWanFive"));
+        pushButtonWanFive->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_31);
+        horizontalLayout_25->addWidget(pushButtonWanFive);
 
-        pushButton_34 = new QPushButton(widgetGuts);
-        pushButton_34->setObjectName(QStringLiteral("pushButton_34"));
-        pushButton_34->setMinimumSize(QSize(20, 20));
+        pushButtonWanSix = new QPushButton(widgetGuts);
+        pushButtonWanSix->setObjectName(QStringLiteral("pushButtonWanSix"));
+        pushButtonWanSix->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_34);
+        horizontalLayout_25->addWidget(pushButtonWanSix);
 
-        pushButton_35 = new QPushButton(widgetGuts);
-        pushButton_35->setObjectName(QStringLiteral("pushButton_35"));
-        pushButton_35->setMinimumSize(QSize(20, 20));
+        pushButtonWanSeven = new QPushButton(widgetGuts);
+        pushButtonWanSeven->setObjectName(QStringLiteral("pushButtonWanSeven"));
+        pushButtonWanSeven->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_35);
+        horizontalLayout_25->addWidget(pushButtonWanSeven);
 
-        pushButton_39 = new QPushButton(widgetGuts);
-        pushButton_39->setObjectName(QStringLiteral("pushButton_39"));
-        pushButton_39->setMinimumSize(QSize(20, 20));
+        pushButtonWanEight = new QPushButton(widgetGuts);
+        pushButtonWanEight->setObjectName(QStringLiteral("pushButtonWanEight"));
+        pushButtonWanEight->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_39);
+        horizontalLayout_25->addWidget(pushButtonWanEight);
 
-        pushButton_38 = new QPushButton(widgetGuts);
-        pushButton_38->setObjectName(QStringLiteral("pushButton_38"));
-        pushButton_38->setMinimumSize(QSize(20, 20));
+        pushButtonWanNine = new QPushButton(widgetGuts);
+        pushButtonWanNine->setObjectName(QStringLiteral("pushButtonWanNine"));
+        pushButtonWanNine->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_38);
+        horizontalLayout_25->addWidget(pushButtonWanNine);
 
-        pushButton_36 = new QPushButton(widgetGuts);
-        pushButton_36->setObjectName(QStringLiteral("pushButton_36"));
-        pushButton_36->setMinimumSize(QSize(20, 20));
+        pushButtonWanQuan = new QPushButton(widgetGuts);
+        pushButtonWanQuan->setObjectName(QStringLiteral("pushButtonWanQuan"));
+        pushButtonWanQuan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_36);
+        horizontalLayout_25->addWidget(pushButtonWanQuan);
 
-        pushButton_37 = new QPushButton(widgetGuts);
-        pushButton_37->setObjectName(QStringLiteral("pushButton_37"));
-        pushButton_37->setMinimumSize(QSize(20, 20));
+        pushButtonWanQing = new QPushButton(widgetGuts);
+        pushButtonWanQing->setObjectName(QStringLiteral("pushButtonWanQing"));
+        pushButtonWanQing->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_37);
+        horizontalLayout_25->addWidget(pushButtonWanQing);
 
-        pushButton_40 = new QPushButton(widgetGuts);
-        pushButton_40->setObjectName(QStringLiteral("pushButton_40"));
-        pushButton_40->setMinimumSize(QSize(20, 20));
+        pushButtonWanFan = new QPushButton(widgetGuts);
+        pushButtonWanFan->setObjectName(QStringLiteral("pushButtonWanFan"));
+        pushButtonWanFan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_25->addWidget(pushButton_40);
+        horizontalLayout_25->addWidget(pushButtonWanFan);
 
 
         verticalLayout_17->addLayout(horizontalLayout_25);
@@ -1194,83 +1194,83 @@ public:
 
         horizontalLayout_26->addWidget(label_20);
 
-        pushButton_41 = new QPushButton(widgetGuts);
-        pushButton_41->setObjectName(QStringLiteral("pushButton_41"));
-        pushButton_41->setMinimumSize(QSize(20, 20));
+        pushButtonQianZero = new QPushButton(widgetGuts);
+        pushButtonQianZero->setObjectName(QStringLiteral("pushButtonQianZero"));
+        pushButtonQianZero->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_41);
+        horizontalLayout_26->addWidget(pushButtonQianZero);
 
-        pushButton_42 = new QPushButton(widgetGuts);
-        pushButton_42->setObjectName(QStringLiteral("pushButton_42"));
-        pushButton_42->setMinimumSize(QSize(20, 20));
+        pushButtonQianOne = new QPushButton(widgetGuts);
+        pushButtonQianOne->setObjectName(QStringLiteral("pushButtonQianOne"));
+        pushButtonQianOne->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_42);
+        horizontalLayout_26->addWidget(pushButtonQianOne);
 
-        pushButton_43 = new QPushButton(widgetGuts);
-        pushButton_43->setObjectName(QStringLiteral("pushButton_43"));
-        pushButton_43->setMinimumSize(QSize(20, 20));
+        pushButtonQianTwo = new QPushButton(widgetGuts);
+        pushButtonQianTwo->setObjectName(QStringLiteral("pushButtonQianTwo"));
+        pushButtonQianTwo->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_43);
+        horizontalLayout_26->addWidget(pushButtonQianTwo);
 
-        pushButton_44 = new QPushButton(widgetGuts);
-        pushButton_44->setObjectName(QStringLiteral("pushButton_44"));
-        pushButton_44->setMinimumSize(QSize(20, 20));
+        pushButtonQianThree = new QPushButton(widgetGuts);
+        pushButtonQianThree->setObjectName(QStringLiteral("pushButtonQianThree"));
+        pushButtonQianThree->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_44);
+        horizontalLayout_26->addWidget(pushButtonQianThree);
 
-        pushButton_45 = new QPushButton(widgetGuts);
-        pushButton_45->setObjectName(QStringLiteral("pushButton_45"));
-        pushButton_45->setMinimumSize(QSize(20, 20));
+        pushButtonQianFour = new QPushButton(widgetGuts);
+        pushButtonQianFour->setObjectName(QStringLiteral("pushButtonQianFour"));
+        pushButtonQianFour->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_45);
+        horizontalLayout_26->addWidget(pushButtonQianFour);
 
-        pushButton_46 = new QPushButton(widgetGuts);
-        pushButton_46->setObjectName(QStringLiteral("pushButton_46"));
-        pushButton_46->setMinimumSize(QSize(20, 20));
+        pushButtonQianFive = new QPushButton(widgetGuts);
+        pushButtonQianFive->setObjectName(QStringLiteral("pushButtonQianFive"));
+        pushButtonQianFive->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_46);
+        horizontalLayout_26->addWidget(pushButtonQianFive);
 
-        pushButton_47 = new QPushButton(widgetGuts);
-        pushButton_47->setObjectName(QStringLiteral("pushButton_47"));
-        pushButton_47->setMinimumSize(QSize(20, 20));
+        pushButtonQianSix = new QPushButton(widgetGuts);
+        pushButtonQianSix->setObjectName(QStringLiteral("pushButtonQianSix"));
+        pushButtonQianSix->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_47);
+        horizontalLayout_26->addWidget(pushButtonQianSix);
 
-        pushButton_48 = new QPushButton(widgetGuts);
-        pushButton_48->setObjectName(QStringLiteral("pushButton_48"));
-        pushButton_48->setMinimumSize(QSize(20, 20));
+        pushButtonQianSeven = new QPushButton(widgetGuts);
+        pushButtonQianSeven->setObjectName(QStringLiteral("pushButtonQianSeven"));
+        pushButtonQianSeven->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_48);
+        horizontalLayout_26->addWidget(pushButtonQianSeven);
 
-        pushButton_49 = new QPushButton(widgetGuts);
-        pushButton_49->setObjectName(QStringLiteral("pushButton_49"));
-        pushButton_49->setMinimumSize(QSize(20, 20));
+        pushButtonQianEight = new QPushButton(widgetGuts);
+        pushButtonQianEight->setObjectName(QStringLiteral("pushButtonQianEight"));
+        pushButtonQianEight->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_49);
+        horizontalLayout_26->addWidget(pushButtonQianEight);
 
-        pushButton_50 = new QPushButton(widgetGuts);
-        pushButton_50->setObjectName(QStringLiteral("pushButton_50"));
-        pushButton_50->setMinimumSize(QSize(20, 20));
+        pushButtonQianNine = new QPushButton(widgetGuts);
+        pushButtonQianNine->setObjectName(QStringLiteral("pushButtonQianNine"));
+        pushButtonQianNine->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_50);
+        horizontalLayout_26->addWidget(pushButtonQianNine);
 
-        pushButton_51 = new QPushButton(widgetGuts);
-        pushButton_51->setObjectName(QStringLiteral("pushButton_51"));
-        pushButton_51->setMinimumSize(QSize(20, 20));
+        pushButtonQianQuan = new QPushButton(widgetGuts);
+        pushButtonQianQuan->setObjectName(QStringLiteral("pushButtonQianQuan"));
+        pushButtonQianQuan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_51);
+        horizontalLayout_26->addWidget(pushButtonQianQuan);
 
-        pushButton_52 = new QPushButton(widgetGuts);
-        pushButton_52->setObjectName(QStringLiteral("pushButton_52"));
-        pushButton_52->setMinimumSize(QSize(20, 20));
+        pushButtonQianQing = new QPushButton(widgetGuts);
+        pushButtonQianQing->setObjectName(QStringLiteral("pushButtonQianQing"));
+        pushButtonQianQing->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_52);
+        horizontalLayout_26->addWidget(pushButtonQianQing);
 
-        pushButton_53 = new QPushButton(widgetGuts);
-        pushButton_53->setObjectName(QStringLiteral("pushButton_53"));
-        pushButton_53->setMinimumSize(QSize(20, 20));
+        pushButtonQianFan = new QPushButton(widgetGuts);
+        pushButtonQianFan->setObjectName(QStringLiteral("pushButtonQianFan"));
+        pushButtonQianFan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_26->addWidget(pushButton_53);
+        horizontalLayout_26->addWidget(pushButtonQianFan);
 
 
         verticalLayout_17->addLayout(horizontalLayout_26);
@@ -1287,83 +1287,83 @@ public:
 
         horizontalLayout_27->addWidget(label_21);
 
-        pushButton_54 = new QPushButton(widgetGuts);
-        pushButton_54->setObjectName(QStringLiteral("pushButton_54"));
-        pushButton_54->setMinimumSize(QSize(20, 20));
+        pushButtonBaiZero = new QPushButton(widgetGuts);
+        pushButtonBaiZero->setObjectName(QStringLiteral("pushButtonBaiZero"));
+        pushButtonBaiZero->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_54);
+        horizontalLayout_27->addWidget(pushButtonBaiZero);
 
-        pushButton_55 = new QPushButton(widgetGuts);
-        pushButton_55->setObjectName(QStringLiteral("pushButton_55"));
-        pushButton_55->setMinimumSize(QSize(20, 20));
+        pushButtonBaiOne = new QPushButton(widgetGuts);
+        pushButtonBaiOne->setObjectName(QStringLiteral("pushButtonBaiOne"));
+        pushButtonBaiOne->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_55);
+        horizontalLayout_27->addWidget(pushButtonBaiOne);
 
-        pushButton_56 = new QPushButton(widgetGuts);
-        pushButton_56->setObjectName(QStringLiteral("pushButton_56"));
-        pushButton_56->setMinimumSize(QSize(20, 20));
+        pushButtonBaiTwo = new QPushButton(widgetGuts);
+        pushButtonBaiTwo->setObjectName(QStringLiteral("pushButtonBaiTwo"));
+        pushButtonBaiTwo->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_56);
+        horizontalLayout_27->addWidget(pushButtonBaiTwo);
 
-        pushButton_57 = new QPushButton(widgetGuts);
-        pushButton_57->setObjectName(QStringLiteral("pushButton_57"));
-        pushButton_57->setMinimumSize(QSize(20, 20));
+        pushButtonBaiThree = new QPushButton(widgetGuts);
+        pushButtonBaiThree->setObjectName(QStringLiteral("pushButtonBaiThree"));
+        pushButtonBaiThree->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_57);
+        horizontalLayout_27->addWidget(pushButtonBaiThree);
 
-        pushButton_58 = new QPushButton(widgetGuts);
-        pushButton_58->setObjectName(QStringLiteral("pushButton_58"));
-        pushButton_58->setMinimumSize(QSize(20, 20));
+        pushButtonBaiFour = new QPushButton(widgetGuts);
+        pushButtonBaiFour->setObjectName(QStringLiteral("pushButtonBaiFour"));
+        pushButtonBaiFour->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_58);
+        horizontalLayout_27->addWidget(pushButtonBaiFour);
 
-        pushButton_59 = new QPushButton(widgetGuts);
-        pushButton_59->setObjectName(QStringLiteral("pushButton_59"));
-        pushButton_59->setMinimumSize(QSize(20, 20));
+        pushButtonBaiFive = new QPushButton(widgetGuts);
+        pushButtonBaiFive->setObjectName(QStringLiteral("pushButtonBaiFive"));
+        pushButtonBaiFive->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_59);
+        horizontalLayout_27->addWidget(pushButtonBaiFive);
 
-        pushButton_60 = new QPushButton(widgetGuts);
-        pushButton_60->setObjectName(QStringLiteral("pushButton_60"));
-        pushButton_60->setMinimumSize(QSize(20, 20));
+        pushButtonBaiSix = new QPushButton(widgetGuts);
+        pushButtonBaiSix->setObjectName(QStringLiteral("pushButtonBaiSix"));
+        pushButtonBaiSix->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_60);
+        horizontalLayout_27->addWidget(pushButtonBaiSix);
 
-        pushButton_61 = new QPushButton(widgetGuts);
-        pushButton_61->setObjectName(QStringLiteral("pushButton_61"));
-        pushButton_61->setMinimumSize(QSize(20, 20));
+        pushButtonBaiSeven = new QPushButton(widgetGuts);
+        pushButtonBaiSeven->setObjectName(QStringLiteral("pushButtonBaiSeven"));
+        pushButtonBaiSeven->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_61);
+        horizontalLayout_27->addWidget(pushButtonBaiSeven);
 
-        pushButton_62 = new QPushButton(widgetGuts);
-        pushButton_62->setObjectName(QStringLiteral("pushButton_62"));
-        pushButton_62->setMinimumSize(QSize(20, 20));
+        pushButtonBaiEight = new QPushButton(widgetGuts);
+        pushButtonBaiEight->setObjectName(QStringLiteral("pushButtonBaiEight"));
+        pushButtonBaiEight->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_62);
+        horizontalLayout_27->addWidget(pushButtonBaiEight);
 
-        pushButton_63 = new QPushButton(widgetGuts);
-        pushButton_63->setObjectName(QStringLiteral("pushButton_63"));
-        pushButton_63->setMinimumSize(QSize(20, 20));
+        pushButtonBaiNine = new QPushButton(widgetGuts);
+        pushButtonBaiNine->setObjectName(QStringLiteral("pushButtonBaiNine"));
+        pushButtonBaiNine->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_63);
+        horizontalLayout_27->addWidget(pushButtonBaiNine);
 
-        pushButton_64 = new QPushButton(widgetGuts);
-        pushButton_64->setObjectName(QStringLiteral("pushButton_64"));
-        pushButton_64->setMinimumSize(QSize(20, 20));
+        pushButtonBaiQuan = new QPushButton(widgetGuts);
+        pushButtonBaiQuan->setObjectName(QStringLiteral("pushButtonBaiQuan"));
+        pushButtonBaiQuan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_64);
+        horizontalLayout_27->addWidget(pushButtonBaiQuan);
 
-        pushButton_65 = new QPushButton(widgetGuts);
-        pushButton_65->setObjectName(QStringLiteral("pushButton_65"));
-        pushButton_65->setMinimumSize(QSize(20, 20));
+        pushButtonBaiQing = new QPushButton(widgetGuts);
+        pushButtonBaiQing->setObjectName(QStringLiteral("pushButtonBaiQing"));
+        pushButtonBaiQing->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_65);
+        horizontalLayout_27->addWidget(pushButtonBaiQing);
 
-        pushButton_66 = new QPushButton(widgetGuts);
-        pushButton_66->setObjectName(QStringLiteral("pushButton_66"));
-        pushButton_66->setMinimumSize(QSize(20, 20));
+        pushButtonBaiFan = new QPushButton(widgetGuts);
+        pushButtonBaiFan->setObjectName(QStringLiteral("pushButtonBaiFan"));
+        pushButtonBaiFan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_27->addWidget(pushButton_66);
+        horizontalLayout_27->addWidget(pushButtonBaiFan);
 
 
         verticalLayout_17->addLayout(horizontalLayout_27);
@@ -1380,83 +1380,83 @@ public:
 
         horizontalLayout_30->addWidget(label_24);
 
-        pushButton_93 = new QPushButton(widgetGuts);
-        pushButton_93->setObjectName(QStringLiteral("pushButton_93"));
-        pushButton_93->setMinimumSize(QSize(20, 20));
+        pushButtonShiZero = new QPushButton(widgetGuts);
+        pushButtonShiZero->setObjectName(QStringLiteral("pushButtonShiZero"));
+        pushButtonShiZero->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_93);
+        horizontalLayout_30->addWidget(pushButtonShiZero);
 
-        pushButton_94 = new QPushButton(widgetGuts);
-        pushButton_94->setObjectName(QStringLiteral("pushButton_94"));
-        pushButton_94->setMinimumSize(QSize(20, 20));
+        pushButtonShiOne = new QPushButton(widgetGuts);
+        pushButtonShiOne->setObjectName(QStringLiteral("pushButtonShiOne"));
+        pushButtonShiOne->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_94);
+        horizontalLayout_30->addWidget(pushButtonShiOne);
 
-        pushButton_95 = new QPushButton(widgetGuts);
-        pushButton_95->setObjectName(QStringLiteral("pushButton_95"));
-        pushButton_95->setMinimumSize(QSize(20, 20));
+        pushButtonShiTwo = new QPushButton(widgetGuts);
+        pushButtonShiTwo->setObjectName(QStringLiteral("pushButtonShiTwo"));
+        pushButtonShiTwo->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_95);
+        horizontalLayout_30->addWidget(pushButtonShiTwo);
 
-        pushButton_96 = new QPushButton(widgetGuts);
-        pushButton_96->setObjectName(QStringLiteral("pushButton_96"));
-        pushButton_96->setMinimumSize(QSize(20, 20));
+        pushButtonShiThree = new QPushButton(widgetGuts);
+        pushButtonShiThree->setObjectName(QStringLiteral("pushButtonShiThree"));
+        pushButtonShiThree->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_96);
+        horizontalLayout_30->addWidget(pushButtonShiThree);
 
-        pushButton_97 = new QPushButton(widgetGuts);
-        pushButton_97->setObjectName(QStringLiteral("pushButton_97"));
-        pushButton_97->setMinimumSize(QSize(20, 20));
+        pushButtonShiFour = new QPushButton(widgetGuts);
+        pushButtonShiFour->setObjectName(QStringLiteral("pushButtonShiFour"));
+        pushButtonShiFour->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_97);
+        horizontalLayout_30->addWidget(pushButtonShiFour);
 
-        pushButton_98 = new QPushButton(widgetGuts);
-        pushButton_98->setObjectName(QStringLiteral("pushButton_98"));
-        pushButton_98->setMinimumSize(QSize(20, 20));
+        pushButtonShiFive = new QPushButton(widgetGuts);
+        pushButtonShiFive->setObjectName(QStringLiteral("pushButtonShiFive"));
+        pushButtonShiFive->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_98);
+        horizontalLayout_30->addWidget(pushButtonShiFive);
 
-        pushButton_99 = new QPushButton(widgetGuts);
-        pushButton_99->setObjectName(QStringLiteral("pushButton_99"));
-        pushButton_99->setMinimumSize(QSize(20, 20));
+        pushButtonShiSix = new QPushButton(widgetGuts);
+        pushButtonShiSix->setObjectName(QStringLiteral("pushButtonShiSix"));
+        pushButtonShiSix->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_99);
+        horizontalLayout_30->addWidget(pushButtonShiSix);
 
-        pushButton_100 = new QPushButton(widgetGuts);
-        pushButton_100->setObjectName(QStringLiteral("pushButton_100"));
-        pushButton_100->setMinimumSize(QSize(20, 20));
+        pushButtonShiSeven = new QPushButton(widgetGuts);
+        pushButtonShiSeven->setObjectName(QStringLiteral("pushButtonShiSeven"));
+        pushButtonShiSeven->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_100);
+        horizontalLayout_30->addWidget(pushButtonShiSeven);
 
-        pushButton_101 = new QPushButton(widgetGuts);
-        pushButton_101->setObjectName(QStringLiteral("pushButton_101"));
-        pushButton_101->setMinimumSize(QSize(20, 20));
+        pushButtonShiEight = new QPushButton(widgetGuts);
+        pushButtonShiEight->setObjectName(QStringLiteral("pushButtonShiEight"));
+        pushButtonShiEight->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_101);
+        horizontalLayout_30->addWidget(pushButtonShiEight);
 
-        pushButton_102 = new QPushButton(widgetGuts);
-        pushButton_102->setObjectName(QStringLiteral("pushButton_102"));
-        pushButton_102->setMinimumSize(QSize(20, 20));
+        pushButtonShiNine = new QPushButton(widgetGuts);
+        pushButtonShiNine->setObjectName(QStringLiteral("pushButtonShiNine"));
+        pushButtonShiNine->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_102);
+        horizontalLayout_30->addWidget(pushButtonShiNine);
 
-        pushButton_103 = new QPushButton(widgetGuts);
-        pushButton_103->setObjectName(QStringLiteral("pushButton_103"));
-        pushButton_103->setMinimumSize(QSize(20, 20));
+        pushButtonShiQuan = new QPushButton(widgetGuts);
+        pushButtonShiQuan->setObjectName(QStringLiteral("pushButtonShiQuan"));
+        pushButtonShiQuan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_103);
+        horizontalLayout_30->addWidget(pushButtonShiQuan);
 
-        pushButton_104 = new QPushButton(widgetGuts);
-        pushButton_104->setObjectName(QStringLiteral("pushButton_104"));
-        pushButton_104->setMinimumSize(QSize(20, 20));
+        pushButtonShiQing = new QPushButton(widgetGuts);
+        pushButtonShiQing->setObjectName(QStringLiteral("pushButtonShiQing"));
+        pushButtonShiQing->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_104);
+        horizontalLayout_30->addWidget(pushButtonShiQing);
 
-        pushButton_105 = new QPushButton(widgetGuts);
-        pushButton_105->setObjectName(QStringLiteral("pushButton_105"));
-        pushButton_105->setMinimumSize(QSize(20, 20));
+        pushButtonShiFan = new QPushButton(widgetGuts);
+        pushButtonShiFan->setObjectName(QStringLiteral("pushButtonShiFan"));
+        pushButtonShiFan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_30->addWidget(pushButton_105);
+        horizontalLayout_30->addWidget(pushButtonShiFan);
 
 
         verticalLayout_17->addLayout(horizontalLayout_30);
@@ -1473,83 +1473,83 @@ public:
 
         horizontalLayout_28->addWidget(label_22);
 
-        pushButton_67 = new QPushButton(widgetGuts);
-        pushButton_67->setObjectName(QStringLiteral("pushButton_67"));
-        pushButton_67->setMinimumSize(QSize(20, 20));
+        pushButtonGeZero = new QPushButton(widgetGuts);
+        pushButtonGeZero->setObjectName(QStringLiteral("pushButtonGeZero"));
+        pushButtonGeZero->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_67);
+        horizontalLayout_28->addWidget(pushButtonGeZero);
 
-        pushButton_68 = new QPushButton(widgetGuts);
-        pushButton_68->setObjectName(QStringLiteral("pushButton_68"));
-        pushButton_68->setMinimumSize(QSize(20, 20));
+        pushButtonGeOne = new QPushButton(widgetGuts);
+        pushButtonGeOne->setObjectName(QStringLiteral("pushButtonGeOne"));
+        pushButtonGeOne->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_68);
+        horizontalLayout_28->addWidget(pushButtonGeOne);
 
-        pushButton_69 = new QPushButton(widgetGuts);
-        pushButton_69->setObjectName(QStringLiteral("pushButton_69"));
-        pushButton_69->setMinimumSize(QSize(20, 20));
+        pushButtonGeTwo = new QPushButton(widgetGuts);
+        pushButtonGeTwo->setObjectName(QStringLiteral("pushButtonGeTwo"));
+        pushButtonGeTwo->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_69);
+        horizontalLayout_28->addWidget(pushButtonGeTwo);
 
-        pushButton_70 = new QPushButton(widgetGuts);
-        pushButton_70->setObjectName(QStringLiteral("pushButton_70"));
-        pushButton_70->setMinimumSize(QSize(20, 20));
+        pushButtonGeThree = new QPushButton(widgetGuts);
+        pushButtonGeThree->setObjectName(QStringLiteral("pushButtonGeThree"));
+        pushButtonGeThree->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_70);
+        horizontalLayout_28->addWidget(pushButtonGeThree);
 
-        pushButton_71 = new QPushButton(widgetGuts);
-        pushButton_71->setObjectName(QStringLiteral("pushButton_71"));
-        pushButton_71->setMinimumSize(QSize(20, 20));
+        pushButtonGeFour = new QPushButton(widgetGuts);
+        pushButtonGeFour->setObjectName(QStringLiteral("pushButtonGeFour"));
+        pushButtonGeFour->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_71);
+        horizontalLayout_28->addWidget(pushButtonGeFour);
 
-        pushButton_72 = new QPushButton(widgetGuts);
-        pushButton_72->setObjectName(QStringLiteral("pushButton_72"));
-        pushButton_72->setMinimumSize(QSize(20, 20));
+        pushButtonGeFive = new QPushButton(widgetGuts);
+        pushButtonGeFive->setObjectName(QStringLiteral("pushButtonGeFive"));
+        pushButtonGeFive->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_72);
+        horizontalLayout_28->addWidget(pushButtonGeFive);
 
-        pushButton_73 = new QPushButton(widgetGuts);
-        pushButton_73->setObjectName(QStringLiteral("pushButton_73"));
-        pushButton_73->setMinimumSize(QSize(20, 20));
+        pushButtonGeSix = new QPushButton(widgetGuts);
+        pushButtonGeSix->setObjectName(QStringLiteral("pushButtonGeSix"));
+        pushButtonGeSix->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_73);
+        horizontalLayout_28->addWidget(pushButtonGeSix);
 
-        pushButton_74 = new QPushButton(widgetGuts);
-        pushButton_74->setObjectName(QStringLiteral("pushButton_74"));
-        pushButton_74->setMinimumSize(QSize(20, 20));
+        pushButtonGeSeven = new QPushButton(widgetGuts);
+        pushButtonGeSeven->setObjectName(QStringLiteral("pushButtonGeSeven"));
+        pushButtonGeSeven->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_74);
+        horizontalLayout_28->addWidget(pushButtonGeSeven);
 
-        pushButton_75 = new QPushButton(widgetGuts);
-        pushButton_75->setObjectName(QStringLiteral("pushButton_75"));
-        pushButton_75->setMinimumSize(QSize(20, 20));
+        pushButtonGeEight = new QPushButton(widgetGuts);
+        pushButtonGeEight->setObjectName(QStringLiteral("pushButtonGeEight"));
+        pushButtonGeEight->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_75);
+        horizontalLayout_28->addWidget(pushButtonGeEight);
 
-        pushButton_76 = new QPushButton(widgetGuts);
-        pushButton_76->setObjectName(QStringLiteral("pushButton_76"));
-        pushButton_76->setMinimumSize(QSize(20, 20));
+        pushButtonGeNine = new QPushButton(widgetGuts);
+        pushButtonGeNine->setObjectName(QStringLiteral("pushButtonGeNine"));
+        pushButtonGeNine->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_76);
+        horizontalLayout_28->addWidget(pushButtonGeNine);
 
-        pushButton_77 = new QPushButton(widgetGuts);
-        pushButton_77->setObjectName(QStringLiteral("pushButton_77"));
-        pushButton_77->setMinimumSize(QSize(20, 20));
+        pushButtonGeQuan = new QPushButton(widgetGuts);
+        pushButtonGeQuan->setObjectName(QStringLiteral("pushButtonGeQuan"));
+        pushButtonGeQuan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_77);
+        horizontalLayout_28->addWidget(pushButtonGeQuan);
 
-        pushButton_78 = new QPushButton(widgetGuts);
-        pushButton_78->setObjectName(QStringLiteral("pushButton_78"));
-        pushButton_78->setMinimumSize(QSize(20, 20));
+        pushButtonGeQing = new QPushButton(widgetGuts);
+        pushButtonGeQing->setObjectName(QStringLiteral("pushButtonGeQing"));
+        pushButtonGeQing->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_78);
+        horizontalLayout_28->addWidget(pushButtonGeQing);
 
-        pushButton_79 = new QPushButton(widgetGuts);
-        pushButton_79->setObjectName(QStringLiteral("pushButton_79"));
-        pushButton_79->setMinimumSize(QSize(20, 20));
+        pushButtonGeFan = new QPushButton(widgetGuts);
+        pushButtonGeFan->setObjectName(QStringLiteral("pushButtonGeFan"));
+        pushButtonGeFan->setMinimumSize(QSize(22, 22));
 
-        horizontalLayout_28->addWidget(pushButton_79);
+        horizontalLayout_28->addWidget(pushButtonGeFan);
 
 
         verticalLayout_17->addLayout(horizontalLayout_28);
@@ -1747,20 +1747,21 @@ public:
 
         horizontalLayout_16 = new QHBoxLayout();
         horizontalLayout_16->setObjectName(QStringLiteral("horizontalLayout_16"));
-        radioButton = new QRadioButton(widget);
-        radioButton->setObjectName(QStringLiteral("radioButton"));
-        radioButton->setMinimumSize(QSize(80, 0));
-        radioButton->setMaximumSize(QSize(80, 16777215));
+        radioButtonRevenueRatio = new QRadioButton(widget);
+        radioButtonRevenueRatio->setObjectName(QStringLiteral("radioButtonRevenueRatio"));
+        radioButtonRevenueRatio->setMinimumSize(QSize(80, 0));
+        radioButtonRevenueRatio->setMaximumSize(QSize(80, 16777215));
+        radioButtonRevenueRatio->setChecked(true);
 
-        horizontalLayout_16->addWidget(radioButton);
+        horizontalLayout_16->addWidget(radioButtonRevenueRatio);
 
-        comboBox_3 = new QComboBox(widget);
-        comboBox_3->setObjectName(QStringLiteral("comboBox_3"));
-        comboBox_3->setMinimumSize(QSize(100, 0));
-        comboBox_3->setMaximumSize(QSize(100, 16777215));
-        comboBox_3->setStyleSheet(QStringLiteral(""));
+        comboBoxRate = new QComboBox(widget);
+        comboBoxRate->setObjectName(QStringLiteral("comboBoxRate"));
+        comboBoxRate->setMinimumSize(QSize(100, 0));
+        comboBoxRate->setMaximumSize(QSize(100, 16777215));
+        comboBoxRate->setStyleSheet(QStringLiteral(""));
 
-        horizontalLayout_16->addWidget(comboBox_3);
+        horizontalLayout_16->addWidget(comboBoxRate);
 
         label_14 = new QLabel(widget);
         label_14->setObjectName(QStringLiteral("label_14"));
@@ -1776,32 +1777,32 @@ public:
 
         horizontalLayout_16->addWidget(label_10);
 
-        comboBox_2 = new QComboBox(widget);
-        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
-        comboBox_2->setMinimumSize(QSize(113, 0));
-        comboBox_2->setMaximumSize(QSize(113, 16777215));
-        comboBox_2->setStyleSheet(QStringLiteral(""));
+        comboBoxCost = new QComboBox(widget);
+        comboBoxCost->setObjectName(QStringLiteral("comboBoxCost"));
+        comboBoxCost->setMinimumSize(QSize(113, 0));
+        comboBoxCost->setMaximumSize(QSize(113, 16777215));
+        comboBoxCost->setStyleSheet(QStringLiteral(""));
 
-        horizontalLayout_16->addWidget(comboBox_2);
+        horizontalLayout_16->addWidget(comboBoxCost);
 
 
         verticalLayout_9->addLayout(horizontalLayout_16);
 
         horizontalLayout_17 = new QHBoxLayout();
         horizontalLayout_17->setObjectName(QStringLiteral("horizontalLayout_17"));
-        radioButton_2 = new QRadioButton(widget);
-        radioButton_2->setObjectName(QStringLiteral("radioButton_2"));
-        radioButton_2->setMinimumSize(QSize(80, 0));
-        radioButton_2->setMaximumSize(QSize(80, 16777215));
+        radioButtonFixedIncom = new QRadioButton(widget);
+        radioButtonFixedIncom->setObjectName(QStringLiteral("radioButtonFixedIncom"));
+        radioButtonFixedIncom->setMinimumSize(QSize(80, 0));
+        radioButtonFixedIncom->setMaximumSize(QSize(80, 16777215));
 
-        horizontalLayout_17->addWidget(radioButton_2);
+        horizontalLayout_17->addWidget(radioButtonFixedIncom);
 
-        lineEdit = new QLineEdit(widget);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setMinimumSize(QSize(100, 0));
-        lineEdit->setMaximumSize(QSize(100, 16777215));
+        lineEditFixedIncom = new QLineEdit(widget);
+        lineEditFixedIncom->setObjectName(QStringLiteral("lineEditFixedIncom"));
+        lineEditFixedIncom->setMinimumSize(QSize(100, 0));
+        lineEditFixedIncom->setMaximumSize(QSize(100, 16777215));
 
-        horizontalLayout_17->addWidget(lineEdit);
+        horizontalLayout_17->addWidget(lineEditFixedIncom);
 
         horizontalSpacer_8 = new QSpacerItem(27, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
@@ -1814,12 +1815,12 @@ public:
 
         horizontalLayout_17->addWidget(label_11);
 
-        lineEdit_2 = new QLineEdit(widget);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
-        lineEdit_2->setMinimumSize(QSize(80, 0));
-        lineEdit_2->setMaximumSize(QSize(80, 16777215));
+        lineEditBonusMode = new QLineEdit(widget);
+        lineEditBonusMode->setObjectName(QStringLiteral("lineEditBonusMode"));
+        lineEditBonusMode->setMinimumSize(QSize(80, 0));
+        lineEditBonusMode->setMaximumSize(QSize(80, 16777215));
 
-        horizontalLayout_17->addWidget(lineEdit_2);
+        horizontalLayout_17->addWidget(lineEditBonusMode);
 
         pushButtonInfo = new QPushButton(widget);
         pushButtonInfo->setObjectName(QStringLiteral("pushButtonInfo"));
@@ -1840,36 +1841,36 @@ public:
         verticalLayout_8->setObjectName(QStringLiteral("verticalLayout_8"));
         horizontalLayout_18 = new QHBoxLayout();
         horizontalLayout_18->setObjectName(QStringLiteral("horizontalLayout_18"));
-        radioButton_3 = new QRadioButton(widget);
-        radioButton_3->setObjectName(QStringLiteral("radioButton_3"));
-        radioButton_3->setMinimumSize(QSize(80, 0));
-        radioButton_3->setMaximumSize(QSize(80, 16777215));
+        radioButtonAccumulateProfits = new QRadioButton(widget);
+        radioButtonAccumulateProfits->setObjectName(QStringLiteral("radioButtonAccumulateProfits"));
+        radioButtonAccumulateProfits->setMinimumSize(QSize(80, 0));
+        radioButtonAccumulateProfits->setMaximumSize(QSize(80, 16777215));
 
-        horizontalLayout_18->addWidget(radioButton_3);
+        horizontalLayout_18->addWidget(radioButtonAccumulateProfits);
 
         label_12 = new QLabel(widget);
         label_12->setObjectName(QStringLiteral("label_12"));
 
         horizontalLayout_18->addWidget(label_12);
 
-        lineEdit_3 = new QLineEdit(widget);
-        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
-        lineEdit_3->setMinimumSize(QSize(40, 0));
-        lineEdit_3->setMaximumSize(QSize(40, 16777215));
+        lineEditBegin = new QLineEdit(widget);
+        lineEditBegin->setObjectName(QStringLiteral("lineEditBegin"));
+        lineEditBegin->setMinimumSize(QSize(40, 0));
+        lineEditBegin->setMaximumSize(QSize(40, 16777215));
 
-        horizontalLayout_18->addWidget(lineEdit_3);
+        horizontalLayout_18->addWidget(lineEditBegin);
 
         label_13 = new QLabel(widget);
         label_13->setObjectName(QStringLiteral("label_13"));
 
         horizontalLayout_18->addWidget(label_13);
 
-        lineEdit_4 = new QLineEdit(widget);
-        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
-        lineEdit_4->setMinimumSize(QSize(40, 0));
-        lineEdit_4->setMaximumSize(QSize(40, 16777215));
+        lineEditAdd = new QLineEdit(widget);
+        lineEditAdd->setObjectName(QStringLiteral("lineEditAdd"));
+        lineEditAdd->setMinimumSize(QSize(40, 0));
+        lineEditAdd->setMaximumSize(QSize(40, 16777215));
 
-        horizontalLayout_18->addWidget(lineEdit_4);
+        horizontalLayout_18->addWidget(lineEditAdd);
 
         horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -1880,12 +1881,12 @@ public:
 
         horizontalLayout_19 = new QHBoxLayout();
         horizontalLayout_19->setObjectName(QStringLiteral("horizontalLayout_19"));
-        radioButton_4 = new QRadioButton(widget);
-        radioButton_4->setObjectName(QStringLiteral("radioButton_4"));
-        radioButton_4->setMinimumSize(QSize(145, 0));
-        radioButton_4->setMaximumSize(QSize(145, 16777215));
+        radioButtonFreeTimes = new QRadioButton(widget);
+        radioButtonFreeTimes->setObjectName(QStringLiteral("radioButtonFreeTimes"));
+        radioButtonFreeTimes->setMinimumSize(QSize(145, 0));
+        radioButtonFreeTimes->setMaximumSize(QSize(145, 16777215));
 
-        horizontalLayout_19->addWidget(radioButton_4);
+        horizontalLayout_19->addWidget(radioButtonFreeTimes);
 
         horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -2112,120 +2113,120 @@ public:
         pushButtonThreeZQing->setText(QApplication::translate("starchoose", " \346\270\205", 0));
         pushButtonThreeZFan->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_3->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
-        checkBox_20->setText(QApplication::translate("starchoose", "\345\211\215\345\233\233", 0));
-        checkBox_22->setText(QApplication::translate("starchoose", "\345\220\216\345\233\233", 0));
-        checkBox_23->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\347\231\276\344\270\252", 0));
-        checkBox_24->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\345\215\201\344\270\252", 0));
-        checkBox_25->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276\345\215\201\344\270\252", 0));
-        pushButton_16->setText(QApplication::translate("starchoose", "\345\205\250", 0));
-        pushButton_15->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_14->setText(QApplication::translate("starchoose", " \345\217\215", 0));
+        checkBoxFZqianSi->setText(QApplication::translate("starchoose", "\345\211\215\345\233\233", 0));
+        checkBoxFZHouSi->setText(QApplication::translate("starchoose", "\345\220\216\345\233\233", 0));
+        checkBoxFZWanQIanBaiGe->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\347\231\276\344\270\252", 0));
+        checkBoxFZWanQianShiGe->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\345\215\201\344\270\252", 0));
+        checkBoxFZWanBaiShiGe->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276\345\215\201\344\270\252", 0));
+        pushButtonFZQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonFZQing->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonFZFan->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_4->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
-        checkBox_26->setText(QApplication::translate("starchoose", "\344\272\224\346\230\237", 0));
-        pushButton_25->setText(QApplication::translate("starchoose", "\345\205\250", 0));
-        pushButton_24->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_23->setText(QApplication::translate("starchoose", " \345\217\215", 0));
+        checkBoxFiveZ->setText(QApplication::translate("starchoose", "\344\272\224\346\230\237", 0));
+        pushButtonFiveZQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonFiveZQing->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonFiveZFan->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_5->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
-        checkBox_27->setText(QApplication::translate("starchoose", "\345\211\215\344\272\214", 0));
-        checkBox_28->setText(QApplication::translate("starchoose", "\345\220\216\344\272\214", 0));
-        checkBox_29->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276", 0));
-        checkBox_30->setText(QApplication::translate("starchoose", "\344\270\207\345\215\201", 0));
-        checkBox_31->setText(QApplication::translate("starchoose", "\344\270\207\344\270\252", 0));
-        checkBox_32->setText(QApplication::translate("starchoose", "\345\215\203\347\231\276", 0));
-        checkBox_33->setText(QApplication::translate("starchoose", "\345\215\203\345\215\201", 0));
-        checkBox_34->setText(QApplication::translate("starchoose", "\345\215\203\344\270\252", 0));
-        checkBox_35->setText(QApplication::translate("starchoose", "\347\231\276\345\215\201", 0));
-        checkBox_36->setText(QApplication::translate("starchoose", "\347\231\276\344\270\252", 0));
-        pushButton_21->setText(QApplication::translate("starchoose", "\345\205\250", 0));
-        pushButton_22->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_20->setText(QApplication::translate("starchoose", " \345\217\215", 0));
+        checkBoxTHQianEr->setText(QApplication::translate("starchoose", "\345\211\215\344\272\214", 0));
+        checkBoxTHHouEr->setText(QApplication::translate("starchoose", "\345\220\216\344\272\214", 0));
+        checkBoxTHWanBai->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276", 0));
+        checkBoxTHWanShi->setText(QApplication::translate("starchoose", "\344\270\207\345\215\201", 0));
+        checkBoxTHWanGe->setText(QApplication::translate("starchoose", "\344\270\207\344\270\252", 0));
+        checkBoxTHQianBai->setText(QApplication::translate("starchoose", "\345\215\203\347\231\276", 0));
+        checkBoxTHQianShi->setText(QApplication::translate("starchoose", "\345\215\203\345\215\201", 0));
+        checkBoxTHQianGe->setText(QApplication::translate("starchoose", "\345\215\203\344\270\252", 0));
+        checkBoxTHBaiShi->setText(QApplication::translate("starchoose", "\347\231\276\345\215\201", 0));
+        checkBoxTHBaiGe->setText(QApplication::translate("starchoose", "\347\231\276\344\270\252", 0));
+        pushButtonTwoHQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonTwoHQing->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonTwoHFan->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_6->setText(QApplication::translate("starchoose", "\344\275\215\347\275\256\357\274\232", 0));
-        checkBox_37->setText(QApplication::translate("starchoose", "\345\220\216\344\270\211", 0));
-        checkBox_38->setText(QApplication::translate("starchoose", "\345\211\215\344\270\211", 0));
-        checkBox_39->setText(QApplication::translate("starchoose", "\344\270\255\344\270\211", 0));
-        checkBox_40->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\345\215\201", 0));
-        checkBox_41->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\344\270\252", 0));
-        checkBox_42->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276\345\215\201", 0));
-        checkBox_43->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276\344\270\252", 0));
-        checkBox_44->setText(QApplication::translate("starchoose", "\344\270\207\345\215\201\344\270\252", 0));
-        checkBox_45->setText(QApplication::translate("starchoose", "\345\215\203\347\231\276\344\270\252", 0));
-        checkBox_46->setText(QApplication::translate("starchoose", "\345\215\203\345\215\201\344\270\252", 0));
-        pushButton_19->setText(QApplication::translate("starchoose", "\345\205\250", 0));
-        pushButton_18->setText(QApplication::translate("starchoose", " \346\270\205", 0));
-        pushButton_17->setText(QApplication::translate("starchoose", " \345\217\215", 0));
+        checkBoxThreeHHouSan->setText(QApplication::translate("starchoose", "\345\220\216\344\270\211", 0));
+        checkBoxThreeHQianSan->setText(QApplication::translate("starchoose", "\345\211\215\344\270\211", 0));
+        checkBoxThreeHZhongSan->setText(QApplication::translate("starchoose", "\344\270\255\344\270\211", 0));
+        checkBoxThreeHWanQIanShi->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\345\215\201", 0));
+        checkBoxThreeHWanQianGe->setText(QApplication::translate("starchoose", "\344\270\207\345\215\203\344\270\252", 0));
+        checkBoxThreeHWanBaiShi->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276\345\215\201", 0));
+        checkBoxThreeHWanBaiGe->setText(QApplication::translate("starchoose", "\344\270\207\347\231\276\344\270\252", 0));
+        checkBoxThreeHWanSHiGe->setText(QApplication::translate("starchoose", "\344\270\207\345\215\201\344\270\252", 0));
+        checkBoxThreeHQianBaiGe->setText(QApplication::translate("starchoose", "\345\215\203\347\231\276\344\270\252", 0));
+        checkBoxThreeHQianShiGe->setText(QApplication::translate("starchoose", "\345\215\203\345\215\201\344\270\252", 0));
+        pushButtonThreeHQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonThreeHQing->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonThreeHFan->setText(QApplication::translate("starchoose", " \345\217\215", 0));
         label_7->setText(QApplication::translate("starchoose", "\346\210\221\347\232\204\345\217\267\347\240\201\357\274\232", 0));
         label_8->setText(QApplication::translate("starchoose", "0\346\263\250", 0));
         checkBox_47->setText(QApplication::translate("starchoose", "\345\260\206\346\255\244\350\256\241\345\210\222\345\210\206\344\272\253\345\210\260\350\256\241\345\210\222\345\271\263\345\217\260", 0));
         label_19->setText(QApplication::translate("starchoose", "\344\270\207\344\275\215\357\274\232", 0));
-        pushButton_10->setText(QApplication::translate("starchoose", "0", 0));
-        pushButton_29->setText(QApplication::translate("starchoose", "1", 0));
-        pushButton_30->setText(QApplication::translate("starchoose", "2", 0));
-        pushButton_32->setText(QApplication::translate("starchoose", "3", 0));
-        pushButton_33->setText(QApplication::translate("starchoose", "4", 0));
-        pushButton_31->setText(QApplication::translate("starchoose", "5", 0));
-        pushButton_34->setText(QApplication::translate("starchoose", "6", 0));
-        pushButton_35->setText(QApplication::translate("starchoose", "7", 0));
-        pushButton_39->setText(QApplication::translate("starchoose", "8", 0));
-        pushButton_38->setText(QApplication::translate("starchoose", "9", 0));
-        pushButton_36->setText(QApplication::translate("starchoose", " \345\205\250", 0));
-        pushButton_37->setText(QApplication::translate("starchoose", " \345\217\215", 0));
-        pushButton_40->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonWanZero->setText(QApplication::translate("starchoose", "0", 0));
+        pushButtonWanOne->setText(QApplication::translate("starchoose", "1", 0));
+        pushButtonWanTwo->setText(QApplication::translate("starchoose", "2", 0));
+        pushButtonWanThree->setText(QApplication::translate("starchoose", "3", 0));
+        pushButtonWanFour->setText(QApplication::translate("starchoose", "4", 0));
+        pushButtonWanFive->setText(QApplication::translate("starchoose", "5", 0));
+        pushButtonWanSix->setText(QApplication::translate("starchoose", "6", 0));
+        pushButtonWanSeven->setText(QApplication::translate("starchoose", "7", 0));
+        pushButtonWanEight->setText(QApplication::translate("starchoose", "8", 0));
+        pushButtonWanNine->setText(QApplication::translate("starchoose", "9", 0));
+        pushButtonWanQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonWanQing->setText(QApplication::translate("starchoose", "\346\270\205", 0));
+        pushButtonWanFan->setText(QApplication::translate("starchoose", "\345\217\215", 0));
         label_20->setText(QApplication::translate("starchoose", "\345\215\203\344\275\215\357\274\232", 0));
-        pushButton_41->setText(QApplication::translate("starchoose", "0", 0));
-        pushButton_42->setText(QApplication::translate("starchoose", "1", 0));
-        pushButton_43->setText(QApplication::translate("starchoose", "2", 0));
-        pushButton_44->setText(QApplication::translate("starchoose", "3", 0));
-        pushButton_45->setText(QApplication::translate("starchoose", "4", 0));
-        pushButton_46->setText(QApplication::translate("starchoose", "5", 0));
-        pushButton_47->setText(QApplication::translate("starchoose", "6", 0));
-        pushButton_48->setText(QApplication::translate("starchoose", "7", 0));
-        pushButton_49->setText(QApplication::translate("starchoose", "8", 0));
-        pushButton_50->setText(QApplication::translate("starchoose", "9", 0));
-        pushButton_51->setText(QApplication::translate("starchoose", " \345\205\250", 0));
-        pushButton_52->setText(QApplication::translate("starchoose", "\345\217\215", 0));
-        pushButton_53->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonQianZero->setText(QApplication::translate("starchoose", "0", 0));
+        pushButtonQianOne->setText(QApplication::translate("starchoose", "1", 0));
+        pushButtonQianTwo->setText(QApplication::translate("starchoose", "2", 0));
+        pushButtonQianThree->setText(QApplication::translate("starchoose", "3", 0));
+        pushButtonQianFour->setText(QApplication::translate("starchoose", "4", 0));
+        pushButtonQianFive->setText(QApplication::translate("starchoose", "5", 0));
+        pushButtonQianSix->setText(QApplication::translate("starchoose", "6", 0));
+        pushButtonQianSeven->setText(QApplication::translate("starchoose", "7", 0));
+        pushButtonQianEight->setText(QApplication::translate("starchoose", "8", 0));
+        pushButtonQianNine->setText(QApplication::translate("starchoose", "9", 0));
+        pushButtonQianQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonQianQing->setText(QApplication::translate("starchoose", "\346\270\205", 0));
+        pushButtonQianFan->setText(QApplication::translate("starchoose", "\345\217\215", 0));
         label_21->setText(QApplication::translate("starchoose", "\347\231\276\344\275\215", 0));
-        pushButton_54->setText(QApplication::translate("starchoose", "0", 0));
-        pushButton_55->setText(QApplication::translate("starchoose", "1", 0));
-        pushButton_56->setText(QApplication::translate("starchoose", "2", 0));
-        pushButton_57->setText(QApplication::translate("starchoose", "3", 0));
-        pushButton_58->setText(QApplication::translate("starchoose", "4", 0));
-        pushButton_59->setText(QApplication::translate("starchoose", "5", 0));
-        pushButton_60->setText(QApplication::translate("starchoose", "6", 0));
-        pushButton_61->setText(QApplication::translate("starchoose", "7", 0));
-        pushButton_62->setText(QApplication::translate("starchoose", "8", 0));
-        pushButton_63->setText(QApplication::translate("starchoose", "9", 0));
-        pushButton_64->setText(QApplication::translate("starchoose", " \345\205\250", 0));
-        pushButton_65->setText(QApplication::translate("starchoose", "\345\217\215", 0));
-        pushButton_66->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonBaiZero->setText(QApplication::translate("starchoose", "0", 0));
+        pushButtonBaiOne->setText(QApplication::translate("starchoose", "1", 0));
+        pushButtonBaiTwo->setText(QApplication::translate("starchoose", "2", 0));
+        pushButtonBaiThree->setText(QApplication::translate("starchoose", "3", 0));
+        pushButtonBaiFour->setText(QApplication::translate("starchoose", "4", 0));
+        pushButtonBaiFive->setText(QApplication::translate("starchoose", "5", 0));
+        pushButtonBaiSix->setText(QApplication::translate("starchoose", "6", 0));
+        pushButtonBaiSeven->setText(QApplication::translate("starchoose", "7", 0));
+        pushButtonBaiEight->setText(QApplication::translate("starchoose", "8", 0));
+        pushButtonBaiNine->setText(QApplication::translate("starchoose", "9", 0));
+        pushButtonBaiQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonBaiQing->setText(QApplication::translate("starchoose", "\346\270\205", 0));
+        pushButtonBaiFan->setText(QApplication::translate("starchoose", "\345\217\215", 0));
         label_24->setText(QApplication::translate("starchoose", "\345\215\201\344\275\215", 0));
-        pushButton_93->setText(QApplication::translate("starchoose", "0", 0));
-        pushButton_94->setText(QApplication::translate("starchoose", "1", 0));
-        pushButton_95->setText(QApplication::translate("starchoose", "2", 0));
-        pushButton_96->setText(QApplication::translate("starchoose", "3", 0));
-        pushButton_97->setText(QApplication::translate("starchoose", "4", 0));
-        pushButton_98->setText(QApplication::translate("starchoose", "5", 0));
-        pushButton_99->setText(QApplication::translate("starchoose", "6", 0));
-        pushButton_100->setText(QApplication::translate("starchoose", "7", 0));
-        pushButton_101->setText(QApplication::translate("starchoose", "8", 0));
-        pushButton_102->setText(QApplication::translate("starchoose", "9", 0));
-        pushButton_103->setText(QApplication::translate("starchoose", " \345\205\250", 0));
-        pushButton_104->setText(QApplication::translate("starchoose", "\345\217\215", 0));
-        pushButton_105->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonShiZero->setText(QApplication::translate("starchoose", "0", 0));
+        pushButtonShiOne->setText(QApplication::translate("starchoose", "1", 0));
+        pushButtonShiTwo->setText(QApplication::translate("starchoose", "2", 0));
+        pushButtonShiThree->setText(QApplication::translate("starchoose", "3", 0));
+        pushButtonShiFour->setText(QApplication::translate("starchoose", "4", 0));
+        pushButtonShiFive->setText(QApplication::translate("starchoose", "5", 0));
+        pushButtonShiSix->setText(QApplication::translate("starchoose", "6", 0));
+        pushButtonShiSeven->setText(QApplication::translate("starchoose", "7", 0));
+        pushButtonShiEight->setText(QApplication::translate("starchoose", "8", 0));
+        pushButtonShiNine->setText(QApplication::translate("starchoose", "9", 0));
+        pushButtonShiQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonShiQing->setText(QApplication::translate("starchoose", "\346\270\205", 0));
+        pushButtonShiFan->setText(QApplication::translate("starchoose", "\345\217\215", 0));
         label_22->setText(QApplication::translate("starchoose", "\344\270\252\344\275\215", 0));
-        pushButton_67->setText(QApplication::translate("starchoose", "0", 0));
-        pushButton_68->setText(QApplication::translate("starchoose", "1", 0));
-        pushButton_69->setText(QApplication::translate("starchoose", "2", 0));
-        pushButton_70->setText(QApplication::translate("starchoose", "3", 0));
-        pushButton_71->setText(QApplication::translate("starchoose", "4", 0));
-        pushButton_72->setText(QApplication::translate("starchoose", "5", 0));
-        pushButton_73->setText(QApplication::translate("starchoose", "6", 0));
-        pushButton_74->setText(QApplication::translate("starchoose", "7", 0));
-        pushButton_75->setText(QApplication::translate("starchoose", "8", 0));
-        pushButton_76->setText(QApplication::translate("starchoose", "9", 0));
-        pushButton_77->setText(QApplication::translate("starchoose", " \345\205\250", 0));
-        pushButton_78->setText(QApplication::translate("starchoose", "\345\217\215", 0));
-        pushButton_79->setText(QApplication::translate("starchoose", " \346\270\205", 0));
+        pushButtonGeZero->setText(QApplication::translate("starchoose", "0", 0));
+        pushButtonGeOne->setText(QApplication::translate("starchoose", "1", 0));
+        pushButtonGeTwo->setText(QApplication::translate("starchoose", "2", 0));
+        pushButtonGeThree->setText(QApplication::translate("starchoose", "3", 0));
+        pushButtonGeFour->setText(QApplication::translate("starchoose", "4", 0));
+        pushButtonGeFive->setText(QApplication::translate("starchoose", "5", 0));
+        pushButtonGeSix->setText(QApplication::translate("starchoose", "6", 0));
+        pushButtonGeSeven->setText(QApplication::translate("starchoose", "7", 0));
+        pushButtonGeEight->setText(QApplication::translate("starchoose", "8", 0));
+        pushButtonGeNine->setText(QApplication::translate("starchoose", "9", 0));
+        pushButtonGeQuan->setText(QApplication::translate("starchoose", "\345\205\250", 0));
+        pushButtonGeQing->setText(QApplication::translate("starchoose", "\346\270\205", 0));
+        pushButtonGeFan->setText(QApplication::translate("starchoose", "\345\217\215", 0));
         pushButton->setText(QApplication::translate("starchoose", "\345\244\215\345\210\266", 0));
         pushButton_2->setText(QApplication::translate("starchoose", "\347\262\230\350\264\264", 0));
         pushButton_3->setText(QApplication::translate("starchoose", "\346\270\205\347\251\272", 0));
@@ -2284,9 +2285,9 @@ public:
          << QApplication::translate("starchoose", "50", 0)
         );
         pushButton_4->setText(QApplication::translate("starchoose", "\346\217\220\344\272\244\350\256\241\345\210\222", 0));
-        radioButton->setText(QApplication::translate("starchoose", "\346\224\266\347\233\212\346\257\224\347\216\207", 0));
-        comboBox_3->clear();
-        comboBox_3->insertItems(0, QStringList()
+        radioButtonRevenueRatio->setText(QApplication::translate("starchoose", "\346\224\266\347\233\212\346\257\224\347\216\207", 0));
+        comboBoxRate->clear();
+        comboBoxRate->insertItems(0, QStringList()
          << QApplication::translate("starchoose", "10", 0)
          << QApplication::translate("starchoose", "20", 0)
          << QApplication::translate("starchoose", "30", 0)
@@ -2299,21 +2300,22 @@ public:
         );
         label_14->setText(QApplication::translate("starchoose", " %", 0));
         label_10->setText(QApplication::translate("starchoose", " \345\215\225\346\263\250\346\210\220\346\234\254\357\274\232 2", 0));
-        comboBox_2->clear();
-        comboBox_2->insertItems(0, QStringList()
+        comboBoxCost->clear();
+        comboBoxCost->insertItems(0, QStringList()
          << QApplication::translate("starchoose", "\345\205\203", 0)
          << QApplication::translate("starchoose", "\350\247\222", 0)
          << QApplication::translate("starchoose", "\345\210\206", 0)
         );
-        radioButton_2->setText(QApplication::translate("starchoose", "\345\233\272\345\256\232\346\224\266\347\233\212", 0));
+        radioButtonFixedIncom->setText(QApplication::translate("starchoose", "\345\233\272\345\256\232\346\224\266\347\233\212", 0));
         label_11->setText(QApplication::translate("starchoose", " \345\245\226\351\207\221\346\250\241\345\274\217\357\274\232", 0));
+        lineEditBonusMode->setText(QApplication::translate("starchoose", "1000", 0));
         pushButtonInfo->setText(QString());
-        radioButton_3->setText(QApplication::translate("starchoose", "\347\264\257\345\212\240\345\210\251\346\266\246", 0));
+        radioButtonAccumulateProfits->setText(QApplication::translate("starchoose", "\347\264\257\345\212\240\345\210\251\346\266\246", 0));
         label_12->setText(QApplication::translate("starchoose", " \350\265\267\346\255\245", 0));
-        lineEdit_3->setText(QApplication::translate("starchoose", "1000", 0));
+        lineEditBegin->setText(QApplication::translate("starchoose", "1000", 0));
         label_13->setText(QApplication::translate("starchoose", " \347\264\257\350\277\233", 0));
-        lineEdit_4->setText(QApplication::translate("starchoose", "200", 0));
-        radioButton_4->setText(QApplication::translate("starchoose", "\350\207\252\347\224\261\345\200\215\346\225\260\357\274\214\350\207\252\345\256\232\344\271\211\345\200\215\346\225\260", 0));
+        lineEditAdd->setText(QApplication::translate("starchoose", "200", 0));
+        radioButtonFreeTimes->setText(QApplication::translate("starchoose", "\350\207\252\347\224\261\345\200\215\346\225\260\357\274\214\350\207\252\345\256\232\344\271\211\345\200\215\346\225\260", 0));
         pushButtonCalCGusts->setText(QApplication::translate("starchoose", "\350\256\241\347\256\227\345\200\215\346\212\225", 0));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetPut->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QApplication::translate("starchoose", "\346\234\237\345\217\267", 0));

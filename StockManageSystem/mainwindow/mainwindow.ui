@@ -148,11 +148,22 @@ QLabel
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton">
+                    <property name="minimumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">border-radius:5px;padding:2px 4px;
-background-color: rgb(255, 126, 114);
-color:white;
-    font-size:28px;</string>
+                     <string notr="true">color:white;
+border-image: url(:/image/image/putdown.png);
+font-size:28px;</string>
                     </property>
                     <property name="text">
                      <string>8</string>
@@ -161,11 +172,22 @@ color:white;
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">border-radius:5px;padding:2px 4px;
-background-color: rgb(255, 126, 114);
-color:white;
-    font-size:28px;</string>
+                     <string notr="true">color:white;
+border-image: url(:/image/image/putdown.png);
+font-size:28px;</string>
                     </property>
                     <property name="text">
                      <string>8</string>
@@ -174,11 +196,22 @@ color:white;
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">border-radius:5px;padding:2px 4px;
-background-color: rgb(255, 126, 114);
-color:white;
-    font-size:28px;</string>
+                     <string notr="true">color:white;
+border-image: url(:/image/image/putdown.png);
+font-size:28px;</string>
                     </property>
                     <property name="text">
                      <string>3</string>
@@ -187,11 +220,22 @@ color:white;
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_5">
+                    <property name="minimumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">border-radius:5px;padding:2px 4px;
-background-color: rgb(255, 126, 114);
-color:white;
-    font-size:28px;</string>
+                     <string notr="true">color:white;
+border-image: url(:/image/image/putdown.png);
+font-size:28px;</string>
                     </property>
                     <property name="text">
                      <string>4</string>
@@ -200,11 +244,22 @@ color:white;
                   </item>
                   <item>
                    <widget class="QPushButton" name="pushButton_4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">border-radius:5px;padding:2px 4px;
-background-color: rgb(255, 126, 114);
-color:white;
-    font-size:28px;</string>
+                     <string notr="true">color:white;
+border-image: url(:/image/image/putdown.png);
+font-size:28px;</string>
                     </property>
                     <property name="text">
                      <string>2</string>

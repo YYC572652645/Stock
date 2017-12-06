@@ -124,46 +124,51 @@ public:
 
         pushButton = new QPushButton(widgetMessage);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setStyleSheet(QLatin1String("border-radius:5px;padding:2px 4px;\n"
-"background-color: rgb(255, 126, 114);\n"
-"color:white;\n"
-"    font-size:28px;"));
+        pushButton->setMinimumSize(QSize(30, 30));
+        pushButton->setMaximumSize(QSize(30, 30));
+        pushButton->setStyleSheet(QLatin1String("color:white;\n"
+"border-image: url(:/image/image/putdown.png);\n"
+"font-size:28px;"));
 
         horizontalLayout_2->addWidget(pushButton);
 
         pushButton_2 = new QPushButton(widgetMessage);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setStyleSheet(QLatin1String("border-radius:5px;padding:2px 4px;\n"
-"background-color: rgb(255, 126, 114);\n"
-"color:white;\n"
-"    font-size:28px;"));
+        pushButton_2->setMinimumSize(QSize(30, 30));
+        pushButton_2->setMaximumSize(QSize(30, 30));
+        pushButton_2->setStyleSheet(QLatin1String("color:white;\n"
+"border-image: url(:/image/image/putdown.png);\n"
+"font-size:28px;"));
 
         horizontalLayout_2->addWidget(pushButton_2);
 
         pushButton_3 = new QPushButton(widgetMessage);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setStyleSheet(QLatin1String("border-radius:5px;padding:2px 4px;\n"
-"background-color: rgb(255, 126, 114);\n"
-"color:white;\n"
-"    font-size:28px;"));
+        pushButton_3->setMinimumSize(QSize(30, 30));
+        pushButton_3->setMaximumSize(QSize(30, 30));
+        pushButton_3->setStyleSheet(QLatin1String("color:white;\n"
+"border-image: url(:/image/image/putdown.png);\n"
+"font-size:28px;"));
 
         horizontalLayout_2->addWidget(pushButton_3);
 
         pushButton_5 = new QPushButton(widgetMessage);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-        pushButton_5->setStyleSheet(QLatin1String("border-radius:5px;padding:2px 4px;\n"
-"background-color: rgb(255, 126, 114);\n"
-"color:white;\n"
-"    font-size:28px;"));
+        pushButton_5->setMinimumSize(QSize(30, 30));
+        pushButton_5->setMaximumSize(QSize(30, 30));
+        pushButton_5->setStyleSheet(QLatin1String("color:white;\n"
+"border-image: url(:/image/image/putdown.png);\n"
+"font-size:28px;"));
 
         horizontalLayout_2->addWidget(pushButton_5);
 
         pushButton_4 = new QPushButton(widgetMessage);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setStyleSheet(QLatin1String("border-radius:5px;padding:2px 4px;\n"
-"background-color: rgb(255, 126, 114);\n"
-"color:white;\n"
-"    font-size:28px;"));
+        pushButton_4->setMinimumSize(QSize(30, 30));
+        pushButton_4->setMaximumSize(QSize(30, 30));
+        pushButton_4->setStyleSheet(QLatin1String("color:white;\n"
+"border-image: url(:/image/image/putdown.png);\n"
+"font-size:28px;"));
 
         horizontalLayout_2->addWidget(pushButton_4);
 

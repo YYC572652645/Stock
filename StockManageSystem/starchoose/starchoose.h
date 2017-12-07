@@ -5,6 +5,7 @@
 #include <QFrame>
 #include <QCheckBox>
 #include <QPushButton>
+#include <QStringList>
 
 class QTableWidget;
 
@@ -17,7 +18,7 @@ class StarChoose : public QWidget
     Q_OBJECT
 
 public:
-    explicit StarChoose(QWidget *parent = 0);
+    explicit StarChoose(QWidget *parent = 0, int type = 0);
     ~StarChoose();
     void setHideType(int type);
 
@@ -62,10 +63,14 @@ private slots:
     void on_pushButtonGeFan_clicked();
     void on_pushButtonWanFan_clicked();
     void setCheckPushButton();
+    void on_radioButtonFreeTimes_clicked();
+    void on_textEditBetting_textChanged();
 
 private:
     Ui::starchoose *ui;
     QList<QFrame*>frameList;
+    int countData;
+    int widgetType;
 
     QList<QCheckBox*>checkBoxTwoStarZ;
     QList<QCheckBox*>checkBoxThreeStarZ;
@@ -80,6 +85,9 @@ private:
     QList<QPushButton*>pushButtonGe;
 
     void initControl();
+    void setControl();
+    void calcCount(int type);
+    void setPushButtonList(QList<QPushButton*>listButton);
     void setTableWidget(QTableWidget * tableWidget);
 };
 

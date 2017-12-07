@@ -82,7 +82,6 @@ private:
     PushMessage pushMessage;
 
     void initControl();
-    void setTextEdit();
     void setUpText();
     void setTreeClickWidget(QString treeItemName);
     void addTabWidget(QWidget *widget, const QString &title);

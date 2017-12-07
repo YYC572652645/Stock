@@ -2,21 +2,24 @@
 #include "ui_starchoose.h"
 #include "globaldef.h"
 
-StarChoose::StarChoose(QWidget *parent) :
+/************************   构造函数            ********************/
+StarChoose::StarChoose(QWidget *parent, int type) :
     QWidget(parent),
     ui(new Ui::starchoose)
+  ,countData(0),widgetType(0)
 {
     ui->setupUi(this);
-
+    widgetType = type;
     this->initControl();
 }
 
+/************************   析构函数            ********************/
 StarChoose::~StarChoose()
 {
     delete ui;
 }
 
-
+/************************   初始化控件            ********************/
 void StarChoose::initControl()
 {
     frameList.append(ui->frameDWDan);
@@ -168,6 +171,16 @@ void StarChoose::initControl()
     }
 }
 
+/************************   设置控件            ********************/
+void StarChoose::setControl()
+{
+    ui->comboBoxRate->setEnabled(false);
+    ui->lineEditAdd->setEnabled(false);
+    ui->lineEditBegin->setEnabled(false);
+    ui->lineEditFixedIncom->setEnabled(false);
+}
+
+/************************   设置表格控件            ********************/
 void StarChoose::setTableWidget(QTableWidget *tableWidget)
 {
     //设置单行选中
@@ -440,45 +453,70 @@ void StarChoose::on_pushButtonThreeHFan_clicked()
 /************************   收益比率            ********************/
 void StarChoose::on_radioButtonRevenueRatio_clicked()
 {
+    this->setControl();
     if(ui->radioButtonRevenueRatio->isChecked())
     {
         ui->comboBoxRate->setEnabled(true);
         ui->comboBoxCost->setEnabled(true);
-    }
-    else
-    {
-        ui->comboBoxRate->setEnabled(false);
-        ui->comboBoxCost->setEnabled(false);
     }
 }
 
 /************************   固定收益            ********************/
 void StarChoose::on_radioButtonFixedIncom_clicked()
 {
+    this->setControl();
     if(ui->radioButtonFixedIncom->isChecked())
     {
         ui->lineEditFixedIncom->setEnabled(true);
         ui->lineEditBonusMode->setEnabled(true);
     }
-    else
-    {
-        ui->lineEditFixedIncom->setEnabled(false);
-        ui->lineEditBonusMode->setEnabled(false);
-    }
+
 }
 
 /************************   累加利润            ********************/
 void StarChoose::on_radioButtonAccumulateProfits_clicked()
 {
-    if(ui->radioButtonFixedIncom->isChecked())
+    this->setControl();
+    if(ui->radioButtonAccumulateProfits->isChecked())
     {
         ui->lineEditBegin->setEnabled(true);
         ui->lineEditAdd->setEnabled(true);
     }
-    else
+}
+
+/************************   自由倍数            ********************/
+void StarChoose::on_radioButtonFreeTimes_clicked()
+{
+    this->setControl();
+}
+
+/************************    设置按钮选中           ********************/
+void StarChoose::setCheckPushButton()
+{
+    this->setPushButtonList(pushButtonWan);
+    this->setPushButtonList(pushButtonQian);
+    this->setPushButtonList(pushButtonBai);
+    this->setPushButtonList(pushButtonShi);
+    this->setPushButtonList(pushButtonGe);
+
+    ui->labelInfo->setText(QString("%1注").arg(countData));
+    countData = 0;
+}
+
+/************************   设置按钮列表            ********************/
+void StarChoose::setPushButtonList(QList<QPushButton *> listButton)
+{
+    for(int i = 0; i < 10; i ++)
     {
-        ui->lineEditBegin->setEnabled(true);
-        ui->lineEditAdd->setEnabled(true);
+        if(listButton.at(i)->isChecked())
+        {
+            listButton.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
+            countData ++;
+        }
+        else
+        {
+            listButton.at(i)->setStyleSheet(GLOBALDEF::PUTON);
+        }
     }
 }
 
@@ -490,6 +528,8 @@ void StarChoose::on_pushButtonWanQuan_clicked()
         pushButtonWan.at(i)->setChecked(true);
         pushButtonWan.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
     }
+
+    this->setCheckPushButton();
 }
 
 /************************   万位清            ********************/
@@ -500,6 +540,7 @@ void StarChoose::on_pushButtonWanQing_clicked()
         pushButtonWan.at(i)->setChecked(false);
         pushButtonWan.at(i)->setStyleSheet(GLOBALDEF::PUTON);
     }
+    this->setCheckPushButton();
 }
 
 /************************   万位反            ********************/
@@ -518,54 +559,7 @@ void StarChoose::on_pushButtonWanFan_clicked()
             pushButtonWan.at(i)->setStyleSheet(GLOBALDEF::PUTON);
         }
     }
-}
-
-/************************    设置按钮选中           ********************/
-void StarChoose::setCheckPushButton()
-{
-    for(int i = 0; i < 10; i ++)
-    {
-        if(pushButtonWan.at(i)->isChecked())
-        {
-            pushButtonWan.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
-        }
-        else
-        {
-            pushButtonWan.at(i)->setStyleSheet(GLOBALDEF::PUTON);
-        }
-        if(pushButtonQian.at(i)->isChecked())
-        {
-            pushButtonQian.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
-        }
-        else
-        {
-            pushButtonQian.at(i)->setStyleSheet(GLOBALDEF::PUTON);
-        }
-        if(pushButtonBai.at(i)->isChecked())
-        {
-            pushButtonBai.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
-        }
-        else
-        {
-            pushButtonBai.at(i)->setStyleSheet(GLOBALDEF::PUTON);
-        }
-        if(pushButtonShi.at(i)->isChecked())
-        {
-            pushButtonShi.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
-        }
-        else
-        {
-            pushButtonShi.at(i)->setStyleSheet(GLOBALDEF::PUTON);
-        }
-        if(pushButtonGe.at(i)->isChecked())
-        {
-            pushButtonGe.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
-        }
-        else
-        {
-            pushButtonGe.at(i)->setStyleSheet(GLOBALDEF::PUTON);
-        }
-    }
+    this->setCheckPushButton();
 }
 
 /************************   千位全            ********************/
@@ -576,6 +570,7 @@ void StarChoose::on_pushButtonQianQuan_clicked()
         pushButtonQian.at(i)->setChecked(true);
         pushButtonQian.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
     }
+    this->setCheckPushButton();
 }
 
 /************************   千位清            ********************/
@@ -586,6 +581,7 @@ void StarChoose::on_pushButtonQianQing_clicked()
         pushButtonQian.at(i)->setChecked(false);
         pushButtonQian.at(i)->setStyleSheet(GLOBALDEF::PUTON);
     }
+    this->setCheckPushButton();
 }
 
 /************************   千位反            ********************/
@@ -604,6 +600,7 @@ void StarChoose::on_pushButtonQianFan_clicked()
             pushButtonQian.at(i)->setStyleSheet(GLOBALDEF::PUTON);
         }
     }
+    this->setCheckPushButton();
 }
 
 /************************   百位全            ********************/
@@ -614,6 +611,7 @@ void StarChoose::on_pushButtonBaiQuan_clicked()
         pushButtonBai.at(i)->setChecked(true);
         pushButtonBai.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
     }
+    this->setCheckPushButton();
 }
 
 /************************   百位清            ********************/
@@ -624,6 +622,7 @@ void StarChoose::on_pushButtonBaiQing_clicked()
         pushButtonBai.at(i)->setChecked(false);
         pushButtonBai.at(i)->setStyleSheet(GLOBALDEF::PUTON);
     }
+    this->setCheckPushButton();
 }
 
 /************************   百位反            ********************/
@@ -642,6 +641,7 @@ void StarChoose::on_pushButtonBaiFan_clicked()
             pushButtonBai.at(i)->setStyleSheet(GLOBALDEF::PUTON);
         }
     }
+    this->setCheckPushButton();
 }
 
 /************************   十位全            ********************/
@@ -652,6 +652,7 @@ void StarChoose::on_pushButtonShiQuan_clicked()
         pushButtonShi.at(i)->setChecked(true);
         pushButtonShi.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
     }
+    this->setCheckPushButton();
 }
 
 /************************   十位清            ********************/
@@ -662,6 +663,7 @@ void StarChoose::on_pushButtonShiQing_clicked()
         pushButtonShi.at(i)->setChecked(false);
         pushButtonShi.at(i)->setStyleSheet(GLOBALDEF::PUTON);
     }
+    this->setCheckPushButton();
 }
 
 /************************   十位反            ********************/
@@ -680,6 +682,7 @@ void StarChoose::on_pushButtonShiFan_clicked()
             pushButtonShi.at(i)->setStyleSheet(GLOBALDEF::PUTON);
         }
     }
+    this->setCheckPushButton();
 }
 
 /************************   个位全            ********************/
@@ -690,6 +693,7 @@ void StarChoose::on_pushButtonGeQuan_clicked()
         pushButtonGe.at(i)->setChecked(true);
         pushButtonGe.at(i)->setStyleSheet(GLOBALDEF::PUTDOWN);
     }
+    this->setCheckPushButton();
 }
 
 /************************   个位清            ********************/
@@ -700,6 +704,7 @@ void StarChoose::on_pushButtonGeQing_clicked()
         pushButtonGe.at(i)->setChecked(false);
         pushButtonGe.at(i)->setStyleSheet(GLOBALDEF::PUTON);
     }
+    this->setCheckPushButton();
 }
 
 /************************   个位反            ********************/
@@ -718,4 +723,50 @@ void StarChoose::on_pushButtonGeFan_clicked()
             pushButtonGe.at(i)->setStyleSheet(GLOBALDEF::PUTON);
         }
     }
+    this->setCheckPushButton();
+}
+
+/************************   文本改变            ********************/
+void StarChoose::on_textEditBetting_textChanged()
+{
+    if(widgetType == FRAMTWOZ)
+    {
+       calcCount(widgetType + 1);
+    }
+    else if(widgetType == THREESTARZ)
+    {
+         calcCount(widgetType + 1);
+    }
+    else if(widgetType == FOURSTARZ)
+    {
+         calcCount(widgetType + 1);
+    }
+    else if(widgetType == FIVESTARZ)
+    {
+         calcCount(widgetType + 1);
+    }
+    else if(widgetType == TWOSTARH)
+    {
+         calcCount(FRAMTWOZ + 1);
+    }
+    else if(widgetType == THREESTARH)
+    {
+         calcCount(THREESTARZ + 1);
+    }
+}
+
+/************************   计算下注数            ********************/
+void StarChoose::calcCount(int type)
+{
+    QStringList strList = ui->textEditBetting->toPlainText().split(' ');
+
+    int count = 0;
+    for(int i = 0; i < strList.size(); i ++)
+    {
+        QString strTemp = strList.at(i);
+
+        if(strTemp.length() == type) count ++;
+    }
+
+    ui->labelInfo->setText(QString("%1注").arg(count));
 }

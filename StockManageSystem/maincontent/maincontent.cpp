@@ -109,12 +109,12 @@ void MainContent::initControl()
     //添加窗口
     homePage = new HomePage();
     dwDan = new StarChoose();
-    widgetTwoZ = new StarChoose();
-    widgetThreeZ = new StarChoose();
-    widgetFourZ = new StarChoose();
-    widgetFiveZ = new StarChoose();
-    widgetTwoH = new StarChoose();
-    widgetThreeH = new StarChoose();
+    widgetTwoZ = new StarChoose(NULL, FRAMTWOZ);
+    widgetThreeZ = new StarChoose(NULL, THREESTARZ);
+    widgetFourZ = new StarChoose(NULL, FOURSTARZ);
+    widgetFiveZ = new StarChoose(NULL, FIVESTARZ);
+    widgetTwoH = new StarChoose(NULL,TWOSTARH );
+    widgetThreeH = new StarChoose(NULL, THREESTARH);
     planTemplate = new PlanTemplate();
     peoplePlan = new PeoplePlan();
     goldenSection = new GodlenSection();

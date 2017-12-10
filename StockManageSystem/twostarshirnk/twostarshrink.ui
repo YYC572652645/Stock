@@ -63,35 +63,35 @@ max-width: 50px;
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout">
                 <item>
-                 <widget class="QCheckBox" name="checkBox">
+                 <widget class="QCheckBox" name="checkBoxPair">
                   <property name="text">
                    <string>对子</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QCheckBox" name="checkBox_2">
+                 <widget class="QCheckBox" name="checkBoxMiscellaneous">
                   <property name="text">
                    <string>杂号</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QCheckBox" name="checkBox_3">
+                 <widget class="QCheckBox" name="checkBoxDiscontinuous">
                   <property name="text">
                    <string>不连</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QCheckBox" name="checkBox_4">
+                 <widget class="QCheckBox" name="checkBoxTwoLian">
                   <property name="text">
                    <string>二连</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton">
+                 <widget class="QPushButton" name="pushButtonTypeQuan">
                   <property name="minimumSize">
                    <size>
                     <width>30</width>
@@ -110,7 +110,7 @@ max-width: 50px;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_2">
+                 <widget class="QPushButton" name="pushButtonTypeQing">
                   <property name="minimumSize">
                    <size>
                     <width>30</width>
@@ -144,42 +144,42 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_2">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_5">
+                   <widget class="QCheckBox" name="checkBoxDanZero">
                     <property name="text">
                      <string>0</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_7">
+                   <widget class="QCheckBox" name="checkBoxDanOne">
                     <property name="text">
                      <string>1</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_6">
+                   <widget class="QCheckBox" name="checkBoxDanTwo">
                     <property name="text">
                      <string>2</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_8">
+                   <widget class="QCheckBox" name="checkBoxDanThree">
                     <property name="text">
                      <string>3</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_9">
+                   <widget class="QCheckBox" name="checkBoxDanFour">
                     <property name="text">
                      <string>4</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_3">
+                   <widget class="QPushButton" name="pushButtonDanQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -202,42 +202,42 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_3">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_13">
+                   <widget class="QCheckBox" name="checkBoxDanFive">
                     <property name="text">
                      <string>5</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_14">
+                   <widget class="QCheckBox" name="checkBoxDanSix">
                     <property name="text">
                      <string>6</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_12">
+                   <widget class="QCheckBox" name="checkBoxDanSeven">
                     <property name="text">
                      <string>7</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_11">
+                   <widget class="QCheckBox" name="checkBoxDanEight">
                     <property name="text">
                      <string>8</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_10">
+                   <widget class="QCheckBox" name="checkBoxDanNine">
                     <property name="text">
                      <string>9</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_4">
+                   <widget class="QPushButton" name="pushButtonDanQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -273,49 +273,49 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_4">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_15">
+                   <widget class="QCheckBox" name="checkBoxHeZero">
                     <property name="text">
                      <string>0</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_16">
+                   <widget class="QCheckBox" name="checkBoxHeOne">
                     <property name="text">
                      <string>1</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_17">
+                   <widget class="QCheckBox" name="checkBoxHeTwo">
                     <property name="text">
                      <string>2</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_18">
+                   <widget class="QCheckBox" name="checkBoxHeThree">
                     <property name="text">
                      <string>3</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_19">
+                   <widget class="QCheckBox" name="checkBoxHeFour">
                     <property name="text">
                      <string>4</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_25">
+                   <widget class="QCheckBox" name="checkBoxHeFive">
                     <property name="text">
                      <string>5</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_26">
+                   <widget class="QCheckBox" name="checkBoxHeSix">
                     <property name="text">
                      <string>6</string>
                     </property>
@@ -326,49 +326,49 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_6">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_27">
+                   <widget class="QCheckBox" name="checkBoxHeSeven">
                     <property name="text">
                      <string>7</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_28">
+                   <widget class="QCheckBox" name="checkBoxHeEight">
                     <property name="text">
                      <string>8</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_29">
+                   <widget class="QCheckBox" name="checkBoxHeNine">
                     <property name="text">
                      <string>9</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_30">
+                   <widget class="QCheckBox" name="checkBoxHeTen">
                     <property name="text">
                      <string>10</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_31">
+                   <widget class="QCheckBox" name="checkBoxHeEleven">
                     <property name="text">
                      <string>11</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_32">
+                   <widget class="QCheckBox" name="checkBoxHeTwelve">
                     <property name="text">
                      <string>12</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_33">
+                   <widget class="QCheckBox" name="checkBoxHeThirteen">
                     <property name="text">
                      <string>13</string>
                     </property>
@@ -379,42 +379,42 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_5">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_20">
+                   <widget class="QCheckBox" name="checkBoxHeFourTeen">
                     <property name="text">
                      <string>14</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_21">
+                   <widget class="QCheckBox" name="checkBoxHeFifTeen">
                     <property name="text">
                      <string>15</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_22">
+                   <widget class="QCheckBox" name="checkBoxHeSixTeen">
                     <property name="text">
                      <string>16</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_23">
+                   <widget class="QCheckBox" name="checkBoxHeSevenTeen">
                     <property name="text">
                      <string>17</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_24">
+                   <widget class="QCheckBox" name="checkBoxHeEightTeen">
                     <property name="text">
                      <string>18</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_5">
+                   <widget class="QPushButton" name="pushButtonHeQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -433,7 +433,7 @@ max-width: 50px;
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_6">
+                   <widget class="QPushButton" name="pushButtonHeQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -469,35 +469,35 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_7">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_34">
+                   <widget class="QCheckBox" name="checkBoxLingZeroZero">
                     <property name="text">
                      <string>00</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_35">
+                   <widget class="QCheckBox" name="checkBoxLingOneOne">
                     <property name="text">
                      <string>11</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_36">
+                   <widget class="QCheckBox" name="checkBoxLingTwoTwo">
                     <property name="text">
                      <string>22</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_37">
+                   <widget class="QCheckBox" name="checkBoxLingZeroOne">
                     <property name="text">
                      <string>01</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_39">
+                   <widget class="QCheckBox" name="checkBoxLingZeroTwo">
                     <property name="text">
                      <string>02</string>
                     </property>
@@ -524,28 +524,28 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_8">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_40">
+                   <widget class="QCheckBox" name="checkBoxLingOneZero">
                     <property name="text">
                      <string>10</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_41">
+                   <widget class="QCheckBox" name="checkBoxLingOneTwo">
                     <property name="text">
                      <string>12</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_42">
+                   <widget class="QCheckBox" name="checkBoxLingTwoZero">
                     <property name="text">
                      <string>20</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_7">
+                   <widget class="QPushButton" name="pushButtonLingQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -564,7 +564,7 @@ max-width: 50px;
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_8">
+                   <widget class="QPushButton" name="pushButtonLingQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -604,35 +604,35 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_12">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_72">
+                   <widget class="QCheckBox" name="checkBoxBigDaDa">
                     <property name="text">
                      <string>大大</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_73">
+                   <widget class="QCheckBox" name="checkBoxBigDaZhong">
                     <property name="text">
                      <string>大中</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_74">
+                   <widget class="QCheckBox" name="checkBoxBigZhongDa">
                     <property name="text">
                      <string>中大</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_108">
+                   <widget class="QCheckBox" name="checkBoxBigZhongZhong">
                     <property name="text">
                      <string>中中</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_75">
+                   <widget class="QCheckBox" name="checkBoxBigXiaoXiao">
                     <property name="text">
                      <string>小小</string>
                     </property>
@@ -656,35 +656,35 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_14">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_86">
+                   <widget class="QCheckBox" name="checkBoxBigXiaoZhong">
                     <property name="text">
                      <string>小中</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_87">
+                   <widget class="QCheckBox" name="checkBoxBigZhongXiao">
                     <property name="text">
                      <string>中小</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_88">
+                   <widget class="QCheckBox" name="checkBoxBigXiaoDa">
                     <property name="text">
                      <string>小大</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_89">
+                   <widget class="QCheckBox" name="checkBoxBigDaXiao">
                     <property name="text">
                      <string>大小</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_15">
+                   <widget class="QPushButton" name="pushButtonBigQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -703,7 +703,7 @@ max-width: 50px;
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_16">
+                   <widget class="QPushButton" name="pushButtonBigQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -739,35 +739,35 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_15">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_90">
+                   <widget class="QCheckBox" name="checkBoxOddOuOu">
                     <property name="text">
                      <string>偶偶</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_91">
+                   <widget class="QCheckBox" name="checkBoxOddOuJi">
                     <property name="text">
                      <string>偶奇</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_92">
+                   <widget class="QCheckBox" name="checkBoxOddJiOu">
                     <property name="text">
                      <string>奇偶</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_93">
+                   <widget class="QCheckBox" name="checkBoxOddJiJi">
                     <property name="text">
                      <string>奇奇</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_17">
+                   <widget class="QPushButton" name="pushButtonOddQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -786,7 +786,7 @@ max-width: 50px;
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_18">
+                   <widget class="QPushButton" name="pushButtonOddQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -822,35 +822,35 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_16">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_94">
+                   <widget class="QCheckBox" name="checkBoxQqeHeHe">
                     <property name="text">
                      <string>合合</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_95">
+                   <widget class="QCheckBox" name="checkBoxQqeHeZhi">
                     <property name="text">
                      <string>合质</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_96">
+                   <widget class="QCheckBox" name="checkBoxQqeZhiHe">
                     <property name="text">
                      <string>质合</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_97">
+                   <widget class="QCheckBox" name="checkBoxQqeZhiZhi">
                     <property name="text">
                      <string>质质</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_19">
+                   <widget class="QPushButton" name="pushButtonQqeQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -869,7 +869,7 @@ max-width: 50px;
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_20">
+                   <widget class="QPushButton" name="pushButtonQqeQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -905,42 +905,42 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_13">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_76">
+                   <widget class="QCheckBox" name="checkBoxKuaZero">
                     <property name="text">
                      <string>0</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_77">
+                   <widget class="QCheckBox" name="checkBoxKuaOne">
                     <property name="text">
                      <string>1</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_78">
+                   <widget class="QCheckBox" name="checkBoxKuaTwo">
                     <property name="text">
                      <string>2</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_79">
+                   <widget class="QCheckBox" name="checkBoxKuaThree">
                     <property name="text">
                      <string>3</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_84">
+                   <widget class="QCheckBox" name="checkBoxKuaFour">
                     <property name="text">
                      <string>4</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_21">
+                   <widget class="QPushButton" name="pushButtonKuaQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -963,42 +963,42 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_17">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_80">
+                   <widget class="QCheckBox" name="checkBoxKuaFive">
                     <property name="text">
                      <string>5</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_81">
+                   <widget class="QCheckBox" name="checkBoxKuaSix">
                     <property name="text">
                      <string>6</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_82">
+                   <widget class="QCheckBox" name="checkBoxKuaSeven">
                     <property name="text">
                      <string>7</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_83">
+                   <widget class="QCheckBox" name="checkBoxKuaEight">
                     <property name="text">
                      <string>8</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_85">
+                   <widget class="QCheckBox" name="checkBoxKuaNine">
                     <property name="text">
                      <string>9</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_22">
+                   <widget class="QPushButton" name="pushButtonKuaQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -1034,42 +1034,42 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_18">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_98">
+                   <widget class="QCheckBox" name="checkBoxWeiZero">
                     <property name="text">
                      <string>0</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_99">
+                   <widget class="QCheckBox" name="checkBoxWeiOne">
                     <property name="text">
                      <string>1</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_100">
+                   <widget class="QCheckBox" name="checkBoxWeiTwo">
                     <property name="text">
                      <string>2</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_101">
+                   <widget class="QCheckBox" name="checkBoxWeiThree">
                     <property name="text">
                      <string>3</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_102">
+                   <widget class="QCheckBox" name="checkBoxWeiFour">
                     <property name="text">
                      <string>4</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_23">
+                   <widget class="QPushButton" name="pushButtonWeiQuan">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -1092,42 +1092,42 @@ max-width: 50px;
                 <item>
                  <layout class="QHBoxLayout" name="horizontalLayout_19">
                   <item>
-                   <widget class="QCheckBox" name="checkBox_103">
+                   <widget class="QCheckBox" name="checkBoxWeiFive">
                     <property name="text">
                      <string>5</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_104">
+                   <widget class="QCheckBox" name="checkBoxWeiSix">
                     <property name="text">
                      <string>6</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_105">
+                   <widget class="QCheckBox" name="checkBoxWeiSeven">
                     <property name="text">
                      <string>7</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_106">
+                   <widget class="QCheckBox" name="checkBoxWeiEight">
                     <property name="text">
                      <string>8</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QCheckBox" name="checkBox_107">
+                   <widget class="QCheckBox" name="checkBoxWeiNine">
                     <property name="text">
                      <string>9</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="pushButton_24">
+                   <widget class="QPushButton" name="pushButtonWeiQing">
                     <property name="minimumSize">
                      <size>
                       <width>30</width>
@@ -1172,77 +1172,77 @@ max-width: 50px;
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_38">
+             <widget class="QCheckBox" name="checkBoxShiZero">
               <property name="text">
                <string>0</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_43">
+             <widget class="QCheckBox" name="checkBoxShiOne">
               <property name="text">
                <string>1</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_44">
+             <widget class="QCheckBox" name="checkBoxShiTwo">
               <property name="text">
                <string>2</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_45">
+             <widget class="QCheckBox" name="checkBoxShiThree">
               <property name="text">
                <string>3</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_48">
+             <widget class="QCheckBox" name="checkBoxShiFour">
               <property name="text">
                <string>4</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_47">
+             <widget class="QCheckBox" name="checkBoxShiFive">
               <property name="text">
                <string>5</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_49">
+             <widget class="QCheckBox" name="checkBoxShiSix">
               <property name="text">
                <string>6</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_46">
+             <widget class="QCheckBox" name="checkBoxShiSeven">
               <property name="text">
                <string>7</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_50">
+             <widget class="QCheckBox" name="checkBoxShiEight">
               <property name="text">
                <string>8</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_51">
+             <widget class="QCheckBox" name="checkBoxShiNine">
               <property name="text">
                <string>9</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_10">
+             <widget class="QPushButton" name="pushButtonShiQuan">
               <property name="minimumSize">
                <size>
                 <width>30</width>
@@ -1261,7 +1261,7 @@ max-width: 50px;
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_9">
+             <widget class="QPushButton" name="pushButtonShiQing">
               <property name="minimumSize">
                <size>
                 <width>30</width>
@@ -1291,77 +1291,77 @@ max-width: 50px;
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_62">
+             <widget class="QCheckBox" name="checkBoxGeZero">
               <property name="text">
                <string>0</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_63">
+             <widget class="QCheckBox" name="checkBoxGeOne">
               <property name="text">
                <string>1</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_64">
+             <widget class="QCheckBox" name="checkBoxGeTwo">
               <property name="text">
                <string>2</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_65">
+             <widget class="QCheckBox" name="checkBoxGeThree">
               <property name="text">
                <string>3</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_66">
+             <widget class="QCheckBox" name="checkBoxGeFour">
               <property name="text">
                <string>4</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_67">
+             <widget class="QCheckBox" name="checkBoxGeFive">
               <property name="text">
                <string>5</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_68">
+             <widget class="QCheckBox" name="checkBoxGeSix">
               <property name="text">
                <string>6</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_69">
+             <widget class="QCheckBox" name="checkBoxGeSeven">
               <property name="text">
                <string>7</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_70">
+             <widget class="QCheckBox" name="checkBoxGeEight">
               <property name="text">
                <string>8</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkBox_71">
+             <widget class="QCheckBox" name="checkBoxGeNine">
               <property name="text">
                <string>9</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_13">
+             <widget class="QPushButton" name="pushButtonGeQuan">
               <property name="minimumSize">
                <size>
                 <width>30</width>
@@ -1380,7 +1380,7 @@ max-width: 50px;
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_14">
+             <widget class="QPushButton" name="pushButtonGeQing">
               <property name="minimumSize">
                <size>
                 <width>30</width>
